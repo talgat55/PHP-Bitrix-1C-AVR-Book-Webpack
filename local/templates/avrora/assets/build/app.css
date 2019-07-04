@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: local("AvenirNextCyr-Bold"), local("AvenirNextCyr-Bold"), url("/local/templates/avrora/assets/build/css/AvenirNextCyr-Bold.woff") format("woff"), url("/local/templates/avrora/assets/build/css/AvenirNextCyr-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: local("AvenirNextCyr-Demi"), local("AvenirNextCyr-Demi"), url("/local/templates/avrora/assets/build/css/AvenirNextCyr-Demi.woff") format("woff"), url("/local/templates/avrora/assets/build/css/AvenirNextCyr-Demi.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: local("ofont.ru_AvenirNext"), local("ofont.ru_AvenirNext"), url("/local/templates/avrora/assets/build/css/ofont.ru_AvenirNext.woff") format("woff"), url("/local/templates/avrora/assets/build/css/ofont.ru_AvenirNext.ttf") format("truetype");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: local("AvenirNextCyr-Thin"), local("AvenirNextCyr-Thin"), url("/local/templates/avrora/assets/build/css/AvenirNextCyr-Thin.woff") format("woff"), url("/local/templates/avrora/assets/build/css/AvenirNextCyr-Thin.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvenirNextCyr';
+  src: local("AvenirNextCyr-UltraLight"), local("AvenirNextCyr-UltraLight"), url("/local/templates/avrora/assets/build/css/AvenirNextCyr-UltraLight.woff") format("woff"), url("/local/templates/avrora/assets/build/css/AvenirNextCyr-UltraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: local("calibri_0"), local("calibri_0"), url("/local/templates/avrora/assets/build/css/calibri_0.woff") format("woff"), url("/local/templates/avrora/assets/build/css/calibri_0.ttf") format("truetype");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: local("calibrib_0"), local("calibrib_0"), url("/local/templates/avrora/assets/build/css/calibrib_0.woff") format("woff"), url("/local/templates/avrora/assets/build/css/calibrib_0.ttf") format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Calibri';
+  src: local("calibril_0"), local("calibril_0"), url("/local/templates/avrora/assets/build/css/calibril_0.woff") format("woff"), url("/local/templates/avrora/assets/build/css/calibril_0.ttf") format("truetype");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Calibri";
+  font-weight: 300;
+}
+
+header {
+  padding: 35px 0;
+}
+
+header #logo {
+  display: inline-block;
+}
+
+header #logo img {
+  max-width: 100%;
+}
+
+header .top-header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+header .top-header #phone-block .img-block {
+  width: 41px;
+  height: 38px;
+  margin-right: 25px;
+}
+
+header .top-header #phone-block .img-block img {
+  max-width: 100%;
+  vertical-align: text-top;
+}
+
+header .top-header #phone-block a {
+  text-decoration: none;
+  color: #000;
+  transition: all .3s;
+}
+
+header .top-header #phone-block a:hover {
+  text-decoration: none;
+}
+
+header .top-header #phone-block a:hover p {
+  color: #cd2628;
+}
+
+header .top-header #phone-block a span {
+  font-size: 14px;
+  font-family: "Calibri";
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+header .top-header #phone-block a p {
+  margin-bottom: 0;
+  font-size: 21px;
+  font-family: "AvenirNextCyr";
+  font-weight: 800;
+}
+
+header .top-header #list-soc-phones .img-block {
+  width: 71px;
+  height: 31px;
+  margin-right: 25px;
+}
+
+header .top-header #list-soc-phones .img-block img {
+  max-width: 100%;
+}
+
+header .top-header #list-soc-phones .list-phones {
+  margin: 0;
+  padding: 0;
+  line-height: 14px;
+}
+
+header .top-header #list-soc-phones .list-phones li {
+  padding-bottom: 8px;
+  list-style: none;
+}
+
+header .top-header #list-soc-phones .list-phones li a {
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "AvenirNextCyr";
+  font-weight: 800;
+  color: #000;
+  transition: all .3s;
+}
+
+header .top-header #list-soc-phones .list-phones li a:hover {
+  text-decoration: none;
+  color: #cd2628;
+}
+
+header .top-header #adr-lang-block .first .img-block {
+  width: 38px;
+  height: 38px;
+  margin-right: 25px;
+}
+
+header .top-header #adr-lang-block .first .adress .link-to-adress {
+  text-decoration: none;
+  color: #000;
+}
+
+header .top-header #adr-lang-block .first .adress .link-to-adress div:first-child {
+  font-size: 27px;
+  font-family: "AvenirNextCyr";
+  font-weight: 800;
+  line-height: 22px;
+  margin-bottom: 4px;
+}
+
+header .top-header #adr-lang-block .first .adress .link-to-adress div:last-child {
+  font-size: 13px;
+  font-family: "Calibri";
+  font-weight: 400;
+}
+
+header .top-header #adr-lang-block .second .list-lang {
+  margin: 0;
+  padding: 0;
+}
+
+header .top-header #adr-lang-block .second .list-lang li {
+  list-style: none;
+  height: 19px;
+}
+
+header .top-header #adr-lang-block .second .list-lang li a {
+  text-decoration: none;
+}
+
+header .bottom-header .second {
+  padding-left: 0;
+}
+
+header .bottom-header .second #special-block .clock-block .img-block,
+header .bottom-header .second #special-block .temperature-block .img-block {
+  width: 27px;
+  height: 31px;
+  margin-right: 5px;
+}
+
+header .bottom-header .second #special-block .clock-block span,
+header .bottom-header .second #special-block .temperature-block span {
+  font-size: 14px;
+  font-family: "AvenirNextCyr";
+  font-weight: 600;
+}
+
+header .bottom-header .second #special-block .clock-block .img-block {
+  width: 26px;
+  height: 26px;
+  margin-right: 5px;
+}
+
+header .bottom-header .second #special-block .temperature-block {
+  padding-right: 15px;
+}

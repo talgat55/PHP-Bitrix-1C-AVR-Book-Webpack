@@ -1,0 +1,257 @@
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('AvenirNextCyr-Bold'), local('AvenirNextCyr-Bold'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Bold.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Bold.ttf') format('truetype')
+  font-weight: 800
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('AvenirNextCyr-Demi'), local('AvenirNextCyr-Demi'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Demi.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Demi.ttf') format('truetype')
+  font-weight: 700
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('ofont.ru_AvenirNext'), local('ofont.ru_AvenirNext'),
+  url('/local/templates/avrora/assets/build/css/ofont.ru_AvenirNext.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/ofont.ru_AvenirNext.ttf') format('truetype')
+  font-weight: 600
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('AvenirNextCyr-Thin'), local('AvenirNextCyr-Thin'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Thin.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Thin.ttf') format('truetype')
+  font-weight: 300
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('AvenirNextCyr-UltraLight'), local('AvenirNextCyr-UltraLight'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-UltraLight.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-UltraLight.ttf') format('truetype')
+  font-weight: 200
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'Calibri'
+  src: local('calibri_0'), local('calibri_0'),
+  url('/local/templates/avrora/assets/build/css/calibri_0.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/calibri_0.ttf') format('truetype')
+  font-weight: 400
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'Calibri'
+  src: local('calibrib_0'), local('calibrib_0'),
+  url('/local/templates/avrora/assets/build/css/calibrib_0.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/calibrib_0.ttf') format('truetype')
+  font-weight: 700
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'Calibri'
+  src: local('calibril_0'), local('calibril_0'),
+  url('/local/templates/avrora/assets/build/css/calibril_0.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/calibril_0.ttf') format('truetype')
+  font-weight: 300
+  font-display: swap
+  font-style: normal
+
+
+
+
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+//
+// Main
+//
+$font_avenir: 'AvenirNextCyr'
+$font_calibri:  'Calibri'
+
+$main_color: #cd2628
+$text_color: #000
+
+
+
+body
+  color: $text_color
+  font-size: 18px
+  line-height: 1.5
+  font-family: $font_calibri
+  font-weight: 300
+
+
+
+
+//
+// Header
+//
+header
+  padding: 35px 0 20px
+
+  #logo
+    display: inline-block
+
+    img
+      max-width: 100%
+
+
+  .top-header
+    padding-bottom: 15px
+    border-bottom: 1px solid #e7e7e7
+    #phone-block
+      .img-block
+        width: 41px
+        height: 38px
+        margin-right: 25px
+
+        img
+          max-width: 100%
+          vertical-align: text-top
+
+      a
+        text-decoration: none
+        color: $text_color
+        transition: all .3s
+        &:hover
+          text-decoration: none
+          p
+            color: $main_color
+
+
+        span
+          font-size: 14px
+          font-family: $font_calibri
+          font-weight: 300
+          color: $text_color
+          margin-bottom: 5px
+        p
+          margin-bottom: 0
+          font-size: 21px
+          font-family: $font_avenir
+          font-weight: 800
+
+
+    #list-soc-phones
+      .img-block
+        width: 71px
+        height: 31px
+        margin-right: 25px
+
+        img
+          max-width: 100%
+
+      .list-phones
+        margin: 0
+        padding: 0
+        line-height: 14px
+
+        li
+          padding-bottom: 8px
+          list-style: none
+          a
+            text-decoration: none
+            font-size: 17px
+            font-family: $font_avenir
+            font-weight: 800
+            color: $text_color
+            transition:  all .3s
+
+            &:hover
+              text-decoration: none
+              color: $main_color
+
+
+    #adr-lang-block
+      .first
+
+        .img-block
+          width: 38px
+          height: 38px
+          margin-right: 25px
+
+        .adress
+          .link-to-adress
+            text-decoration: none
+            color: $text_color
+
+            div:first-child
+              font-size: 27px
+              font-family: $font_avenir
+              font-weight: 800
+              line-height: 22px
+              margin-bottom: 4px
+
+            div:last-child
+              font-size: 13px
+              font-family: $font_calibri
+              font-weight: 400
+
+      .second
+        .list-lang
+          margin: 0
+          padding: 0
+
+          li
+            list-style: none
+            height: 19px
+
+            a
+              text-decoration: none
+
+  .bottom-header
+    .second
+      padding-left: 0
+      #special-block
+        .clock-block,
+        .temperature-block
+          .img-block
+            width: 27px
+            height: 31px
+            margin-right: 5px
+
+          span
+            font-size: 14px
+            font-family: $font_avenir
+            font-weight: 600
+
+
+        .clock-block
+          .img-block
+            width: 26px
+            height: 26px
+            margin-right: 5px
+
+
+        .temperature-block
+          padding-right: 15px
+
+
+
+
+
+
+
+
