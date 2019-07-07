@@ -70,8 +70,30 @@ body {
   font-weight: 300;
 }
 
+.hide-main-title {
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.sub-title {
+  margin: 0;
+  font-size: 48px;
+  color: #000;
+  font-family: "AvenirNextCyr";
+  font-weight: 700;
+}
+
+.title-border {
+  width: 235px;
+  height: 2px;
+  background-color: #cd2628;
+  margin-bottom: 45px;
+  margin-top: 15px;
+}
+
 header {
-  padding: 35px 0;
+  padding: 35px 0 20px;
 }
 
 header #logo {
@@ -227,4 +249,171 @@ header .bottom-header .second #special-block .clock-block .img-block {
 
 header .bottom-header .second #special-block .temperature-block {
   padding-right: 15px;
+}
+
+.reserve-section {
+  width: fit-content;
+  margin: 0 auto -215px auto;
+  position: relative;
+  top: -215px;
+}
+
+.reserve-section .reserve-block {
+  border-radius: 5px;
+}
+
+.reserve-section .reserve-block .title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: "AvenirNextCyr";
+}
+
+.reserve-section .reserve-block .first {
+  padding: 50px;
+  width: 490px;
+  background-color: #cd2628;
+}
+
+.reserve-section .reserve-block .first img {
+  height: 38px;
+  margin-right: 20px;
+}
+
+.reserve-section .reserve-block .first .title {
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.reserve-section .reserve-block .first .list-advantages {
+  margin: 0;
+  padding: 0;
+}
+
+.reserve-section .reserve-block .first .list-advantages .item {
+  list-style: none;
+}
+
+.reserve-section .reserve-block .first .list-advantages .item p {
+  margin-bottom: 0;
+  font-size: 18px;
+  color: #fff;
+  font-family: "AvenirNextCyr";
+  font-weight: 700;
+}
+
+.reserve-section .reserve-block .second {
+  padding: 32px 110px;
+  width: 690px;
+  background-color: #f4f4f4;
+}
+
+.reserve-section .reserve-block .second .title {
+  color: #000;
+  margin-bottom: 20px;
+}
+
+#reserve-form *:focus,
+#reserve-form *:active {
+  outline: none;
+  box-shadow: none;
+}
+
+#reserve-form label {
+  font-family: "AvenirNextCyr";
+  font-weight: 700;
+  color: #000;
+}
+
+#reserve-form input[type=number],
+#reserve-form input[type=text] {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 13.5px 5px;
+  font-family: "Calibri";
+  font-size: 15px;
+  color: #000;
+  width: 100%;
+}
+
+#reserve-form input[type=number]::-webkit-input-placeholder,
+#reserve-form input[type=text]::-webkit-input-placeholder {
+  font-family: "Calibri";
+  font-size: 15px;
+  color: #000;
+}
+
+#reserve-form input[type=number]:-moz-placeholder,
+#reserve-form input[type=text]:-moz-placeholder {
+  font-family: "Calibri";
+  font-size: 15px;
+  color: #000;
+}
+
+#reserve-form input[type=number]::-moz-placeholder,
+#reserve-form input[type=text]::-moz-placeholder {
+  font-family: "Calibri";
+  font-size: 15px;
+  color: #000;
+}
+
+#reserve-form input[type=number]:-ms-input-placeholder,
+#reserve-form input[type=text]:-ms-input-placeholder {
+  font-family: "Calibri";
+  font-size: 15px;
+  color: #000;
+}
+
+#reserve-form button {
+  border: none;
+  background: #cd2628;
+  color: #fff;
+  font-family: "Calibri";
+  font-weight: 300;
+  border-radius: 5px;
+  display: block;
+  padding: 11px;
+  margin-top: 35px;
+  width: 100%;
+  transition: all .3s;
+}
+
+#reserve-form button:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+#reserve-form .form-group {
+  margin-bottom: 14px;
+}
+
+#reserve-form .date-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 11px;
+}
+
+.first-section {
+  margin-top: 120px;
+}
+
+.first-section p {
+  font-size: 18px;
+  font-family: "Calibri";
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 0;
+}
+
+.first-section .first,
+.first-section .second {
+  margin-bottom: 170px;
+}
+
+.advantage-section {
+  background-image: url("/images/bg-advantage.jpg");
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
