@@ -120,6 +120,32 @@ body
   background-color: $main_color
   margin-bottom: 45px
   margin-top: 15px
+  &.center
+    margin-right: auto
+    margin-left: auto
+
+
+.link-more
+  background: $main_color
+  color: #fff
+  font-family: $font_calibri
+  font-weight: 300
+  border-radius: 5px
+  padding: 11px  65px
+  transition: all .3s
+  margin-top: 60px
+  display: inline-block
+
+  &:hover
+    background: #333
+    color: #fff
+    text-decoration: none
+
+
+
+
+
+
 
 //
 // Header
@@ -408,6 +434,66 @@ header
   background-image: url("/images/bg-advantage.jpg")
   background-repeat: no-repeat!important
   background-size: cover!important
+  padding: 160px 0
+  background-position: center center!important
+  .wrapper-block
+    margin: 0 auto
+    display: table
+
+  .title
+    margin-top: 0
+    font-weight: 700
+    font-family: $font_avenir
+    color: #000
+    margin-bottom: 30px
+    font-size: 48px
+
+  .list-adv
+    margin: 0
+    padding: 0
+    .item
+      list-style: none
+      font-family: $font_avenir
+      font-weight: 700
+      color: #000
+      font-size: 18px
+      margin-bottom: 8px
+      position: relative
+
+      &:last-child
+        margin-bottom: 0
+
+      &::before
+        display: block
+        width: 15px
+        height: 15px
+        content: "\f00c"
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        position: absolute
+        color: $main_color
+
+      p
+        margin-bottom: 0
+        padding-left: 36px
 
 
+//
+// Service section
+//
+.services-section
+  padding: 160px 0
+
+  .title-border
+    margin-bottom: 120px
+
+
+
+//
+// News section
+//
+.news-section
+  padding-bottom: 100px
+  .title-border
+    margin-bottom: 90px
 

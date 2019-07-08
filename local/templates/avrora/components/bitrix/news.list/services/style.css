@@ -1,0 +1,52 @@
+.services-list{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.services-list .service-item .content ul li{
+    list-style: none;
+    font-size: 18px;
+    font-family: 'Calibri';
+    color: #000;
+    margin-bottom: 8px;
+    position: relative;
+}
+.services-list .service-item .content ul li:before{
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background-color: #cd2628;
+    border-radius: 50%;
+    top: 7px;
+    left: -36px;
+}
+
+.services-list .service-item .content ul li:last-child{
+    margin-bottom: 0;
+}
+
+.services-list .service-item .content ul{
+    margin: 0;
+    padding: 0 0 0 36px;
+
+}
+.services-list .service-item .title{
+    font-size: 48px;
+    color: #000;
+    font-weight: 700;
+    font-family: 'AvenirNextCyr';
+    margin-top: 0;
+    margin-bottom: 35px;
+    text-align: left;
+}
+.services-list li{
+    list-style: none;
+}
+
+.services-list .list-sliders{
+    padding: 0;
+    height: 600px;
+    overflow: hidden;
+}
