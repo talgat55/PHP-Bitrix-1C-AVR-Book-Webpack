@@ -1,0 +1,44 @@
+.payments-block{
+
+}
+
+.payments-block .list-payments{
+    height: 85px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.payments-block .list-payments li{
+    list-style: none
+}
+.payments-block .list-payments li:focus,
+.payments-block .list-payments li:active{
+    outline: none;
+    box-shadow: none ;
+}
+.payments-block .list-payments .slick-slide img{
+    margin: 0 auto;
+}
+
+.payment-slide-arrows a i{
+    font-size: 26px;
+    color: #000;
+}
+.payment-slide-arrows a{
+    padding: 10px;
+    display: inline-block;
+    position: absolute;
+    transition: all .3s;
+}
+.payment-slide-arrows a:hover i{
+     color: #cd2628;
+}
+.payment-slide-arrows .next{
+    right: -50px;
+    bottom: 18px;
+}
+.payment-slide-arrows .prev{
+    left: -50px;
+    bottom: 18px;
+}
+

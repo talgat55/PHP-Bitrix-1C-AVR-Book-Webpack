@@ -38,6 +38,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
         $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
 
+
     }
 
     $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/app.js");
@@ -49,7 +50,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 <?
 $APPLICATION->ShowPanel();
 ?>
-<main class="<? $APPLICATION->ShowProperty('MainClass'); ?>">
+<main class="<? $APPLICATION->ShowProperty('MainClass'); ?> main-wrapper">
     <header>
         <div class="container">
             <div class="row">

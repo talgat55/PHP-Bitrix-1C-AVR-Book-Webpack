@@ -1,0 +1,40 @@
+.reception-list{
+    width: 512px;
+    overflow: hidden;
+    margin: 0;
+    padding: 30px;
+}
+
+#home-banner .bottom .title{
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'AvenirNextCyr';
+    padding-left: 40px;
+}
+#home-banner .bottom{
+    padding: 0 30px 30px 30px;
+
+}
+
+#home-banner .bottom .list-arrow li a:hover i{
+    color: #cd2628;
+}
+#home-banner .bottom .list-arrow li .fa-chevron-right{
+    padding-left: 10px;
+}
+#home-banner .bottom .list-arrow li .fa-chevron-left{
+    padding-right: 10px;
+}
+#home-banner .bottom .list-arrow li i{
+    color: #dddddd;
+    font-size: 23px;
+    transition: all .3s;
+}
+#home-banner .bottom .list-arrow li{
+    list-style: none;
+}
+#home-banner .bottom .list-arrow{
+    margin: 0;
+    padding: 0;
+}
