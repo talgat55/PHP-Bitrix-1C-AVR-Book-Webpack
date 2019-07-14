@@ -44,6 +44,27 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/app.js");
 
     ?>
+    <script>
+        jQuery(document).ready(function () {
+            "use strict";
+
+
+            //  close links
+            jQuery('a').click(function(e) {
+
+                return false;
+
+            });
+            jQuery('form').submit(function(e) {
+
+                return false;
+
+            });
+
+
+            // end redy function
+        });
+    </script>
 </head>
 
 <body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>  " <? $APPLICATION->ShowProperty('BodyTag'); ?> >

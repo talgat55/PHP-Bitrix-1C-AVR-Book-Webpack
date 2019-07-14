@@ -24,7 +24,7 @@
     position: absolute;
     width: 11px;
     height: 11px;
-    background-color: #cd2628;
+    background-color: #ec4345;
     border-radius: 50%;
     top: 7px;
     left: -36px;
@@ -90,7 +90,7 @@
 }
 .services-section .services-slide-arrows a:hover i{
 
-    color: #cd2628!important
+    color: #ec4345!important
 }
 .services-section .services-slide-arrows a{
     display: inline-block;

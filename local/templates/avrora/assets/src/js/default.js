@@ -3,6 +3,16 @@ jQuery(document).ready(function () {
 
 
     lasyLoad();
+
+
+    //  close links
+    jQuery('a').click(function(e) {
+
+        return false;
+
+    });
+
+
     // end redy function
 });
 

@@ -104,7 +104,8 @@ $APPLICATION->SetTitle("Главная");
                                 </div>
                                 <div class="col-md-6 col-xs-12 e">
                                     <label>
-                                        Дата выезда: </label>
+                                        Дата выезда:
+                                    </label>
                                     <div class=" position-relative">
                                         <input type="text" name="date_to" class="text-input date-input"> <span
                                                 class="date-icon"> <img src="/images/date-icon.jpg"
@@ -115,11 +116,20 @@ $APPLICATION->SetTitle("Главная");
                         </div>
                         <div class="form-group">
                             <div class="row">
-                                <div class="col-md-3 col-xs-12">
+                                <div class="col-md-4 col-xs-12">
                                     <label>
-                                        Гости: </label> <input type="number" name="сщгте" class="text-input ">
+                                        Гости:
+                                    </label>
+                                    <div class=" position-relative w--115">
+
+                                        <input type="number" name="count" class="text-input ">
+                                        <span class="date-icon person ">
+                                            <img src="/images/person-icon.png" alt="иконка">
+                                        </span>
+
+                                    </div>
                                 </div>
-                                <div class="col-md-9 col-xs-12">
+                                <div class="col-md-8 col-xs-12">
                                     <button type="submit" form="reserve-form" class="main-link">
                                         Найти номер
                                     </button>

@@ -114,7 +114,11 @@ __webpack_require__.r(__webpack_exports__);
 jQuery(document).ready(function () {
   "use strict";
 
-  lasyLoad(); // end redy function
+  lasyLoad(); //  close links
+
+  jQuery('a').click(function (e) {
+    return false;
+  }); // end redy function
 });
 
 window.onload = function () {// menuLoadFirstBlock();

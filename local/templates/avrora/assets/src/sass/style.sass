@@ -90,10 +90,11 @@
 $font_avenir: 'AvenirNextCyr'
 $font_calibri:  'Calibri'
 
-$main_color: #cd2628
+$main_color: #ec4345
 $text_color: #000
 
-
+.page-wrap
+  border-bottom: 1px solid #e5e5e5
 
 body
   color: $text_color
@@ -169,6 +170,13 @@ body
       transition: all .3s
 
 
+.main-title
+  margin: 60px auto 50px
+  display: block
+  text-align: center
+  font-size: 50px
+  font-family: $font_avenir
+  font-weight: 700
 
 
 
@@ -380,6 +388,8 @@ header
     outline: none
     box-shadow: none
 
+  .date-icon.person
+    right: 27px
 
   label
     font-family: $font_avenir
@@ -619,7 +629,6 @@ header
       &:hover
         color: #313131
         text-decoration: none
-
 
 
 //
