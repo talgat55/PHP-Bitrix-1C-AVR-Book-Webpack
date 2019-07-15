@@ -32,16 +32,11 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
     <?php
 
-    $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/js/jquery.lazy.min.js");
-
-    if ($APPLICATION->GetCurPage(false) === '/' || $APPLICATION->GetCurPage(false) === '/about/') {
-
-        $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
+    $APPLICATION->AddHeadScript("/local/templates/avrora/assets/build/js/jquery.lazy.min.js");
 
 
-    }
 
-    $APPLICATION->AddHeadScript("/local/templates/sanatorium/assets/build/app.js");
+    $APPLICATION->AddHeadScript("/local/templates/avrora/assets/build/app.js");
 
     ?>
     <script>

@@ -114,7 +114,8 @@ __webpack_require__.r(__webpack_exports__);
 jQuery(document).ready(function () {
   "use strict";
 
-  lasyLoad(); //  close links
+  lasyLoad();
+  mapInit(); //  close links
 
   jQuery('a').click(function (e) {
     return false;
@@ -138,7 +139,38 @@ function lasyLoad() {
       effectTime: 700
     });
   }
+} //----------------------------------
+//   Map
+//---------------------------------------
+
+
+function mapInit() {
+  "use strict";
+
+  var mapClass = jQuery('#map');
+
+  if (mapClass.length) {
+    ymaps.ready(function () {
+      var myMap = new ymaps.Map('map', {
+        center: [54.944207, 73.353776],
+        zoom: 15,
+        controls: []
+      }, {// searchControlProvider: 'yandex#search'
+      });
+      myMap.geoObjects.add(new ymaps.Placemark([54.944207, 73.353776], {
+        balloonContent: 'ул. Поворотникова, 6',
+        iconCaption: 'Наш офис'
+      }, {
+        preset: 'islands#greenDotIconWithCaption'
+      }));
+      myMap.behaviors.disable('scrollZoom');
+      myMap.behaviors.disable('multiTouch');
+      myMap.behaviors.disable('drag');
+    });
+  }
 }
+
+map;
 
 /***/ }),
 
