@@ -74,6 +74,11 @@ body {
   font-weight: 300;
 }
 
+*:focus,
+*:active {
+  outline: none;
+}
+
 .hide-main-title {
   height: 0;
   margin: 0;
@@ -721,7 +726,7 @@ header .bottom-header .second #special-block .temperature-block {
 .contacts-page .item-walp .item .content {
   font-size: 20px;
   font-family: "Calibri";
-  font-weight: 400;
+  font-weight: 300;
   padding-left: 60px;
 }
 
@@ -751,15 +756,15 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .contacts-page .item-walp .item .content .links-list li:last-child a {
-  font-family: "AvenirNextCyr";
-  font-size: 20px;
+  font-family: "Calibri";
   font-weight: 300;
+  font-size: 20px;
   margin-bottom: 0;
 }
 
 .contacts-page .item-walp .item .content .contact-add-block .title {
   font-size: 20px;
-  font-family: "AvenirNextCyr";
+  font-family: "Calibri";
   font-weight: 300;
   margin-bottom: 20px;
 }
@@ -799,7 +804,7 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .contacts-page .item-walp .item .mail-field {
-  font-family: "AvenirNextCyr";
+  font-family: "Calibri";
   font-weight: 300;
 }
 

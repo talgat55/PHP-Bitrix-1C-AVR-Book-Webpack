@@ -17,6 +17,7 @@
     display: inline-block;
     min-height: 304px;
     margin-bottom: 20px;
+    pointer-events: none;
 }
 .news-page .news-list .news-date-time {
     margin-bottom: 25px;
@@ -50,7 +51,7 @@
     font-weight: 700;
     font-family: 'AvenirNextCyr';
     margin: 0 0 20px;
-
+    pointer-events: none;
 }
 .news-page .news-list  .news-item{
     list-style: none;
@@ -59,4 +60,5 @@
 
 .news-page  .news-item  .preview_picture{
     max-width: 100%;
+
 }

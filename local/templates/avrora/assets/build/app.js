@@ -170,8 +170,6 @@ function mapInit() {
   }
 }
 
-map;
-
 /***/ }),
 
 /***/ "./local/templates/avrora/assets/src/sass/style.sass":
