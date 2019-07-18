@@ -191,7 +191,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="img-block w-100  d-flex align-items-center">
+                                <div class="img-block w-100  d-flex ">
                                     <img src="/images/bus-stop.jpg" alt="Иконка"/>
                                     <h3 class="title">
                                         На автобусе:
@@ -205,7 +205,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
 
                             </div>
                             <div class="item">
-                                <div class="img-block w-100  d-flex align-items-center">
+                                <div class="img-block w-100  d-flex ">
                                     <img src="/images/car.jpg" alt="Иконка"/>
                                     <h3 class="title">
                                         Трансфер:
@@ -218,7 +218,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                                 </div>
                             </div>
                             <div class="item">
-                                <div class="img-block w-100  d-flex align-items-center">
+                                <div class="img-block w-100  d-flex  ">
                                     <img src="/images/distance.jpg" alt="Иконка"/>
                                     <h3 class="title">
                                         Такси:

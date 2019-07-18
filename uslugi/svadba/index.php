@@ -7,8 +7,7 @@ $APPLICATION->SetTitle("Свадьба");
             <div class="page-wrap w-100 service-detail-page">
                 <div class="col-md-12 col-xs-12">
                     <h1 class="main-title">
-                        Свадьба
-                    </h1>
+                        Свадьба </h1>
                     <div class="service-detail-wrapper">
                         <? $APPLICATION->IncludeComponent(
                             "bitrix:news.detail",
@@ -53,7 +52,9 @@ $APPLICATION->SetTitle("Свадьба");
                                 "PAGER_TITLE" => "Страница",
                                 "PROPERTY_CODE" => array(
                                     0 => "",
-                                    1 => "",
+                                    1 => "HAL_SLIDERS",
+                                    2 => "FISRT_SLIDER",
+                                    3 => "",
                                 ),
                                 "SET_BROWSER_TITLE" => "Y",
                                 "SET_CANONICAL_URL" => "N",
@@ -70,13 +71,9 @@ $APPLICATION->SetTitle("Свадьба");
                             ),
                             false
                         ); ?>
-
-
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+    <br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
