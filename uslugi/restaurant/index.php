@@ -1,17 +1,16 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Свадьба");
+$APPLICATION->SetTitle("Ресторан");
 ?>
     <div class="container">
         <div class="row">
             <div class="page-wrap w-100 service-detail-page">
                 <div class="col-md-12 col-xs-12">
-                    <h1 class="main-title">
-                        Свадьба </h1>
+
                     <div class="service-detail-wrapper">
                         <? $APPLICATION->IncludeComponent(
                             "bitrix:news.detail",
-                            "service-wedding",
+                            "service-restaurant",
                             array(
                                 "ACTIVE_DATE_FORMAT" => "d.m.Y",
                                 "ADD_ELEMENT_CHAIN" => "N",
@@ -34,7 +33,7 @@ $APPLICATION->SetTitle("Свадьба");
                                 "DISPLAY_PREVIEW_TEXT" => "Y",
                                 "DISPLAY_TOP_PAGER" => "N",
                                 "ELEMENT_CODE" => "",
-                                "ELEMENT_ID" => "20", // element id
+                                "ELEMENT_ID" => "26",
                                 "FIELD_CODE" => array(
                                     0 => "",
                                     1 => "",
@@ -51,10 +50,16 @@ $APPLICATION->SetTitle("Свадьба");
                                 "PAGER_TEMPLATE" => ".default",
                                 "PAGER_TITLE" => "Страница",
                                 "PROPERTY_CODE" => array(
-                                    0 => "",
-                                    1 => "HAL_SLIDERS",
-                                    2 => "FISRT_SLIDER",
-                                    3 => "",
+                                    0 => "MAIN_BANNER",
+                                    1 => "TEXT",
+                                    2 => "ROME_BANNER",
+                                    3 => "BANKET_BANNER",
+                                    4 => "SUMMER_BANNER",
+                                    5 => "BANKET_MENU",
+                                    6 => "MAIN_MENU",
+                                    7 => "BUSINES_MENU",
+                                    8 => "SWEDES_MENU",
+                                    9 => "FOOTER_SLIDER",
                                 ),
                                 "SET_BROWSER_TITLE" => "Y",
                                 "SET_CANONICAL_URL" => "N",
@@ -67,7 +72,7 @@ $APPLICATION->SetTitle("Свадьба");
                                 "STRICT_SECTION_CHECK" => "N",
                                 "USE_PERMISSIONS" => "N",
                                 "USE_SHARE" => "N",
-                                "COMPONENT_TEMPLATE" => "service-wedding"
+                                "COMPONENT_TEMPLATE" => "service-restaurant"
                             ),
                             false
                         ); ?>

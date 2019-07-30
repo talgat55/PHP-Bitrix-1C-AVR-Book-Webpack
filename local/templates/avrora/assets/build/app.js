@@ -116,10 +116,12 @@ jQuery(document).ready(function () {
 
   lasyLoad();
   mapInit(); //  close links
-
-  jQuery('a').click(function (e) {
-    return false;
-  }); // end redy function
+  // jQuery('a').click(function(e) {
+  //
+  //     return false;
+  //
+  // });
+  // end redy function
 });
 
 window.onload = function () {// menuLoadFirstBlock();

@@ -6,11 +6,11 @@ jQuery(document).ready(function () {
     mapInit();
 
     //  close links
-    jQuery('a').click(function(e) {
-
-        return false;
-
-    });
+    // jQuery('a').click(function(e) {
+    //
+    //     return false;
+    //
+    // });
 
 
     // end redy function
@@ -64,7 +64,7 @@ function mapInit() {
             myMap.geoObjects
                 .add(new ymaps.Placemark([54.944207, 73.353776], {
                     balloonContent: 'ул. Поворотникова, 6',
-                    iconCaption: 'Наш офис'
+                    iconCaption: 'Наша Гостиница'
                 }, {
                     preset: 'islands#greenDotIconWithCaption'
                 }));
