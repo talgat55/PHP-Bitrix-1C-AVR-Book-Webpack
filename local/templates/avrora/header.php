@@ -180,7 +180,7 @@ $APPLICATION->ShowPanel();
                                             <img src="/images/clock.png" alt="Иконка"/>
                                         </div>
                                         <span>
-                                           Омск 14:41
+                                           Омск  <?=  date('h:i'); ?>
                                         </span>
 
                                     </div>
