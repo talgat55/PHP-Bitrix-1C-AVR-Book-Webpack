@@ -161,7 +161,7 @@ function mapInit() {
       });
       myMap.geoObjects.add(new ymaps.Placemark([54.944207, 73.353776], {
         balloonContent: 'ул. Поворотникова, 6',
-        iconCaption: 'Наш офис'
+        iconCaption: 'Наша Гостиница'
       }, {
         preset: 'islands#greenDotIconWithCaption'
       }));

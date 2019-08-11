@@ -153,7 +153,7 @@ foreach ($arResult['DISPLAY_PROPERTIES']['FISRT_SLIDER']['LINK_ELEMENT_VALUE'] a
                 <div class="col">
                     <div class="item d-flex align-items-center justify-content-center">
                         <img src="/images/manager.png" alt="иконка">
-                        <p>
+                        <p class="text-nowrap">
                             Персональный менеджер
                         </p>
 

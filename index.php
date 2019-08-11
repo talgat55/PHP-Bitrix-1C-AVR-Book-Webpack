@@ -1,146 +1,29 @@
 <?
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/header.php');
 $APPLICATION->SetTitle("Главная");
-?>
 
+?>
     <h1 class="hide-main-title">
         <? $APPLICATION->ShowTitle(); ?>
     </h1>
-<? $APPLICATION->IncludeComponent(
-    "bitrix:news.list",
-    "home-slider",
-    Array(
-        "ACTIVE_DATE_FORMAT" => "d.m.Y",
-        "ADD_SECTIONS_CHAIN" => "N",
-        "AJAX_MODE" => "N",
-        "AJAX_OPTION_ADDITIONAL" => "",
-        "AJAX_OPTION_HISTORY" => "N",
-        "AJAX_OPTION_JUMP" => "N",
-        "AJAX_OPTION_STYLE" => "Y",
-        "CACHE_FILTER" => "N",
-        "CACHE_GROUPS" => "Y",
-        "CACHE_TIME" => "36000000",
-        "CACHE_TYPE" => "A",
-        "CHECK_DATES" => "Y",
-        "DETAIL_URL" => "",
-        "DISPLAY_BOTTOM_PAGER" => "Y",
-        "DISPLAY_DATE" => "Y",
-        "DISPLAY_NAME" => "Y",
-        "DISPLAY_PICTURE" => "Y",
-        "DISPLAY_PREVIEW_TEXT" => "Y",
-        "DISPLAY_TOP_PAGER" => "N",
-        "FIELD_CODE" => array(0 => "PREVIEW_PICTURE", 1 => "",),
-        "FILTER_NAME" => "",
-        "HIDE_LINK_WHEN_NO_DETAIL" => "N",
-        "IBLOCK_ID" => "1",
-        "IBLOCK_TYPE" => "home_slider",
-        "INCLUDE_IBLOCK_INTO_CHAIN" => "N",
-        "INCLUDE_SUBSECTIONS" => "Y",
-        "MESSAGE_404" => "",
-        "NEWS_COUNT" => "20",
-        "PAGER_BASE_LINK_ENABLE" => "N",
-        "PAGER_DESC_NUMBERING" => "N",
-        "PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
-        "PAGER_SHOW_ALL" => "N",
-        "PAGER_SHOW_ALWAYS" => "N",
-        "PAGER_TEMPLATE" => ".default",
-        "PAGER_TITLE" => "Новости",
-        "PARENT_SECTION" => "",
-        "PARENT_SECTION_CODE" => "",
-        "PREVIEW_TRUNCATE_LEN" => "",
-        "PROPERTY_CODE" => array(0 => "LINK", 1 => "",),
-        "SET_BROWSER_TITLE" => "N",
-        "SET_LAST_MODIFIED" => "N",
-        "SET_META_DESCRIPTION" => "N",
-        "SET_META_KEYWORDS" => "N",
-        "SET_STATUS_404" => "N",
-        "SET_TITLE" => "N",
-        "SHOW_404" => "N",
-        "SORT_BY1" => "ACTIVE_FROM",
-        "SORT_BY2" => "SORT",
-        "SORT_ORDER1" => "DESC",
-        "SORT_ORDER2" => "ASC",
-        "STRICT_SECTION_CHECK" => "N"
-    )
-); ?>
-    <section class="reserve-section">
-        <div class="reserve-block">
-            <div class="row">
-                <div class="first col-xs-12">
-                    <div class="info-block">
-                        <h3 class="title">
-                            Забронируйте номера<br>
-                            со скидкой! </h3>
-                        <div class="bottom-block">
-                            <ul class="list-advantages d-flex">
-                                <li class="item d-flex"><img src="/images/banner-icon.png" alt="иконка">
-                                    <p>
-                                        Завтрак шведский стол
-                                    </p>
-                                </li>
-                                <li class="item d-flex"><img src="/images/banner-icon2.png" alt="иконка">
-                                    <p>
-                                        Номера, в которых хочется жить!
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="second col-xs-12">
-                    <h3 class="title">
-                        Бронирование номера: </h3>
-                    <form id="reserve-form" method="post" action="/ajax/reserve">
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-6 col-xs-12">
-                                    <label>
-                                        Дата заезда: </label>
-                                    <div class=" position-relative">
-                                        <input type="text" name="date_from" class="text-input date-input"> <span
-                                                class="date-icon"> <img src="/images/date-icon.jpg"
-                                                                        alt="иконка"> </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-xs-12 e">
-                                    <label>
-                                        Дата выезда:
-                                    </label>
-                                    <div class=" position-relative">
-                                        <input type="text" name="date_to" class="text-input date-input"> <span
-                                                class="date-icon"> <img src="/images/date-icon.jpg"
-                                                                        alt="иконка"> </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row">
-                                <div class="col-md-4 col-xs-12">
-                                    <label>
-                                        Гости:
-                                    </label>
-                                    <div class=" position-relative w--115">
+<?
 
-                                        <input type="number" name="count" class="text-input ">
-                                        <span class="date-icon person ">
-                                            <img src="/images/person-icon.png" alt="иконка">
-                                        </span>
+//  include home slider
+$APPLICATION->IncludeFile(
+    SITE_DIR."/include/home-slider.php",
+    Array(),
+    Array("MODE"=>"html")
+);
+ //  include reserve block
+$APPLICATION->IncludeFile(
+    SITE_DIR."/include/reserve-block.php",
+    Array(),
+    Array("MODE"=>"html")
+);
 
-                                    </div>
-                                </div>
-                                <div class="col-md-8 col-xs-12">
-                                    <button type="submit" form="reserve-form" class="main-link">
-                                        Найти номер
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+
+?>
+
     <section class="first-section">
         <div class="container">
             <div class="row d-flex align-items-center">
@@ -241,7 +124,7 @@ $APPLICATION->SetTitle("Главная");
     <section class="advantage-section">
         <div class="container">
             <div class="row ">
-                <div class="col-md-7 col-xs-12">
+                <div class="col-lg-7 col-xs-12">
                     <div class="wrapper-block text-left">
                         <h3 class="title">
                             В гостинице: </h3>
@@ -329,7 +212,7 @@ $APPLICATION->SetTitle("Главная");
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-xs-12 text-center">
+                <div class="col-lg-5 col-xs-12 text-center">
                     <div class="wrapper-block text-left">
                         <h3 class="title">
                             В номере: </h3>

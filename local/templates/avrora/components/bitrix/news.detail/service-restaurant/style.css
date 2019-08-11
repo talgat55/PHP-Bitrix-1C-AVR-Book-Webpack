@@ -54,7 +54,12 @@
     margin-top: -28px;
     position: relative;
     bottom: -28px;
+    transition: all .3s;
 }
+.service-page-restaurant .menu-section .wrapper:hover .img-block{
+    box-shadow: 5px 10px 20px 5px #dedddd;
+}
+
 .service-page-restaurant .menu-section .wrapper .img-block img {
     width: 100%;
     height: 100%;

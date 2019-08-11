@@ -13,7 +13,10 @@
 $this->setFrameMode(true);
 $this->addExternalCss("/local/templates/avrora/assets/build/css/slick.css");
 $this->addExternalCss("/local/templates/avrora/assets/build/css/slick-theme.css");
+$this->addExternalCss("/local/templates/avrora/assets/build/css/lightbox.min.css");
+
 $this->addExternalJS("/local/templates/avrora/assets/build/js/slick.min.js");
+$this->addExternalJS("/local/templates/avrora/assets/build/js/lightbox.min.js");
 
 ?>
 <? foreach ($arResult["ITEMS"] as $arItem): ?>
@@ -22,7 +25,9 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/slick.min.js");
             <? foreach ($arItem["DISPLAY_PROPERTIES"]['SLIDERS']['VALUE'] as $file_item): ?>
                 <li>
                     <? $URL = CFile::GetPath($file_item); ?>
-                    <img src="<?= $URL; ?>" alt="Изображение"/>
+                    <a href="<?= $URL; ?>"  data-lightbox="image-<?=$arItem['ID'];?>">
+                        <img src="<?= $URL; ?>"  alt="Изображение" />
+                    </a>
                 </li>
             <? endforeach; ?>
         </ul>

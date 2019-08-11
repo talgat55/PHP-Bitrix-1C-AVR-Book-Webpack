@@ -20,13 +20,13 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
 //var_dump($arResult['DISPLAY_PROPERTIES']['TEXT']);
 
 ?>
-
-<section class="main-slider">
-    <img src="<?= $arResult['DISPLAY_PROPERTIES']['MAIN_BANNER']['FILE_VALUE']['SRC']; ?>" alt="баннер"/>
-</section>
 <h1 class="main-title">
     Ресторан
 </h1>
+<section class="main-slider">
+    <img src="<?= $arResult['DISPLAY_PROPERTIES']['MAIN_BANNER']['FILE_VALUE']['SRC']; ?>" alt="баннер"/>
+</section>
+
 <section class="text-section">
     <?= stripcslashes($arResult['DISPLAY_PROPERTIES']['TEXT']['DISPLAY_VALUE']); ?>
 

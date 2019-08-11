@@ -9,7 +9,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Ресторан", 
-		"", 
+		"/uslugi/restaurant/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -23,28 +23,28 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Свадьба", 
-		"", 
+		"/uslugi/svadba/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Новости", 
-		"", 
+		"/news/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Отзывы", 
-		"", 
+		"/reviews/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Контакты", 
-		"", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 

@@ -25,7 +25,9 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     //    $this->getTemplate()->addExternalJs("/local/addcss.css");
     ?>
     <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/app.css">
+
+    <? $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH."/assets/build/app.css"); ?>
+
 
     <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/global.js"></script>
     <? $APPLICATION->ShowHeadScripts() ?>
@@ -33,33 +35,10 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     <?php
 
     $APPLICATION->AddHeadScript("/local/templates/avrora/assets/build/js/jquery.lazy.min.js");
-
-
-
     $APPLICATION->AddHeadScript("/local/templates/avrora/assets/build/app.js");
 
     ?>
-    <script>
-        jQuery(document).ready(function () {
-            "use strict";
 
-
-            //  close links
-            jQuery('a').click(function(e) {
-
-                return false;
-
-            });
-            jQuery('form').submit(function(e) {
-
-                return false;
-
-            });
-
-
-            // end redy function
-        });
-    </script>
 </head>
 
 <body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>  " <? $APPLICATION->ShowProperty('BodyTag'); ?> >
@@ -70,14 +49,15 @@ $APPLICATION->ShowPanel();
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-md-3 col-4">
                     <div id="logo">
                         <a href="/" class="logo">
                             <img src="/images/logo.png" alt="Логотип"/>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-9">
+
+                <div class="col-md-9  col-8">
                     <div class="top-header">
                         <div class="row d-flex align-items-center">
                             <div class="item col-lg-4 col-xs-12">
@@ -166,7 +146,7 @@ $APPLICATION->ShowPanel();
                     </div>
                     <div class="bottom-header">
                         <div class="row">
-                            <div class="first col-lg-9 col-xs-12">
+                            <div class="first col-xl-9  col-md-12 col-xs-12">
                                 <? $APPLICATION->IncludeComponent("bitrix:menu", "mian-menu", Array(
                                     "ALLOW_MULTI_SELECT" => "N",    // Разрешить несколько активных пунктов одновременно
                                     "CHILD_MENU_TYPE" => "left",    // Тип меню для остальных уровней
@@ -184,7 +164,7 @@ $APPLICATION->ShowPanel();
                                     false
                                 ); ?>
                             </div>
-                            <div class="second col-lg-3 col-xs-12 d-flex align-items-center">
+                            <div class="second col-xl-3 col-xs-12 d-flex align-items-center">
                                 <div id="special-block" class="d-flex">
                                     <div class="temperature-block d-flex  align-items-center">
                                         <div class="img-block">
