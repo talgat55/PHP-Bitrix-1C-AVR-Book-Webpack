@@ -929,6 +929,101 @@ header .bottom-header .second #special-block .temperature-block {
   transform: rotateZ(180deg);
 }
 
+.conference-page .sub-title,
+.conference-page h2 {
+  color: #ec4345;
+  font-size: 30px;
+  font-family: "AvenirNextCyr";
+  font-weight: 700;
+  margin: 0 0 60px;
+}
+
+.conference-page .last-section {
+  margin-bottom: 90px;
+}
+
+.conference-page .last-section .link-more.order-price {
+  margin-top: 40px;
+}
+
+.conference-page .last-section .description {
+  font-family: "Calibri";
+  font-size: 20px;
+  color: #000;
+  font-weight: 300;
+  margin: 0 auto 20px auto;
+  width: 80%;
+}
+
+.conference-page .last-section .text-info {
+  margin-bottom: 15px;
+}
+
+.conference-page .last-section .text-info a,
+.conference-page .last-section .text-info .text {
+  font-weight: 400;
+  font-family: "Calibri";
+  font-size: 24px;
+  color: #000;
+}
+
+.conference-page .last-section .text-info a {
+  text-decoration: none;
+  padding-left: 8px;
+  transition: all .3s;
+}
+
+.conference-page .last-section .text-info a:hover {
+  color: #ec4345;
+  text-decoration: none;
+}
+
+.conference-page .last-section .text-info span {
+  color: #cdcdcd;
+}
+
+.conference-page .last-section .menu-section.wrapper {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  width: 250px;
+  margin: 0 0 0 auto;
+}
+
+.conference-page .last-section .menu-section.wrapper .img-block {
+  width: 65px;
+  height: 65px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-top: -28px;
+  position: relative;
+  bottom: -28px;
+  transition: all .3s;
+}
+
+.conference-page .last-section .menu-section.wrapper:hover .img-block {
+  box-shadow: 5px 10px 20px 5px #dedddd;
+}
+
+.conference-page .last-section .menu-section.wrapper .img-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover !important;
+}
+
+.conference-page .last-section .menu-section.wrapper .title {
+  margin: 0;
+  padding: 10px 8px 10px 70px;
+  font-family: 'AvenirNextCyr';
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.conference-page .last-section .menu-section.wrapper .text {
+  border: 1.5px dashed #d0d0d0;
+}
+
 .numbers-list .slide-arrows {
   position: absolute;
   left: 0;

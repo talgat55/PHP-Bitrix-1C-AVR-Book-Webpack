@@ -817,6 +817,85 @@ header
   .rotate
     transform: rotateZ(180deg)
 
+//
+//  Conference page
+//
+.conference-page
+  .sub-title,
+  h2
+    color: $main_color
+    font-size: 30px
+    font-family: $font_avenir
+    font-weight: 700
+    margin: 0 0 60px
+  .last-section
+    margin-bottom: 90px
+    .link-more.order-price
+      margin-top: 40px
+    .description
+      font-family: $font_calibri
+      font-size: 20px
+      color: #000
+      font-weight: 300
+      margin: 0 auto 20px auto
+      width: 80%
+    .text-info
+      margin-bottom: 15px
+
+      a,
+      .text
+        font-weight: 400
+        font-family: $font_calibri
+        font-size: 24px
+        color: #000
+      a
+        text-decoration: none
+        padding-left: 8px
+        transition: all .3s
+        &:hover
+          color: $main_color
+          text-decoration: none
+
+      span
+        color: #cdcdcd
+
+    .menu-section.wrapper
+        display: block
+        text-decoration: none
+        color: #000
+        width: 250px
+        margin: 0 0 0 auto
+        .img-block
+          width: 65px
+          height: 65px
+          overflow: hidden
+          border-radius: 50%
+          margin-top: -28px
+          position: relative
+          bottom: -28px
+          transition: all .3s
+
+    .menu-section.wrapper:hover .img-block
+      box-shadow: 5px 10px 20px 5px #dedddd
+
+    .menu-section.wrapper .img-block img
+      width: 100%
+      height: 100%
+      object-fit: cover!important
+
+    .menu-section.wrapper  .title
+      margin: 0
+      padding: 10px 8px 10px 70px
+      font-family: 'AvenirNextCyr'
+      font-size: 14px
+      font-weight: 600
+      text-align: center
+
+    .menu-section.wrapper  .text
+      border: 1.5px dashed #d0d0d0
+
+
+
 
 
 
