@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Номера и цены", 
-		"", 
+		"/hotel/", 
 		Array(), 
 		Array(), 
 		"" 
@@ -16,7 +16,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Услуги для бизнеса", 
-		"", 
+		"/conference-halls/", 
 		Array(), 
 		Array(), 
 		"" 

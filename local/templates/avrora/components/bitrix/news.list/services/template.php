@@ -30,18 +30,14 @@ $this->setFrameMode(true);
             '</div>';
 
         $slider =
-            '<ul class="list-sliders">';
-        foreach ($arItem['PROPERTIES']['GALLERY']['VALUE'] as $value) {
-
-            $img = CFile::GetPath($value);
-
-
-            $slider .= '<li> <img src="' . $img . '"  alt="Изображение"/> </li>';
-
-        }
+            '<ul class="list-sliders ">';
+            foreach ($arItem['PROPERTIES']['GALLERY']['VALUE'] as $value) {
+                $img = CFile::GetPath($value);
+                $slider .= '<li> <img src="' . $img . '"  alt="Изображение"/> </li>';
+            }
         $slider .= '
             </ul>
-            <ul class="services-slide-arrows d-flex">
+            <ul class="services-slide-arrows  d-flex">
                 <li>
                     <a class="prev" href="#">
                         <i class="fas fa-chevron-left"></i>
@@ -72,10 +68,15 @@ $this->setFrameMode(true);
 
         <li class="service-item row d-flex align-items-center   count-<?= $i; ?>"
             id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
-            <div class="  col-lg-6 col-xs-12 position-relative <?= $firstClass; ?>">
+
+            <div class="  col-lg-6 col-xs-12 position-relative <?= $firstClass; ?>  mobile-block">
+                <?= $slider; ?>
+            </div>
+             <div class="  col-lg-6 col-xs-12 position-relative <?= $firstClass; ?>">
                 <?= $firstBlock; ?>
             </div>
-            <div class="col-lg-6 col-xs-12  position-relative  <?= $secondClass; ?>">
+
+            <div class="col-lg-6 col-xs-12  position-relative  <?= $secondClass; ?>  desktop-block">
                 <?= $secondBlock; ?>
 
             </div>

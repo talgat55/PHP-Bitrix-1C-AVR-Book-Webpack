@@ -17,6 +17,7 @@ $this->addExternalCss("/local/templates/avrora/assets/build/css/slick-theme.css"
 $this->addExternalJS("/local/templates/avrora/assets/build/js/slick.min.js");
 $this->addExternalJS("/local/templates/avrora/assets/build/js/jquery.mask.min.js");
 
+
 ?>
 <div class="container">
     <div class="row">
@@ -26,7 +27,7 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/jquery.mask.min.js
             <? foreach ($arResult["ITEMS"] as $arItem): ?>
                 <!--    --><? // var_dump($arItem["DISPLAY_PROPERTIES"]["OPTIONS"]); ?>
                 <li class="number-item d-flex align-items-center">
-                    <div class="slider col-lg-5 col-md-6  col-sm-12 position-relative">
+                    <div class="slider col-lg-5 col-md-12  col-sm-12 position-relative">
                         <ul class="sliders d-flex">
                             <? foreach ($arItem["DISPLAY_PROPERTIES"]["SLIDERS"]["FILE_VALUE"] as $fileItem): ?>
                                 <li class="slider-item">
@@ -48,7 +49,7 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/jquery.mask.min.js
                             </li>
                         </ul>
                     </div>
-                    <div class="content  col-lg-7 col-md-6  col-sm-12">
+                    <div class="content  col-lg-7 col-md-12 col-sm-12">
                         <h2 class="sub-title">
                             <?= $arItem['NAME']; ?>
                         </h2>
@@ -76,7 +77,7 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/jquery.mask.min.js
                                     </li>
                                 <? endforeach; ?>
                                 <li class="slider-item  ">
-                                    <a href="" class="last-link">
+                                    <a href="<?=$arItem["DETAIL_PAGE_URL"]?>" class="last-link">
                                         Подробнее
                                     </a>
                                 </li>

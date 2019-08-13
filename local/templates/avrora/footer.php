@@ -119,7 +119,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
 
             </div>
-            <div class="col-lg-3 col-md-6 col-xs-12 d-flex align-items-center">
+            <div class="col-lg-3 col-md-6 col-xs-12 d-flex align-items-center  last-col-certs">
                 <ul class="footer-certs-list d-flex">
                     <li>
                         <a href="#">

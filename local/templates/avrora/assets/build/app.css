@@ -1377,6 +1377,10 @@ footer .footer-certs-list li a:hover {
   opacity: .5;
 }
 
+.mobile-block {
+  display: none !important;
+}
+
 @media (max-width: 1200px) {
   #special-block {
     display: none !important;
@@ -1404,6 +1408,48 @@ footer .footer-certs-list li a:hover {
 
   .reception-list .item img {
     height: auto !important;
+  }
+
+  .footer-slider-section .footer-slider-list {
+    height: 500px;
+  }
+
+  .footer-slider-section .footer-slider-list .slider-item {
+    height: 500px;
+  }
+
+  footer #phone-block-footer a p {
+    font-size: 16px;
+  }
+
+  footer #list-soc-phones-footer .list-phones li a {
+    font-size: 15px;
+  }
+
+  footer #list-soc-phones-footer .img-block {
+    width: 40px;
+  }
+
+  footer #adr-lang-block-footer .first .img-block {
+    margin-right: 10px;
+  }
+
+  footer #adr-lang-block-footer .first .img-block .adress .link-to-adress div:first-child {
+    font-size: 19px;
+  }
+
+  footer .list-add-links li a {
+    font-size: 14px;
+  }
+
+  footer .footer-soc-links-block .title {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  .service-page-wedding .hal-sliders .list-hal-heading li a {
+    font-size: 20px;
+    padding: 14px 15px;
   }
 }
 
@@ -1518,9 +1564,171 @@ footer .footer-certs-list li a:hover {
   .services-list .service-item .content-wrap {
     padding: 0 !important;
   }
+
+  .right.desktop-block {
+    display: none !important;
+  }
+
+  .right.mobile-block {
+    display: block !important;
+    height: 400px;
+  }
+
+  .services-section .services-list .service-item {
+    margin-bottom: 30px;
+  }
+
+  .feedback-section .feedback-block .top.d-flex {
+    display: block !important;
+  }
+
+  .feedback-section .top .title-border {
+    margin-bottom: 35px;
+  }
+
+  #feedback-form .form-group.d-flex {
+    display: block !important;
+  }
+
+  #feedback-form .form-group.d-flex .col-lg-4 {
+    margin: 0 auto;
+  }
+
+  #feedback-form .form-group.d-flex textarea,
+  #feedback-form .form-group.d-flex input {
+    width: 100%;
+  }
+
+  footer #logo-footer img {
+    height: 70px;
+  }
+
+  .contacts-page .item-walp .item .img-block .title {
+    font-size: 18px;
+  }
+
+  .contacts-page .item-walp .item .content {
+    font-size: 15px;
+  }
+
+  .contacts-page .item-walp .item .content li:last-child a,
+  .contacts-page .item-walp .item .content .links-list li a {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .contacts-page.row.bottom .item {
+    width: 49%;
+    display: inline-block;
+    padding: 0 15px;
+  }
+
+  .service-detail-page .features .w-100.d-flex.align-items-center {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-detail-page .features .col {
+    flex-basis: inherit;
+    flex-grow: initial;
+    width: auto;
+  }
+
+  .service-page-wedding .gift .sub-title {
+    font-size: 28px;
+  }
+
+  .service-page-wedding .hal-sliders .list-hal-heading {
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .service-page-wedding .last-block .item-walp.first .bg-item {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 35px;
+  }
+
+  .numbers-list .number-item {
+    flex-direction: column;
+  }
+
+  .numbers-list .number-item .slider-item img {
+    margin: 0 auto;
+  }
+
+  .numbers-list .number-item .slider .sliders {
+    margin-bottom: 20px;
+  }
+
+  .numbers-list .number-item .content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .numbers-list .number-item .content .description ul li::before {
+    display: none;
+  }
+
+  .numbers-list .number-item .content .sub-title {
+    font-size: 28px;
+  }
+
+  .conference-page .sub-title,
+  .conference-page .conference-page h2 {
+    margin-bottom: 20px;
+  }
+
+  .conference-page .last-section .menu-section.wrapper {
+    margin: 0 auto;
+  }
+
+  .conference-page .last-section .link-more.order-price {
+    margin: 40px auto 0 auto;
+    display: table;
+  }
+
+  .hotel-page .call-block {
+    display: block !important;
+  }
+
+  .hotel-page .call-block .heading {
+    border-top: 1px solid #e8e8e8;
+  }
+
+  .hotel-page .call-block .content .list p {
+    font-size: 15px;
+  }
+
+  .hotel-page .call-block .content .list li {
+    margin-bottom: 28px;
+  }
+
+  .hotel-page .call-block::before {
+    display: none !important;
+  }
+
+  .hotel-page .last-section h3 {
+    font-size: 20px;
+  }
+
+  .menu-section .row {
+    flex-wrap: wrap;
+  }
+
+  .menu-section .row .col {
+    flex-basis: initial;
+    flex-grow: inherit;
+    max-width: initial;
+    width: 50%;
+  }
 }
 
 @media (max-width: 768px) {
+  .menu-section .row .col {
+    width: 100%;
+  }
+
   header #logo {
     display: table;
     margin: 0 auto;
@@ -1529,9 +1737,160 @@ footer .footer-certs-list li a:hover {
   header #logo img {
     height: 50px;
   }
+
+  .footer-slider-section .footer-slider-list {
+    height: 200px;
+  }
+
+  .footer-slider-section .footer-slider-list .slider-item {
+    height: 200px;
+  }
+
+  .footer-slide-arrows {
+    bottom: 0;
+  }
+
+  .footer-slide-arrows a i {
+    font-size: 15px;
+  }
+
+  #logo-footer {
+    text-align: center;
+  }
+
+  footer .footer-soc-links-block {
+    margin: 24px auto;
+    justify-content: center;
+  }
+
+  footer #phone-block-footer,
+  footer #list-soc-phones-footer,
+  footer #adr-lang-block-footer {
+    justify-content: center !important;
+  }
+
+  footer #list-soc-phones-footer {
+    margin-bottom: 30px;
+  }
+
+  footer .list-add-links {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  footer .last-col-certs {
+    justify-content: center;
+  }
+
+  .contacts-page.row.bottom .item {
+    width: auto;
+    display: block;
+    padding: 0 15px;
+  }
+
+  .contacts-page.row.bottom .item .content {
+    width: 230px;
+  }
+
+  .contacts-page .item-walp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contacts-page .item-walp .item .content {
+    width: 300px;
+  }
+
+  .main-title {
+    font-size: 30px;
+  }
+
+  .reviews-block .slick-prev {
+    left: 20px;
+  }
+
+  .reviews-block .slick-next {
+    right: 20px;
+  }
+
+  .reviews-block .slick-dots {
+    padding: 10px 0;
+  }
+
+  .reviews-block .reviews-list {
+    padding: 15px;
+  }
+
+  .reviews-block .reviews-list .review-item .content .from-site-info {
+    font-size: 19px;
+  }
+
+  .reviews-block .reviews-list .review-item .content .sep {
+    margin: 0 auto 20px auto;
+  }
+
+  .reviews-block .reviews-list .review-item .content .text {
+    font-size: 15px;
+  }
+
+  .news-page .news-list .news-item {
+    list-style: none;
+    display: table;
+    margin: 0 auto 30px auto;
+    width: 400px;
+  }
+
+  .service-page-wedding .last-block .item-walp .title {
+    font-size: 18px;
+  }
+
+  .service-page-wedding .last-block .item-walp .content a {
+    font-size: 15px;
+  }
+
+  .service-page-wedding .last-block .item-walp.first .bg-item {
+    margin-left: auto;
+    margin-right: auto;
+    width: 265px;
+  }
+
+  .conference-page .last-section .text-info {
+    flex-direction: column;
+  }
+
+  .conference-page .last-section .text-info a,
+  .conference-page .last-section .text-info .text {
+    font-size: 17px;
+  }
+
+  .service-page-restaurant .menu-section .wrapper {
+    margin-bottom: 35px;
+  }
+
+  .service-page-restaurant .info-section {
+    text-align: center;
+  }
+
+  .service-page-restaurant .info-section .item .heading {
+    justify-content: center;
+  }
+
+  .service-page-restaurant .info-section .item .info-row {
+    padding: 0;
+  }
 }
 
 @media (max-width: 600px) {
+  .numbers-list .number-item {
+    padding: 10px;
+  }
+
+  .news-page .news-list .news-item {
+    width: 100%;
+  }
+
   header #logo img {
     height: auto !important;
     padding: 4.5px 0;
@@ -1542,5 +1901,110 @@ footer .footer-certs-list li a:hover {
     height: 32px;
     margin-right: 10px;
     padding: 3px 0;
+  }
+
+  .services-list .slider-wrapper,
+  .services-list .right.mobile-block,
+  .services-list .list-sliders {
+    height: 200px !important;
+  }
+
+  .services-list .slick-slide img {
+    width: 100%;
+    object-position: center;
+  }
+
+  .services-section .services-slide-arrows {
+    bottom: 10px;
+  }
+
+  .services-section .left .services-slide-arrows {
+    right: 20px;
+  }
+
+  .advantage-section .title {
+    font-size: 28px;
+  }
+
+  .advantage-section .list-adv .item {
+    font-size: 15px;
+  }
+
+  .sub-title {
+    font-size: 28px;
+  }
+
+  .services-list .link-more {
+    margin-top: 20px;
+  }
+
+  .services-list .service-item .content ul li {
+    font-size: 15px;
+  }
+
+  .services-list .service-item .content ul li:before {
+    width: 8px;
+    height: 8px;
+    top: 5px;
+  }
+
+  .services-list .service-item .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .news-section .title-border {
+    margin-bottom: 35px;
+  }
+
+  .news-section .news-list li {
+    margin-bottom: 50px;
+  }
+
+  .news-section .news-list .news-item .blog-img {
+    display: block;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .news-section .news-list .preview_picture {
+    float: none !important;
+    display: table;
+    margin: 0 auto;
+  }
+
+  .news-section .news-list .news-date-time {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+
+  .news-section .news-list .title {
+    text-align: center;
+  }
+
+  .payments-section {
+    padding: 60px 0;
+  }
+
+  .payments-section .title-border {
+    margin-bottom: 35px;
+  }
+
+  .service-page-wedding .hal-sliders .list-hal-heading {
+    flex-wrap: inherit;
+    flex-direction: column;
+  }
+
+  .service-page-wedding .hal-sliders .list-hal-heading li {
+    width: 100%;
+  }
+
+  section.hal-sliders {
+    margin-bottom: 40px;
+  }
+
+  .service-page-wedding .last-block .item-walp {
+    width: 300px;
+    margin: 0 auto;
   }
 }

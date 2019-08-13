@@ -11,7 +11,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                         Контакты
                     </h1>
                     <div class="contacts-page row">
-                        <div class="item-walp col-md-4 col-xs-12">
+                        <div class="item-walp col-lg-4 col-md-6   col-sm-12 col-xs-12">
                             <div class="item">
                                 <div class="img-block w-100  d-flex align-items-center">
                                     <img src="/images/geo.png" alt="Иконка"/>
@@ -26,7 +26,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                             </div>
                         </div>
 
-                        <div class="item-walp col-md-4 col-xs-12">
+                        <div class="item-walp  col-lg-4 col-md-6   col-sm-12  col-xs-12">
                             <div class="item">
                                 <div class="img-block w-100  d-flex align-items-center">
                                     <img src="/images/phone.jpg" alt="Иконка"/>
@@ -61,7 +61,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                                 </div>
                             </div>
                         </div>
-                        <div class="item-walp col-md-4 col-xs-12">
+                        <div class="item-walp  col-lg-4 col-md-6 col-sm-12 col-xs-12">
                             <div class="item">
                                 <div class="img-block w-100  d-flex align-items-center">
                                     <img src="/images/cocktail.jpg" alt="Иконка"/>
@@ -91,7 +91,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                                 </div>
                             </div>
                         </div>
-                        <div class="item-walp col-md-4 col-xs-12">
+                        <div class="item-walp  col-lg-4 col-md-6   col-sm-12  col-xs-12">
                             <div class="item">
                                 <div class="img-block w-100  d-flex align-items-center">
                                     <img src="/images/business-card-of-a-man-with-contact-info.jpg" alt="Иконка"/>
@@ -116,7 +116,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                                 </div>
                             </div>
                         </div>
-                        <div class="item-walp col-md-4 col-xs-12">
+                        <div class="item-walp  col-lg-4 col-md-6 col-sm-12  col-xs-12">
                             <div class="item">
                                 <div class="img-block w-100  d-flex align-items-center">
                                     <img src="/images/bookmark-button.jpg" alt="Иконка"/>
@@ -146,7 +146,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                             </div>
                         </div>
 
-                        <div class="item-walp col-md-4 col-xs-12">
+                        <div class="item-walp  col-lg-4 col-md-6   col-sm-12 col-xs-12">
                             <div class="item">
                                 <div class="img-block w-100  d-flex align-items-center">
                                     <img src="/images/megaphone.jpg" alt="Иконка"/>
@@ -178,9 +178,9 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
 
                     </div>
                     <div class="contacts-page row  bottom">
-                        <div class="item-walp col-lg-5 col-xs-12">
-                            <div class="item">
-                                <div class="img-block w-100  d-flex align-items-center">
+                        <div class="item-walp col-lg-5  col-xs-12">
+                            <div class="item   ">
+                                <div class="img-block w-100 d-flex align-items-center">
                                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAQAAAC00HvSAAAAJElEQVR42u3MMQEAAAgDINc/9CyhHwQg7RyIRqPRaDQajeaxWXrIRd7Utee8AAAAAElFTkSuQmCC"
                                          alt="Иконка"/>
                                     <h3 class="title">
@@ -190,7 +190,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                                     </h3>
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item   ">
                                 <div class="img-block w-100  d-flex ">
                                     <img src="/images/bus-stop.jpg" alt="Иконка"/>
                                     <h3 class="title">
@@ -204,7 +204,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
 
 
                             </div>
-                            <div class="item">
+                            <div class="item  ">
                                 <div class="img-block w-100  d-flex ">
                                     <img src="/images/car.jpg" alt="Иконка"/>
                                     <h3 class="title">
@@ -217,7 +217,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                                     13 посадочных мест
                                 </div>
                             </div>
-                            <div class="item">
+                            <div class="item   ">
                                 <div class="img-block w-100  d-flex  ">
                                     <img src="/images/distance.jpg" alt="Иконка"/>
                                     <h3 class="title">

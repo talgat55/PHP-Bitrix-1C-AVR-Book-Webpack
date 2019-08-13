@@ -1184,6 +1184,8 @@ footer
         &:hover
           opacity: .5
 
+.mobile-block
+  display: none!important
 
 @media (max-width: 1200px)
   #special-block
@@ -1209,6 +1211,38 @@ footer
     .item
       img
         height: auto!important
+  .footer-slider-section
+    .footer-slider-list
+      height: 500px
+      .slider-item
+        height: 500px
+
+  footer
+    #phone-block-footer a p
+      font-size: 16px
+
+    #list-soc-phones-footer
+      .list-phones
+        li a
+          font-size: 15px
+      .img-block
+        width: 40px
+
+    #adr-lang-block-footer .first .img-block
+      margin-right:  10px
+      .adress .link-to-adress div:first-child
+        font-size: 19px
+
+    .list-add-links li a
+      font-size: 14px
+    .footer-soc-links-block .title
+      margin: 0
+      font-size: 14px
+  .service-page-wedding
+    .hal-sliders
+      .list-hal-heading li a
+        font-size: 20px
+        padding: 14px 15px
 
 @media (max-width: 1024px)
   header
@@ -1294,16 +1328,240 @@ footer
         margin-top: 20px
       .content-wrap
         padding: 0!important
+  .right
+    &.desktop-block
+      display: none!important
+    &.mobile-block
+      display: block!important
+      height: 400px
+  .services-section
+    .services-list
+      .service-item
+        margin-bottom: 30px
+  .feedback-section
+    .feedback-block
+      .top.d-flex
+        display: block!important
+    .top
+      .title-border
+        margin-bottom: 35px
+  #feedback-form
+    .form-group.d-flex
+      display: block!important
+      .col-lg-4
+        margin: 0 auto
+      textarea,
+      input
+        width: 100%
+
+  footer
+    #logo-footer img
+      height: 70px
+
+  .contacts-page
+    .item-walp
+      .item
+        .img-block
+          .title
+            font-size: 18px
+        .content
+          font-size: 15px
+
+          li:last-child a,
+          .links-list li a
+            font-size: 15px
+            margin-bottom: 10px
+    &.row.bottom
+      .item
+        width: 49%
+        display: inline-block
+        padding: 0 15px
+  .service-detail-page
+    .features
+      .w-100.d-flex.align-items-center
+        flex-wrap: wrap
+        justify-content: center
+      .col
+        flex-basis: inherit
+        flex-grow: initial
+        width: auto
+
+  .service-page-wedding .gift .sub-title
+    font-size: 28px
+
+  .service-page-wedding .hal-sliders .list-hal-heading
+    padding: 0
+    flex-wrap: wrap
+
+  .service-page-wedding .last-block .item-walp.first .bg-item
+    background-color: transparent
+    padding: 0
+    margin-bottom: 35px
+  .numbers-list .number-item
+    flex-direction: column
+    .slider-item
+      img
+        margin: 0 auto
+    .slider .sliders
+      margin-bottom: 20px
+    .content
+      padding: 0
+      text-align: center
+      .description ul li::before
+        display: none
+      .sub-title
+        font-size: 28px
+
+  .conference-page
+    .sub-title, .conference-page h2
+      margin-bottom: 20px
+    .last-section
+      .menu-section.wrapper
+        margin:  0 auto
+      .link-more.order-price
+        margin: 40px auto 0 auto
+        display: table
+  .hotel-page
+    .call-block
+      display: block!important
+      .heading
+        border-top: 1px solid #e8e8e8
+      .content
+        .list
+          p
+            font-size: 15px
+          li
+            margin-bottom: 28px
+
+    .call-block::before
+      display: none!important
+    .last-section h3
+      font-size: 20px
+  .menu-section
+    .row
+      flex-wrap: wrap
+      .col
+        flex-basis: initial
+        flex-grow: inherit
+        max-width: initial
+        width: 50%
 
 @media (max-width: 768px)
+  .menu-section
+    .row
+      .col
+        width: 100%
+
   header #logo
     display: table
     margin: 0 auto
     img
       height: 50px
+  .footer-slider-section
+    .footer-slider-list
+      height: 200px
+      .slider-item
+        height: 200px
+  .footer-slide-arrows
+    bottom: 0
+    a i
+      font-size: 15px
+  #logo-footer
+    text-align: center
 
+  footer
+    .footer-soc-links-block
+      margin: 24px auto
+      justify-content: center
+    #phone-block-footer,
+    #list-soc-phones-footer,
+    #adr-lang-block-footer
+      justify-content: center!important
 
+    #list-soc-phones-footer
+      margin-bottom: 30px
+
+    .list-add-links
+      text-align: center
+      margin-bottom: 30px
+    .last-col-certs
+      justify-content: center
+
+  .contacts-page
+    &.row.bottom
+      .item
+        width: auto
+        display: block
+        padding: 0 15px
+        .content
+          width: 230px
+    .item-walp
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      .item .content
+        width: 300px
+  .main-title
+    font-size: 30px
+
+  .reviews-block
+    .slick-prev
+      left: 20px
+    .slick-next
+      right: 20px
+
+    .slick-dots
+      padding: 10px 0
+    .reviews-list
+      padding: 15px
+      .review-item
+        .content
+          .from-site-info
+            font-size: 19px
+          .sep
+            margin: 0 auto 20px auto
+
+          .text
+            font-size: 15px
+
+  .news-page .news-list .news-item
+    list-style: none
+    display: table
+    margin: 0 auto 30px auto
+    width: 400px
+  .service-page-wedding .last-block .item-walp
+    .title
+      font-size: 18px
+    .content a
+      font-size: 15px
+    &.first .bg-item
+      margin-left: auto
+      margin-right: auto
+      width: 265px
+
+  .conference-page .last-section .text-info
+    flex-direction: column
+    a,
+    .text
+      font-size: 17px
+
+  .service-page-restaurant
+    .menu-section .wrapper
+      margin-bottom: 35px
+    .info-section
+      text-align: center
+      .item
+        .heading
+          justify-content: center
+        .info-row
+          padding: 0
 @media (max-width: 600px)
+  .numbers-list .number-item
+    padding: 10px
+  .news-page .news-list .news-item
+    width: 100%
+
   header
     #logo
       img
@@ -1315,4 +1573,80 @@ footer
       height: 32px
       margin-right: 10px
       padding: 3px 0
+  .services-list
+    .slider-wrapper,
+    .right.mobile-block,
+    .list-sliders
+      height: 200px !important
+    .slick-slide
+      img
+        width: 100%
+        object-position: center
 
+  .services-section
+    .services-slide-arrows
+      bottom: 10px
+    .left
+      .services-slide-arrows
+        right: 20px
+  .advantage-section
+    .title
+      font-size: 28px
+    .list-adv
+      .item
+        font-size: 15px
+
+  .sub-title
+    font-size: 28px
+
+  .services-list
+    .link-more
+      margin-top: 20px
+    .service-item
+      .content ul li
+        font-size: 15px
+        &:before
+          width: 8px
+          height: 8px
+          top: 5px
+
+      .title
+        font-size: 20px
+        margin-bottom: 20px
+  .news-section
+    .title-border
+      margin-bottom: 35px
+    .news-list
+      li
+        margin-bottom: 50px
+      .news-item
+        .blog-img
+          display: block
+          height: auto
+          margin-bottom: 10px
+      .preview_picture
+        float: none!important
+        display: table
+        margin: 0 auto
+      .news-date-time
+        margin-bottom: 5px
+        text-align: center
+      .title
+        text-align: center
+
+  .payments-section
+    padding: 60px 0
+    .title-border
+      margin-bottom: 35px
+
+  .service-page-wedding .hal-sliders .list-hal-heading
+    flex-wrap: inherit
+    flex-direction: column
+    li
+      width: 100%
+
+  section.hal-sliders
+    margin-bottom: 40px
+  .service-page-wedding .last-block .item-walp
+    width: 300px
+    margin: 0 auto
