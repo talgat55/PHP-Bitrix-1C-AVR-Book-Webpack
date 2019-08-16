@@ -71,7 +71,7 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/jquery.mask.min.js
                                                      alt="иконка"/>
                                             </div>
                                             <h4>
-                                                <?= $fileItem; ?>
+                                                <?  showNameConferenceOption($arItem["DISPLAY_PROPERTIES"]["OPTIONS"]["VALUE_XML_ID"][$key], 'ru');  ?>
                                             </h4>
                                         </div>
                                     </li>

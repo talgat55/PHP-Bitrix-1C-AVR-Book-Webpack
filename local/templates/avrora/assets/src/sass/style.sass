@@ -664,7 +664,7 @@ header
       .content
         font-size: 20px
         font-family: $font_calibri
-        font-weight: 300
+        font-weight: 400
         padding-left: 60px
 
         .links-list
@@ -691,7 +691,7 @@ header
           li:last-child
             a
               font-family: $font_calibri
-              font-weight: 300
+              font-weight: 400
               font-size: 20px
               margin-bottom: 0
 
@@ -699,7 +699,7 @@ header
           .title
             font-size: 20px
             font-family: $font_calibri
-            font-weight: 300
+            font-weight: 400
             margin-bottom: 20px
           .text
             a
@@ -729,7 +729,7 @@ header
           color: $main_color
       .mail-field
         font-family: $font_calibri
-        font-weight: 300
+        font-weight: 400
 .contacts-page.row.bottom
   margin-bottom: 40px
   .item
@@ -800,6 +800,7 @@ header
         padding: 0
         li
           margin-bottom: 50px
+          min-height: 75px
         p
           margin: 0 0 0 18px
           font-size: 24px
@@ -893,13 +894,10 @@ header
 
     .menu-section.wrapper  .text
       border: 1.5px dashed #d0d0d0
-
-
-
-
-
-
-
+.lang-item
+  transition: all .3s
+  &:hover
+    opacity: .5
 .numbers-list .slide-arrows
   position: absolute
   left: 0
@@ -938,6 +936,7 @@ header
   visibility: hidden
   transition: all .3s
   #feedback-form
+    textarea,
     input
       border-bottom: 1px solid #e8e8e8
   .close-icon
@@ -1126,18 +1125,23 @@ footer
 
         i
           font-size: 20px
-
-        .vk
-          color: #698cc4
-
-        .inst
-          color: #f23c6f
-
-        .fb
-          color: #5d6eac
-
-        .odn
-          color: #ee8208
+          padding: 0 3px
+        i.fab.fa-vk
+          font-size: 29px!important
+        i.fab.fa-instagram
+          font-size: 23px!important
+        i.fab.fa-facebook
+          font-size: 22px!important
+        i.fab.fa-odnoklassniki
+          font-size: 22px!important
+      .vk
+        color: #698cc4
+      .inst
+        color: #f23c6f
+      .fb
+        color: #5d6eac
+      .odn
+        color: #ee8208
 
 
   .list-add-links
@@ -1447,6 +1451,8 @@ footer
         width: 50%
 
 @media (max-width: 768px)
+  .reception-list .item img
+    width: 100%
   .menu-section
     .row
       .col
@@ -1556,6 +1562,17 @@ footer
           justify-content: center
         .info-row
           padding: 0
+
+  .conference-page-detail
+    .text-info.d-flex.align-items-center.justify-content-center.w-100
+      flex-direction: column
+
+    .sub-title-conference
+      font-size: 28px
+    .description
+      font-size: 18px
+
+
 @media (max-width: 600px)
   .numbers-list .number-item
     padding: 10px

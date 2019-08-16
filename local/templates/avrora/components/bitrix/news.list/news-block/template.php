@@ -75,7 +75,7 @@ $this->setFrameMode(true);
     <? endforeach; ?>
 </ul>
 <div class="pagination-alt w-100">
-    <a href="#" class="link-more news-link" >
+    <a href="/news/" class="link-more news-link" >
         Открыть все новости
     </a>
 

@@ -307,7 +307,7 @@ $APPLICATION->IncludeFile(
                         "PARENT_SECTION" => "",    // ID раздела
                         "PARENT_SECTION_CODE" => "",    // Код раздела
                         "PREVIEW_TRUNCATE_LEN" => "",    // Максимальная длина анонса для вывода (только для типа текст)
-                        "PROPERTY_CODE" => array(0 => "GALLERY", 1 => "",),
+                        "PROPERTY_CODE" => array(0 => "GALLERY", 1 => "LINK",),
                         "SET_BROWSER_TITLE" => "N",    // Устанавливать заголовок окна браузера
                         "SET_LAST_MODIFIED" => "N",    // Устанавливать в заголовках ответа время модификации страницы
                         "SET_META_DESCRIPTION" => "N",    // Устанавливать описание страницы
@@ -443,30 +443,13 @@ $APPLICATION->IncludeFile(
                         </div>
                     </div>
                     <div class="bottom">
-                        <form id="feedback-form" method="post" action="/ajax/feedback">
-                            <div class="form-group d-flex w-100">
-                                <div class="col-lg-4 col-md-6 col-xs-12">
-                                    <input type="text" name="name" placeholder="Ваше имя" class="text-input">
-                                    <input type="text" name="phone" placeholder="Ваш телефон *"
-                                           class="text-input phone-input">
-
-
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12">
-                                    <textarea rows="4" name="comment" placeholder="Введите ваше сообщение"
-                                              class="textarea-input"></textarea>
-                                </div>
-                                <div class="col-lg-4 col-md-6 col-xs-12">
-                                    <input type="email" name="email" placeholder="Ваш email *" class="text-input">
-                                    <button type="submit" form="feedback-form" class="main-link">
-                                        Отправить заявку
-                                    </button>
-                                </div>
-                            </div>
-
-                        </form>
-
-
+                        <?
+                        $APPLICATION->IncludeFile(
+                            SITE_DIR . "/include/form-index.php",
+                            Array(),
+                            Array("MODE" => "html")
+                        );
+                        ?>
                     </div>
 
                 </div>
@@ -626,6 +609,16 @@ $APPLICATION->IncludeFile(
             false
         ); ?>
     </section>
+<?
+
+//  include  modal success send
+$APPLICATION->IncludeFile(
+    SITE_DIR . "/include/modal-success.php",
+    Array(),
+    Array("MODE" => "html")
+);
+?>
+    <div class="layer-overflow"></div>
 <?
 require($_SERVER['DOCUMENT_ROOT'] . '/bitrix/footer.php');
 ?>

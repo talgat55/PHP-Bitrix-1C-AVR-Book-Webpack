@@ -67,4 +67,24 @@ $APPLICATION->SetTitle("Отзывы");
 		"COMPONENT_TEMPLATE" => "reviews"
 	),
 	false
-);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+);?>
+
+<?
+
+//  include  modal success send
+$APPLICATION->IncludeFile(
+    SITE_DIR . "/include/modal-review.php",
+    Array(),
+    Array("MODE" => "html")
+);
+
+//  include  modal success send
+$APPLICATION->IncludeFile(
+    SITE_DIR . "/include/modal-success.php",
+    Array(),
+    Array("MODE" => "html")
+);
+?>
+
+
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -1,7 +1,7 @@
 <?
-$sSectionName = 'Главная';
+$sSectionName = 'Отель Аврора Омск';
 $arDirProperties = array(
-	'title' => 'Главная',
+	'title' => 'Отель Аврора Омск',
 	'description' => 'Description',
 	'keywords' => 'Keywords',
 	'robots' => 'index, follow'

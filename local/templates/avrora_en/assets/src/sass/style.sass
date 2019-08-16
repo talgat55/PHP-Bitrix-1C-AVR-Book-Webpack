@@ -1,0 +1,1652 @@
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('AvenirNextCyr-Bold'), local('AvenirNextCyr-Bold'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Bold.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Bold.ttf') format('truetype')
+  font-weight: 800
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('AvenirNextCyr-Demi'), local('AvenirNextCyr-Demi'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Demi.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Demi.ttf') format('truetype')
+  font-weight: 700
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('ofont.ru_AvenirNext'), local('ofont.ru_AvenirNext'),
+  url('/local/templates/avrora/assets/build/css/ofont.ru_AvenirNext.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/ofont.ru_AvenirNext.ttf') format('truetype')
+  font-weight: 600
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('AvenirNextCyr-Thin'), local('AvenirNextCyr-Thin'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Thin.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-Thin.ttf') format('truetype')
+  font-weight: 300
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'AvenirNextCyr'
+  src: local('AvenirNextCyr-UltraLight'), local('AvenirNextCyr-UltraLight'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-UltraLight.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/AvenirNextCyr-UltraLight.ttf') format('truetype')
+  font-weight: 200
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'Calibri'
+  src: local('calibri_0'), local('calibri_0'),
+  url('/local/templates/avrora/assets/build/css/calibri_0.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/calibri_0.ttf') format('truetype')
+  font-weight: 400
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'Calibri'
+  src: local('calibrib_0'), local('calibrib_0'),
+  url('/local/templates/avrora/assets/build/css/calibrib_0.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/calibrib_0.ttf') format('truetype')
+  font-weight: 700
+  font-display: swap
+  font-style: normal
+
+@font-face
+  font-family: 'Calibri'
+  src: local('calibril_0'), local('calibril_0'),
+  url('/local/templates/avrora/assets/build/css/calibril_0.woff') format('woff'),
+  url('/local/templates/avrora/assets/build/css/calibril_0.ttf') format('truetype')
+  font-weight: 300
+  font-display: swap
+  font-style: normal
+
+
+
+
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+//
+// Main
+//
+$font_avenir: 'AvenirNextCyr'
+$font_calibri:  'Calibri'
+
+$main_color: #ec4345
+$text_color: #000
+
+.page-wrap
+  border-bottom: 1px solid #e5e5e5
+
+body
+  color: $text_color
+  font-size: 18px
+  line-height: 1.5
+  font-family: $font_calibri
+  font-weight: 300
+
+*:focus,
+*:active
+    outline: none
+
+
+.hide-main-title
+  height: 0
+  margin: 0
+  overflow: hidden
+
+.sub-title
+  margin: 0
+  font-size: 48px
+  color: #000
+  font-family: $font_avenir
+  font-weight: 700
+.title-border
+  width: 235px
+  height: 2px
+  background-color: $main_color
+  margin-bottom: 45px
+  margin-top: 15px
+  &.center
+    margin-right: auto
+    margin-left: auto
+
+
+.link-more
+  background: $main_color
+  color: #fff
+  font-family: $font_calibri
+  font-weight: 400
+  border-radius: 5px
+  padding: 11px  65px
+  transition: all .3s
+  margin-top: 60px
+  display: inline-block
+  box-shadow: 0px 11px 20px 0px rgba(225,47,19,.4)
+
+  &:hover
+    background: #333
+    color: #fff
+    text-decoration: none
+
+.main-wrapper
+  overflow-x: hidden
+
+
+.footer-slide-arrows
+  position: absolute
+  bottom: 70px
+  left: 0
+  background-color: #fff
+
+  a
+    display: inline-block
+    padding: 10px
+    line-height: .6
+
+    &:hover
+      text-decoration: none
+      i
+        color: $main_color!important
+
+
+    i
+      font-size: 22px
+      color: #000
+      transition: all .3s
+
+
+.main-title
+  margin: 60px auto 50px
+  display: block
+  text-align: center
+  font-size: 50px
+  font-family: $font_avenir
+  font-weight: 700
+
+
+
+//
+// Header
+//
+
+header
+  padding: 35px 0 20px
+
+  #logo
+    display: inline-block
+
+    img
+      max-width: 100%
+
+  .top-header
+    padding-bottom: 15px
+    border-bottom: 1px solid #e7e7e7
+    #phone-block
+      .img-block
+        width: 41px
+        height: 38px
+        margin-right: 25px
+
+        img
+          max-width: 100%
+          vertical-align: text-top
+
+      a
+        text-decoration: none
+        color: $text_color
+        transition: all .3s
+        &:hover
+          text-decoration: none
+          p
+            color: $main_color
+
+
+        span
+          font-size: 14px
+          font-family: $font_calibri
+          font-weight: 300
+          color: $text_color
+          margin-bottom: 5px
+        p
+          margin-bottom: 0
+          font-size: 21px
+          font-family: $font_avenir
+          font-weight: 800
+
+    #list-soc-phones
+      .img-block
+        width: 71px
+        height: 31px
+        margin-right: 25px
+
+        img
+          max-width: 100%
+
+      .list-phones
+        margin: 0
+        padding: 0
+        line-height: 14px
+
+        li
+          padding-bottom: 8px
+          list-style: none
+          a
+            text-decoration: none
+            font-size: 17px
+            font-family: $font_avenir
+            font-weight: 800
+            color: $text_color
+            transition:  all .3s
+
+            &:hover
+              text-decoration: none
+              color: $main_color
+
+    #adr-lang-block
+      .first
+
+        .img-block
+          width: 38px
+          height: 38px
+          margin-right: 25px
+
+        .adress
+          .link-to-adress
+            text-decoration: none
+            color: $text_color
+
+            div:first-child
+              font-size: 27px
+              font-family: $font_avenir
+              font-weight: 800
+              line-height: 22px
+              margin-bottom: 4px
+
+            div:last-child
+              font-size: 13px
+              font-family: $font_calibri
+              font-weight: 400
+
+      .second
+        .list-lang
+          margin: 0
+          padding: 0
+
+          li
+            list-style: none
+            height: 19px
+
+            a
+              text-decoration: none
+
+  .bottom-header
+    .second
+      padding-left: 0
+      #special-block
+        .clock-block,
+        .temperature-block
+          .img-block
+            width: 27px
+            height: 31px
+            margin-right: 5px
+
+          span
+            font-size: 14px
+            font-family: $font_avenir
+            font-weight: 600
+
+
+        .clock-block
+          .img-block
+            width: 26px
+            height: 26px
+            margin-right: 5px
+
+
+        .temperature-block
+          padding-right: 15px
+
+
+
+
+
+//
+// Home page
+//
+
+.reserve-section
+  width: fit-content
+  margin: 0 auto -215px auto
+  position: relative
+  top: -215px
+
+  .reserve-block
+
+    border-radius: 5px
+    .title
+      margin: 0
+      font-size: 30px
+      font-weight: 800
+      font-family: $font_avenir
+
+    .first
+      padding: 50px
+      width: 490px
+      background-color: $main_color
+      img
+        height: 38px
+        margin-right: 20px
+
+      .title
+        color: #fff
+        margin-bottom: 60px
+
+      .list-advantages
+        margin: 0
+        padding: 0
+
+        .item
+          list-style: none
+
+          p
+            margin-bottom: 0
+            font-size: 18px
+            color: #fff
+            font-family: $font_avenir
+            font-weight: 700
+
+    .second
+      padding: 32px 110px
+      width: 690px
+      background-color: #f4f4f4
+
+      .title
+        color: #000
+        margin-bottom: 20px
+
+//
+// Form
+//
+#reserve-form
+  *:focus,
+  *:active
+    outline: none
+    box-shadow: none
+
+  .date-icon.person
+    right: 27px
+
+  label
+    font-family: $font_avenir
+    font-weight: 700
+    color: #000
+
+  input[type=number],
+  input[type=text]
+    background-color: #fff
+    border: none
+    border-radius: 5px
+    padding: 13.5px 5px
+    font-family: $font_calibri
+    font-size: 15px
+    color: #000
+    width: 100%
+
+    +placeholder
+      font-family: $font_calibri
+      font-size: 15px
+      color: #000
+
+  button
+    border: none
+    background: $main_color
+    color: #fff
+    font-family: $font_calibri
+    font-weight: 300
+    border-radius: 5px
+    display: block
+    padding: 11px
+    margin-top: 35px
+    width: 100%
+    transition: all .3s
+    box-shadow: 0px 11px 20px 0px rgba(225,47,19,.4)
+    &:hover
+      background-color: #333
+      color: #fff
+
+
+
+
+  .form-group
+    margin-bottom: 14px
+
+  .date-icon
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: 11px
+
+
+//
+// First  section
+//
+.first-section
+  margin-top: 120px
+
+  p
+    font-size: 18px
+    font-family: $font_calibri
+    font-weight: 400
+    color: #000
+    margin-bottom: 0
+
+
+  .first,
+  .second
+    margin-bottom: 170px
+
+  #home-banner
+    border: 15px solid #e9e9e9
+
+//
+// Advantage
+//
+.advantage-section
+  background-image: url("/images/bg-advantage.jpg")
+  background-repeat: no-repeat!important
+  background-size: cover!important
+  padding: 160px 0
+  background-position: center center!important
+  .wrapper-block
+    margin: 0 auto
+    display: table
+
+  .title
+    margin-top: 0
+    font-weight: 700
+    font-family: $font_avenir
+    color: #000
+    margin-bottom: 30px
+    font-size: 48px
+
+  .list-adv
+    margin: 0
+    padding: 0
+    .item
+      list-style: none
+      font-family: $font_avenir
+      font-weight: 700
+      color: #000
+      font-size: 18px
+      margin-bottom: 8px
+      position: relative
+
+      &:last-child
+        margin-bottom: 0
+
+      &::before
+        display: block
+        width: 15px
+        height: 15px
+        content: "\f00c"
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        position: absolute
+        color: $main_color
+
+      p
+        margin-bottom: 0
+        padding-left: 36px
+
+
+//
+// Service section
+//
+.services-section
+  padding: 160px 0
+
+  .title-border
+    margin-bottom: 120px
+
+
+
+//
+// News section
+//
+.news-section
+  padding-bottom: 100px
+  .title-border
+    margin-bottom: 90px
+
+
+
+//
+//  Feedback section
+//
+.feedback-section
+  background-color: #e4e4e4
+  padding-top: 80px
+  padding-bottom: 30px
+  .top
+    margin-bottom: 75px
+    img
+      max-width: 100%
+
+    .title-border
+      margin-bottom: 90px
+
+    .content
+      font-weight: 400
+      p
+        margin-bottom: 0
+
+
+      a
+        color: $main_color
+        text-decoration: none
+        transition: all .3s
+        &:hover
+          color: #333
+          text-decoration: none
+
+
+
+
+//
+// Form
+//
+#feedback-form
+  *:focus,
+  *:active
+    outline: none
+    box-shadow: none
+
+  textarea,
+  input[type=email],
+  input[type=text]
+    border: none
+    width: 100%
+    font-family: $font_calibri
+    font-size: 18px
+    color: #000
+    padding: 17px 48px
+    border-radius: 5px
+    background-color: #fff
+    margin-bottom: 20px
+    +placeholder
+      font-family: $font_calibri
+      font-size: 18px
+      color: #000
+
+  textarea
+    resize: none
+
+  button
+    padding: 15px 65px
+    background: $main_color
+    color: #fff
+    font-family: $font_calibri
+    font-weight: 400
+    border-radius: 5px
+    transition: all .3s
+    margin-top: 0
+    display: inline-block
+    width: 100%
+    border: none
+    box-shadow: 0px 11px 20px 0px rgba(225,47,19,.4)
+
+    &:hover
+      background: #333
+      color: #fff
+      text-decoration: none
+
+
+  .policy
+    text-align: center
+    font-size: 13px
+    font-family: $font_calibri
+    font-weight: 300
+
+    a
+      color: $main_color
+      text-decoration: underline
+      transition: all .3s
+      &:hover
+        color: #313131
+        text-decoration: none
+
+
+//
+//  Payments
+//
+.payments-section
+  padding: 115px 0
+
+  .title-border
+    margin-bottom: 115px
+
+
+//
+//  Contacts
+//
+.contacts-page
+  .item-walp
+    padding-bottom: 50px
+    .item
+      .img-block
+        margin-bottom: 20px
+        .title
+          padding-left: 25px
+          margin: 0
+          font-family: $font_avenir
+          font-weight: 700
+          font-size: 20px
+
+      .content
+        font-size: 20px
+        font-family: $font_calibri
+        font-weight: 300
+        padding-left: 60px
+
+        .links-list
+          margin: 0
+          padding: 0
+
+          li
+            list-style: none
+
+            a
+              text-decoration: none
+              color: #000
+              font-family: $font_avenir
+              font-size: 20px
+              font-weight: 700
+              margin-bottom: 15px
+              display: inline-block
+              transition: all .3s
+              &:hover
+                text-decoration: none
+                color: $main_color
+
+
+          li:last-child
+            a
+              font-family: $font_calibri
+              font-weight: 300
+              font-size: 20px
+              margin-bottom: 0
+
+        .contact-add-block
+          .title
+            font-size: 20px
+            font-family: $font_calibri
+            font-weight: 300
+            margin-bottom: 20px
+          .text
+            a
+              text-decoration: none
+              color: #000
+              font-family: $font_avenir
+              font-size: 20px
+              font-weight: 700
+              margin-bottom: 15px
+              display: inline-block
+              transition: all .3s
+              &:hover
+                text-decoration: none
+                color: $main_color
+      .mail-field,
+      .phone-field
+        text-decoration: none
+        color: #000
+        font-family: $font_avenir
+        font-size: 20px
+        font-weight: 700
+        margin-bottom: 15px
+        display: inline-block
+        transition: all .3s
+        &:hover
+          text-decoration: none
+          color: $main_color
+      .mail-field
+        font-family: $font_calibri
+        font-weight: 300
+.contacts-page.row.bottom
+  margin-bottom: 40px
+  .item
+    margin-bottom: 30px
+    .img-block
+      margin-bottom: 7px
+
+#map
+  width: 100%
+  height: 550px
+
+//
+//  hotel page
+//
+.hotel-page
+  font-family: $font_calibri
+  font-size: 20px
+  font-weight: 300
+  .title-border
+    margin: 0 auto 95px auto
+
+  .last-section
+
+
+    .border-bottom
+      padding-bottom: 90px
+      border-bottom: 1px solid #e5e5e5
+    .heading
+      padding: 30px
+    h3
+      font-family: $font_avenir
+      font-weight: 700
+      font-size: 24px
+      margin: 0
+      &.black
+        color: black
+      &.red
+        color: $main_color
+
+    h2
+      color: $main_color
+      font-size: 30px
+      font-family: $font_avenir
+      font-weight: 700
+      margin: 0 0 60px
+  .call-block
+    &::before
+      content: ""
+      background: url(/images/hotel/hotel-cap.png) no-repeat
+      width: 53px
+      height: 52px
+      position: absolute
+      left: 50%
+      top: 18px
+      transform: translateX(-50%)
+      z-index: 2
+
+
+    border: 1px solid #e8e8e8
+    .heading
+      border-bottom: 1px solid #e8e8e8
+    .sub-heading
+      padding: 30px
+    .content
+      padding: 30px
+      .list
+        margin: 0
+        padding: 0
+        li
+          margin-bottom: 50px
+        p
+          margin: 0 0 0 18px
+          font-size: 24px
+          font-weight: 300
+          font-family: $font_calibri
+        .img-block
+          img
+            max-width: 39px
+    .first
+      padding: 0
+      border-right: 1px solid #e8e8e8
+    .second
+      padding: 0
+      border-left: 1px solid #e8e8e8
+  .rotate
+    transform: rotateZ(180deg)
+
+//
+//  Conference page
+//
+.conference-page
+  .sub-title,
+  h2
+    color: $main_color
+    font-size: 30px
+    font-family: $font_avenir
+    font-weight: 700
+    margin: 0 0 60px
+  .last-section
+    margin-bottom: 90px
+    .link-more.order-price
+      margin-top: 40px
+    .description
+      font-family: $font_calibri
+      font-size: 20px
+      color: #000
+      font-weight: 300
+      margin: 0 auto 20px auto
+      width: 80%
+    .text-info
+      margin-bottom: 15px
+
+      a,
+      .text
+        font-weight: 400
+        font-family: $font_calibri
+        font-size: 24px
+        color: #000
+      a
+        text-decoration: none
+        padding-left: 8px
+        transition: all .3s
+        &:hover
+          color: $main_color
+          text-decoration: none
+
+      span
+        color: #cdcdcd
+
+    .menu-section.wrapper
+        display: block
+        text-decoration: none
+        color: #000
+        width: 250px
+        margin: 0 0 0 auto
+        .img-block
+          width: 65px
+          height: 65px
+          overflow: hidden
+          border-radius: 50%
+          margin-top: -28px
+          position: relative
+          bottom: -28px
+          transition: all .3s
+
+    .menu-section.wrapper:hover .img-block
+      box-shadow: 5px 10px 20px 5px #dedddd
+
+    .menu-section.wrapper .img-block img
+      width: 100%
+      height: 100%
+      object-fit: cover!important
+
+    .menu-section.wrapper  .title
+      margin: 0
+      padding: 10px 8px 10px 70px
+      font-family: 'AvenirNextCyr'
+      font-size: 14px
+      font-weight: 600
+      text-align: center
+
+    .menu-section.wrapper  .text
+      border: 1.5px dashed #d0d0d0
+
+
+
+
+
+
+
+.numbers-list .slide-arrows
+  position: absolute
+  left: 0
+  bottom: 0
+.numbers-list .slide-arrows a:hover
+  text-decoration: none
+
+.numbers-list .slide-arrows a i
+  font-size: 16px
+  color: #000
+  transition: all .3s
+
+.numbers-list .slide-arrows a:hover i
+
+  color: #ec4345!important
+
+.numbers-list .slide-arrows a
+  display: inline-block
+  padding: 10px
+  line-height: .6
+
+.numbers-list .slide-arrows
+  position: absolute
+  z-index: 2
+  background-color: #fff
+  padding: 0
+.modal-success,
+.modal-cutom
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 999
+  opacity: 0
+  visibility: hidden
+  transition: all .3s
+  #feedback-form
+    input
+      border-bottom: 1px solid #e8e8e8
+  .close-icon
+    position: absolute
+    top: 0
+    right: 0
+    padding: 7px 12px
+    i
+      font-size: 20px
+      color: #333
+      transition: all .3s
+      &:hover
+        color: $main_color
+  .modal-content
+    width: 50%
+    background-color: #fff
+    border: none
+    padding: 20px
+    .policy-block
+      a
+        color: $main_color
+
+.layer-overflow
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 998
+  background: rgba(0,0,0,.7)
+  opacity: 0
+  visibility: hidden
+  transition: all .3s
+
+.is-active
+  opacity: 1
+  visibility: visible
+
+.modal-success-container
+  background-color: #fff
+  border-radius: 10px
+  padding: 40px
+  h3
+    margin: 0
+    font-size: 23px
+    font-family: $font_avenir
+    font-weight: 700
+
+
+
+
+//
+// Footer
+//
+footer
+  background-color: #fff
+  padding: 40px 55px
+
+  #logo-footer
+    img
+      max-width: 100%
+
+  #phone-block-footer
+    margin-bottom: 35px
+
+
+    .img-block
+      width: 41px
+      height: 38px
+      margin-right: 25px
+
+      img
+        max-width: 100%
+        vertical-align: text-top
+
+    a
+      text-decoration: none
+      color: $text_color
+      transition: all .3s
+      &:hover
+        text-decoration: none
+        p
+          color: $main_color
+
+
+      span
+        font-size: 14px
+        font-family: $font_calibri
+        font-weight: 300
+        color: $text_color
+        margin-bottom: 5px
+      p
+        margin-bottom: 0
+        font-size: 21px
+        font-family: $font_avenir
+        font-weight: 800
+
+  #list-soc-phones-footer
+    .img-block
+      width: 71px
+      height: 31px
+      margin-right: 25px
+
+      img
+        max-width: 100%
+
+    .list-phones
+      margin: 0
+      padding: 0
+      line-height: 14px
+
+      li
+        padding-bottom: 8px
+        list-style: none
+        a
+          text-decoration: none
+          font-size: 17px
+          font-family: $font_avenir
+          font-weight: 800
+          color: $text_color
+          transition:  all .3s
+
+          &:hover
+            text-decoration: none
+            color: $main_color
+
+
+  #adr-lang-block-footer
+    margin-bottom: 45px
+    .first
+      .img-block
+        width: 38px
+        height: 38px
+        margin-right: 25px
+
+    .adress
+      .link-to-adress
+        text-decoration: none
+        color: $text_color
+
+        div:first-child
+          font-size: 27px
+          font-family: $font_avenir
+          font-weight: 800
+          line-height: 22px
+          margin-bottom: 4px
+
+        div:last-child
+          font-size: 13px
+          font-family: $font_calibri
+          font-weight: 400
+
+    .second
+      .list-lang
+        margin: 0
+        padding: 0
+
+        li
+          list-style: none
+          height: 19px
+
+          a
+            text-decoration: none
+
+
+  .footer-soc-links-block
+    margin-top: 20px
+    .title
+      margin: 0 20px 0 0
+      font-family: $font_calibri
+      font-size: 18px
+      font-weight: 300
+      color: #000
+
+    .footer-soc-links
+      margin: 0
+      padding: 0
+
+      li
+        list-style: none
+        a
+          padding: 5px
+          transition: all .3s
+          &:hover
+            opacity: .5
+
+        i
+          font-size: 20px
+
+        .vk
+          color: #698cc4
+
+        .inst
+          color: #f23c6f
+
+        .fb
+          color: #5d6eac
+
+        .odn
+          color: #ee8208
+
+
+  .list-add-links
+    margin: 0
+    padding: 0
+    li
+      list-style: none
+      &:first-child
+        a
+          text-decoration: underline
+          font-weight: 400
+          color: #000
+
+      &:last-child
+        a
+          text-decoration: none
+          font-weight: 300
+          color: #aeaeae
+
+      a
+        font-size: 16px
+        transition:  all .3s
+        &:hover
+          color: $main_color
+          text-decoration: none
+
+
+  .footer-certs-list
+    margin: 0
+    padding: 0
+
+    li
+      list-style: none
+      margin-right: 15px
+
+      &:last-child
+        margin-right: 0
+      img
+        max-width: 100%
+
+      a
+        transition: all .3s
+
+        &:hover
+          opacity: .5
+
+.mobile-block
+  display: none!important
+
+@media (max-width: 1200px)
+  #special-block
+    display: none!important
+
+  header
+    .top-header
+      #phone-block a p
+        font-size: 15px
+    #list-soc-phones
+      display: none!important
+
+  .reserve-section
+    .reserve-block
+      .first
+        width: 40%
+
+      .second
+        width: 60%
+
+  .reception-list
+    width: 390px
+    .item
+      img
+        height: auto!important
+  .footer-slider-section
+    .footer-slider-list
+      height: 500px
+      .slider-item
+        height: 500px
+
+  footer
+    #phone-block-footer a p
+      font-size: 16px
+
+    #list-soc-phones-footer
+      .list-phones
+        li a
+          font-size: 15px
+      .img-block
+        width: 40px
+
+    #adr-lang-block-footer .first .img-block
+      margin-right:  10px
+      .adress .link-to-adress div:first-child
+        font-size: 19px
+
+    .list-add-links li a
+      font-size: 14px
+    .footer-soc-links-block .title
+      margin: 0
+      font-size: 14px
+  .service-page-wedding
+    .hal-sliders
+      .list-hal-heading li a
+        font-size: 20px
+        padding: 14px 15px
+
+@media (max-width: 1024px)
+  header
+    #phone-block span,
+    #adr-lang-block,
+    .bottom-header
+      display: none!important
+
+    .top-header
+      border: none!important
+      padding-bottom: 0
+      #phone-block a p
+        font-size: 15px
+        line-height: 40px
+
+  .reserve-section
+    .reserve-block
+      .first
+        .title
+          margin-bottom: 25px
+
+        .list-advantages
+          display: block!important
+          .item
+            margin-bottom: 10px
+
+      .title
+        font-size: 25px
+
+@media (max-width: 992px)
+  .reserve-section
+    margin: 0 auto
+    top: 0
+    .reserve-block
+      .second,
+      .first
+        width: 100%
+        padding: 20px 30px
+  #home-slider .slider-list li,
+  #home-slider
+    height: 300px
+  .reception-list
+    width: 100%
+
+  .first-section
+    margin-top: 50px
+    .first,
+    .second
+      margin-bottom: 50px
+
+  .advantage-section
+    padding: 50px 0
+    .wrapper-block
+      margin: 0
+      display: block
+
+    .title
+      margin-bottom: 25px
+      font-size: 35px
+
+    .list-adv
+      margin: 0 0 50px
+
+  .services-list
+    .slider-wrapper
+      height: 400px!important
+    .list-sliders
+      width: 100%!important
+      height: 400px!important
+
+  .services-section
+    padding: 50px 0!important
+
+    .title-border
+      margin-bottom: 40px!important
+
+  .sub-title
+    font-size: 35px
+  .services-list
+    .service-item
+      .title
+        font-size: 30px
+        margin-top: 20px
+      .content-wrap
+        padding: 0!important
+  .right
+    &.desktop-block
+      display: none!important
+    &.mobile-block
+      display: block!important
+      height: 400px
+  .services-section
+    .services-list
+      .service-item
+        margin-bottom: 30px
+  .feedback-section
+    .feedback-block
+      .top.d-flex
+        display: block!important
+    .top
+      .title-border
+        margin-bottom: 35px
+  #feedback-form
+    .form-group.d-flex
+      display: block!important
+      .col-lg-4
+        margin: 0 auto
+      textarea,
+      input
+        width: 100%
+
+  footer
+    #logo-footer img
+      height: 70px
+
+  .contacts-page
+    .item-walp
+      .item
+        .img-block
+          .title
+            font-size: 18px
+        .content
+          font-size: 15px
+
+          li:last-child a,
+          .links-list li a
+            font-size: 15px
+            margin-bottom: 10px
+    &.row.bottom
+      .item
+        width: 49%
+        display: inline-block
+        padding: 0 15px
+  .service-detail-page
+    .features
+      .w-100.d-flex.align-items-center
+        flex-wrap: wrap
+        justify-content: center
+      .col
+        flex-basis: inherit
+        flex-grow: initial
+        width: auto
+
+  .service-page-wedding .gift .sub-title
+    font-size: 28px
+
+  .service-page-wedding .hal-sliders .list-hal-heading
+    padding: 0
+    flex-wrap: wrap
+
+  .service-page-wedding .last-block .item-walp.first .bg-item
+    background-color: transparent
+    padding: 0
+    margin-bottom: 35px
+  .numbers-list .number-item
+    flex-direction: column
+    .slider-item
+      img
+        margin: 0 auto
+    .slider .sliders
+      margin-bottom: 20px
+    .content
+      padding: 0
+      text-align: center
+      .description ul li::before
+        display: none
+      .sub-title
+        font-size: 28px
+
+  .conference-page
+    .sub-title, .conference-page h2
+      margin-bottom: 20px
+    .last-section
+      .menu-section.wrapper
+        margin:  0 auto
+      .link-more.order-price
+        margin: 40px auto 0 auto
+        display: table
+  .hotel-page
+    .call-block
+      display: block!important
+      .heading
+        border-top: 1px solid #e8e8e8
+      .content
+        .list
+          p
+            font-size: 15px
+          li
+            margin-bottom: 28px
+
+    .call-block::before
+      display: none!important
+    .last-section h3
+      font-size: 20px
+  .menu-section
+    .row
+      flex-wrap: wrap
+      .col
+        flex-basis: initial
+        flex-grow: inherit
+        max-width: initial
+        width: 50%
+
+@media (max-width: 768px)
+  .menu-section
+    .row
+      .col
+        width: 100%
+
+  header #logo
+    display: table
+    margin: 0 auto
+    img
+      height: 50px
+  .footer-slider-section
+    .footer-slider-list
+      height: 200px
+      .slider-item
+        height: 200px
+  .footer-slide-arrows
+    bottom: 0
+    a i
+      font-size: 15px
+  #logo-footer
+    text-align: center
+
+  footer
+    .footer-soc-links-block
+      margin: 24px auto
+      justify-content: center
+    #phone-block-footer,
+    #list-soc-phones-footer,
+    #adr-lang-block-footer
+      justify-content: center!important
+
+    #list-soc-phones-footer
+      margin-bottom: 30px
+
+    .list-add-links
+      text-align: center
+      margin-bottom: 30px
+    .last-col-certs
+      justify-content: center
+
+  .contacts-page
+    &.row.bottom
+      .item
+        width: auto
+        display: block
+        padding: 0 15px
+        .content
+          width: 230px
+    .item-walp
+      display: flex
+      justify-content: center
+      flex-direction: column
+      align-items: center
+      .item .content
+        width: 300px
+  .main-title
+    font-size: 30px
+
+  .reviews-block
+    .slick-prev
+      left: 20px
+    .slick-next
+      right: 20px
+
+    .slick-dots
+      padding: 10px 0
+    .reviews-list
+      padding: 15px
+      .review-item
+        .content
+          .from-site-info
+            font-size: 19px
+          .sep
+            margin: 0 auto 20px auto
+
+          .text
+            font-size: 15px
+
+  .news-page .news-list .news-item
+    list-style: none
+    display: table
+    margin: 0 auto 30px auto
+    width: 400px
+  .service-page-wedding .last-block .item-walp
+    .title
+      font-size: 18px
+    .content a
+      font-size: 15px
+    &.first .bg-item
+      margin-left: auto
+      margin-right: auto
+      width: 265px
+
+  .conference-page .last-section .text-info
+    flex-direction: column
+    a,
+    .text
+      font-size: 17px
+
+  .service-page-restaurant
+    .menu-section .wrapper
+      margin-bottom: 35px
+    .info-section
+      text-align: center
+      .item
+        .heading
+          justify-content: center
+        .info-row
+          padding: 0
+@media (max-width: 600px)
+  .numbers-list .number-item
+    padding: 10px
+  .news-page .news-list .news-item
+    width: 100%
+
+  header
+    #logo
+      img
+        height: auto!important
+        padding: 4.5px 0
+
+    .top-header #phone-block .img-block
+      width: 30px
+      height: 32px
+      margin-right: 10px
+      padding: 3px 0
+  .services-list
+    .slider-wrapper,
+    .right.mobile-block,
+    .list-sliders
+      height: 200px !important
+    .slick-slide
+      img
+        width: 100%
+        object-position: center
+
+  .services-section
+    .services-slide-arrows
+      bottom: 10px
+    .left
+      .services-slide-arrows
+        right: 20px
+  .advantage-section
+    .title
+      font-size: 28px
+    .list-adv
+      .item
+        font-size: 15px
+
+  .sub-title
+    font-size: 28px
+
+  .services-list
+    .link-more
+      margin-top: 20px
+    .service-item
+      .content ul li
+        font-size: 15px
+        &:before
+          width: 8px
+          height: 8px
+          top: 5px
+
+      .title
+        font-size: 20px
+        margin-bottom: 20px
+  .news-section
+    .title-border
+      margin-bottom: 35px
+    .news-list
+      li
+        margin-bottom: 50px
+      .news-item
+        .blog-img
+          display: block
+          height: auto
+          margin-bottom: 10px
+      .preview_picture
+        float: none!important
+        display: table
+        margin: 0 auto
+      .news-date-time
+        margin-bottom: 5px
+        text-align: center
+      .title
+        text-align: center
+
+  .payments-section
+    padding: 60px 0
+    .title-border
+      margin-bottom: 35px
+
+  .service-page-wedding .hal-sliders .list-hal-heading
+    flex-wrap: inherit
+    flex-direction: column
+    li
+      width: 100%
+
+  section.hal-sliders
+    margin-bottom: 40px
+  .service-page-wedding .last-block .item-walp
+    width: 300px
+    margin: 0 auto

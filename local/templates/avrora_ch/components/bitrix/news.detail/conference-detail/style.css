@@ -1,0 +1,155 @@
+.slider-list {
+    margin: 0 -15px;
+    padding: 0;
+}
+
+.slider-list .slider-item {
+    list-style: none;
+    height: 350px;
+}
+
+.slider-list .slider-item img {
+    width: 100%;
+    height: 100%;
+    object-position: center center;
+    object-fit: cover !important;
+    padding: 15px;
+}
+
+.slider-list .slick-prev:before {
+    content: "\f053";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 36px;
+    color: #e1e1e1;
+}
+
+.slider-list .slick-next:before {
+    content: "\f054";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 36px;
+    color: #e1e1e1;
+}
+
+.slider-list .slick-arrow:hover:before {
+    color: #ec4345;
+}
+
+.slider-list .slick-next {
+    right: -70px;
+}
+
+.slider-list .slick-prev {
+    left: -70px;
+
+}
+
+.conference-page-detail .sub-title-conference {
+    font-family: 'AvenirNextCyr';
+    font-weight: 800;
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+
+.conference-page-detail .description {
+    font-family: 'Calibri';
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 35px;
+
+}
+
+.conference-page-detail .list-seat {
+    margin: 0;
+    padding: 0;
+}
+
+.conference-page-detail .list-seat li {
+    list-style: none;
+    margin-bottom: 35px;
+}
+
+.conference-page-detail .list-seat li p {
+    margin-bottom: 0;
+}
+
+.conference-page-detail .list-seat li img {
+    margin-right: 25px;
+}
+
+.conference-page-detail .list-prices {
+    margin: 0 0 25px;
+    padding: 0;
+}
+
+.conference-page-detail .title-devide {
+    color: #ec4345;
+    font-size: 24px;
+    font-family: 'AvenirNextCyr';
+    margin-top: 0;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.conference-page-detail .border-conference {
+    width: 70%;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin-bottom: 35px;
+}
+
+.conference-page-detail .list-prices li {
+    list-style: none;
+}
+
+.conference-page-detail .list-prices li p {
+    font-family: 'AvenirNextCyr';
+    font-weight: 300;
+}
+
+.conference-page-detail .list-prices li span {
+    color: #ec4345;
+    font-weight: 700;
+}
+
+.conference-page-detail .last-block .link-more {
+    margin-bottom: 90px;
+}
+.conference-page-detail .pre-describe,
+.conference-page-detail .last-block .description {
+    font-family: "Calibri";
+    font-size: 20px;
+    color: #000;
+    font-weight: 300;
+    margin: 0 auto 20px auto;
+    width: 80%;
+}
+.conference-page-detail .pre-describe{
+    margin: 0 auto 90px auto;
+}
+
+
+.conference-page-detail .last-block{
+    margin-bottom: 90px;
+}
+.conference-page-detail .last-block .text-info a {
+    text-decoration: none;
+    padding-left: 8px;
+    color: #000;
+    transition: all .3s;
+}
+
+.conference-page-detail .last-block .text-info a:hover {
+    color: #ec4345;
+    text-decoration: none;
+}
+
+.conference-page-detail .last-block .text {
+    font-weight: 400;
+    font-family: "Calibri";
+    font-size: 24px;
+    color: #000;
+}

@@ -65,13 +65,14 @@
                                 </label>
                                 <div class=" position-relative w--115">
 
-                                    <input type="number" name="count" class="text-input ">
+                                    <input type="number" name="count" class="text-input "  min="1">
                                     <span class="date-icon person ">
                                             <img src="/images/person-icon.png" alt="иконка">
                                         </span>
 
                                 </div>
                             </div>
+
                             <div class="col-md-8 col-xs-12">
                                 <button type="submit" form="reserve-form" class="main-link">
                                     Найти номер
@@ -83,4 +84,5 @@
             </div>
         </div>
     </div>
+
 </section>

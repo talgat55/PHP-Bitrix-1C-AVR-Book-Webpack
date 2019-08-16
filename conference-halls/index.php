@@ -7,7 +7,8 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page");
         <div class="container">
             <div class="row">
                 <h1 class="main-title">
-                    <? $APPLICATION->ShowTitle(); ?> </h1>
+                    <? $APPLICATION->ShowTitle(); ?>
+                </h1>
             </div>
             <div class="row">
                 <div class="col-lg-2 col-xs-12">
@@ -117,7 +118,7 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page");
                     </div>
                     <div class="row align-items-center justify-content-center ">
                         <div class="col-lg-6 col-sm-12">
-                            <a href="#" class="menu-section wrapper">
+                            <a href="/images/sample.pdf" target="_blank" class="menu-section wrapper">
                                 <div class="img-block">
                                     <img src="/images/coffee-break.jpg" alt="Изображение">
                                 </div>
@@ -227,7 +228,6 @@ $APPLICATION->IncludeFile(
     Array(),
     Array("MODE" => "html")
 );
-
 
 
 ?>

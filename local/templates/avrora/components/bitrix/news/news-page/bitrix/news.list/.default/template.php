@@ -12,7 +12,10 @@
 /** @var CBitrixComponent $component */
 $this->setFrameMode(true);
 ?>
-<ul class="news-list   row">
+    <h1 class="main-title"  >
+        Новости
+    </h1>
+<ul class="news-list   row list-insert">
 
     <? foreach ($arResult["ITEMS"] as $arItem): ?>
         <?
@@ -21,7 +24,7 @@ $this->setFrameMode(true);
 
         ?>
 
-        <li class="news-item  col-lg-4  col-md-6 col-xs-12  " id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
+        <li class="news-item  col-lg-4  col-md-6 col-xs-12 item-insert " id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
             <? if ($arParams["DISPLAY_PICTURE"] != "N" && is_array($arItem["PREVIEW_PICTURE"])): ?>
                 <? if (!$arParams["HIDE_LINK_WHEN_NO_DETAIL"] || ($arItem["DETAIL_TEXT"] && $arResult["USER_HAVE_ACCESS"])): ?>
                     <a class="blog-img" href="<?= $arItem["DETAIL_PAGE_URL"] ?>"><img
@@ -76,9 +79,7 @@ $this->setFrameMode(true);
 
     <? endforeach; ?>
 </ul>
-<div class="pagination-alt w-100">
-    <a href="#" class="link-more-alt news-link">
-        Открыть больше
-    </a>
-
-</div>
+ 
+<?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
+    <br /><?=$arResult["NAV_STRING"]?>
+<?endif;?>

@@ -26,7 +26,7 @@ $this->setFrameMode(true);
             '<div class="content-wrap">' .
             '<h3 class="title">' . $arItem["NAME"] . '</h3>' .
             '<div class="content">' . $arItem["PREVIEW_TEXT"] . '</div>' .
-            '<a href="' . $arItem["DETAIL_PAGE_URL"] . '"  class="link-more">Подробнее</a>' .
+            '<a href="' . $arItem['PROPERTIES']['LINK']['VALUE'] . '"  class="link-more">Подробнее</a>' .
             '</div>';
 
         $slider =

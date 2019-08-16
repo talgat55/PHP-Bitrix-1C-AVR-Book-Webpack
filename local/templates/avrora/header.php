@@ -35,6 +35,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     <?php
 
     $APPLICATION->AddHeadScript("/local/templates/avrora/assets/build/js/jquery.lazy.min.js");
+    $APPLICATION->AddHeadScript("/local/templates/avrora/assets/build/js/jquery.mask.min.js");
     $APPLICATION->AddHeadScript("/local/templates/avrora/assets/build/app.js");
 
     ?>
@@ -83,12 +84,12 @@ $APPLICATION->ShowPanel();
                                     </div>
                                     <ul class="list-phones">
                                         <li>
-                                            <a href="#">
+                                            <a href="tel:8-951-416-04-44">
                                                 8-951-416-04-44
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <a href="tel:8 (3812) 55-73-52">
                                                 8 (3812) 55-73-52
                                             </a>
                                         </li>
@@ -107,7 +108,7 @@ $APPLICATION->ShowPanel();
                                             <img src="/images/geo.png" alt="Иконка"/>
                                         </div>
                                         <div class="adress">
-                                            <a href="#" class="link-to-adress">
+                                            <a  target="_blank" href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9F%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+6,+%D0%9E%D0%BC%D1%81%D0%BA,+%D0%9E%D0%BC%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+644015/@54.9442581,73.351403,17z/data=!3m1!4b1!4m5!3m4!1s0x43ab026a63214a55:0xe33794ae6c93fb4b!8m2!3d54.944255!4d73.353597?hl=ru-RU" class="link-to-adress">
                                                 <div>
                                                     г. Омск
                                                 </div>
@@ -171,7 +172,7 @@ $APPLICATION->ShowPanel();
                                             <img src="/images/thermometer.png" alt="Иконка"/>
                                         </div>
                                         <span>
-                                            +19 C
+                                            <? getTemperatureCity(); ?> C
                                         </span>
 
                                     </div>
@@ -180,7 +181,7 @@ $APPLICATION->ShowPanel();
                                             <img src="/images/clock.png" alt="Иконка"/>
                                         </div>
                                         <span>
-                                           Омск  <?=  date('h:i'); ?>
+                                           Омск  <?  getTimeCity(); ?>
                                         </span>
 
                                     </div>

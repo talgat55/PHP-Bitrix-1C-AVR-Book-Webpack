@@ -95,7 +95,7 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
 <section class="menu-section">
     <div class="row">
         <div class="item col">
-            <a href="#" class="wrapper">
+            <a href="/images/sample.pdf"  target="_blank" class="wrapper">
                 <div class="img-block">
                     <img src="/images/menu-1.jpg" alt="Изображение">
                 </div>
@@ -107,7 +107,7 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
             </a>
         </div>
         <div class="item col">
-            <a href="#" class="wrapper">
+            <a href="/images/sample.pdf"  target="_blank" class="wrapper">
                 <div class="img-block">
                     <img src="/images/menu-2.jpg" alt="Изображение">
                 </div>
@@ -119,7 +119,7 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
             </a>
         </div>
         <div class="item col">
-            <a href="#" class="wrapper">
+            <a href="/images/sample.pdf"  target="_blank" class="wrapper">
                 <div class="img-block">
                     <img src="/images/menu-3.jpg" alt="Изображение">
                 </div>
@@ -131,7 +131,7 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
             </a>
         </div>
         <div class="item col">
-            <a href="#" class="wrapper">
+            <a href="/images/sample.pdf"  target="_blank" class="wrapper">
                 <div class="img-block">
                     <img src="/images/menu-4.jpg" alt="Изображение">
                 </div>

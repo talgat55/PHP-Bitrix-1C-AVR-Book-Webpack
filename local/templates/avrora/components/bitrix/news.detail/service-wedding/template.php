@@ -372,7 +372,8 @@ foreach ($arResult['DISPLAY_PROPERTIES']['FISRT_SLIDER']['LINK_ELEMENT_VALUE'] a
                         "PROPERTY_CODE" => array(
                             0 => "",
                             1 => "SLIDERS",
-                            2 => "",
+                            2 => "PRICE",
+                            3 => "CAPACITY",
                         ),
                         "SET_BROWSER_TITLE" => "N",
                         "SET_LAST_MODIFIED" => "N",
@@ -420,7 +421,7 @@ foreach ($arResult['DISPLAY_PROPERTIES']['FISRT_SLIDER']['LINK_ELEMENT_VALUE'] a
                         <img src="/images/group.png" alt="Иконка"/>
                     </div>
 
-                    <p>
+                    <p class="capacity">
                         Вместимость - 250 чел.
                     </p>
                 </div>
@@ -429,7 +430,7 @@ foreach ($arResult['DISPLAY_PROPERTIES']['FISRT_SLIDER']['LINK_ELEMENT_VALUE'] a
                     <div class="img-block">
                         <img src="/images/wallet.png" alt="Иконка"/>
                     </div>
-                    <p>
+                    <p class="price">
                         Стоимость - от 1500 р./чел.
                     </p>
                 </div>

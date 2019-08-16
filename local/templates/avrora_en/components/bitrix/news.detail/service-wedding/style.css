@@ -1,0 +1,156 @@
+.features {
+    background-color: #f3fafc;
+    padding: 30px;
+    margin-bottom: 90px;
+}
+
+.service-page-wedding .sub-title {
+    font-size: 30px;
+}
+
+.features .item {
+    margin-bottom: 20px;
+}
+
+.features .item p {
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.features .sub-title {
+    margin-bottom: 30px;
+}
+
+
+
+.service-page-wedding .gift {
+    padding-bottom: 90px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.service-page-wedding .gift .sub-title{
+    font-weight: 800;
+    font-size: 48px;
+    color: #f43834;
+    margin-bottom: 30px;
+
+}
+
+.service-page-wedding .gift .gift-image{
+    max-width: 100%;
+}
+.service-page-wedding .gift .list{
+    margin: 0;
+    padding: 0;
+}
+
+.service-page-wedding .gift .list li p{
+
+    margin-bottom: 0;
+    margin-left: 25px;
+
+}
+.service-page-wedding .gift .list li{
+    list-style: none;
+    margin-bottom: 18px;
+}
+
+.service-page-wedding .hal-sliders .list-hal-heading{
+    margin: 0;
+    padding: 0  40px;
+}
+
+.service-page-wedding .hal-sliders .list-hal-heading li .active::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #ec4345;
+    bottom: 0;
+    left: 0;
+}
+.service-page-wedding .hal-sliders .list-hal-heading li {
+    list-style: none;
+    position: relative;
+}
+
+.service-page-wedding .last-block .item-walp.first .img-block{
+    width: 40px;
+}
+
+.service-page-wedding .last-block .item-walp {
+
+}
+.service-page-wedding .hal-sliders .list-hal-heading li  a{
+    padding: 14px 20px;
+    display: inline-block;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'AvenirNextCyr';
+
+}
+
+
+
+.service-page-wedding .last-block .item-walp .title {
+    font-family: 'AvenirNextCyr';
+    font-weight: 700;
+    margin: 0;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+.service-page-wedding .last-block .item-walp   a.mail-link{
+    font-family: 'Calibri';
+    font-weight: 300;
+    color: #000;
+    margin-left: 25px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.service-page-wedding .last-block .item-walp .item-e{
+    margin-top: 30px;
+}
+.service-page-wedding .last-block .item-walp .item-e p{
+    margin-bottom: 0;
+}
+
+.service-page-wedding .last-block .item-walp .content a{
+    font-family: 'AvenirNextCyr';
+    font-weight: 700;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    transition: all .3s;
+}
+.service-page-wedding .last-block .item-walp   a.mail-link:hover,
+.service-page-wedding .last-block .item-walp .content a:hover{
+    color: #ec4345;
+    text-decoration: none;
+}
+.service-page-wedding .last-block .item-walp .content{
+    margin-left: 60px;
+
+}
+.service-page-wedding .last-block .item-walp.first .bg-item{
+    width: 320px;
+    background-color: #f3fafc;
+    padding: 50px 20px;
+}
+.service-page-wedding .last-block .item-walp.first .item{
+    margin-bottom: 40px;
+}
+.service-page-wedding .last-block .item-walp.first .item:last-child{
+    margin-bottom: 0;
+}
+.service-page-wedding .last-block .item-walp.first p{
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.service-page-wedding .last-block{
+    margin-bottom: 90px;
+}

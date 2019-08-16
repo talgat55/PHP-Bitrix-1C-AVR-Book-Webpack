@@ -6,7 +6,6 @@ $APPLICATION->SetTitle("Ресторан");
         <div class="row">
             <div class="page-wrap w-100 service-detail-page">
                 <div class="col-md-12 col-xs-12">
-
                     <div class="service-detail-wrapper">
                         <? $APPLICATION->IncludeComponent(
                             "bitrix:news.detail",
@@ -81,4 +80,21 @@ $APPLICATION->SetTitle("Ресторан");
             </div>
         </div>
     </div>
+<?
+//  include  form modal
+$APPLICATION->IncludeFile(
+    SITE_DIR . "/include/modal-form.php",
+    Array(),
+    Array("MODE" => "html")
+);
+
+//  include  modal success
+$APPLICATION->IncludeFile(
+    SITE_DIR . "/include/modal-success.php",
+    Array(),
+    Array("MODE" => "html")
+);
+
+
+?>
     <br><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>

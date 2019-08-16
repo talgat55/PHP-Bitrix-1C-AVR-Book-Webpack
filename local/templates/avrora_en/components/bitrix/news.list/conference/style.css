@@ -1,0 +1,101 @@
+.conference-page .title-border {
+	margin: 0 auto 95px auto;
+}
+.numbers-list {
+	margin: 0 ;
+	padding: 0;
+}
+.numbers-list .link-more.order-price{
+	margin-top: 40px;
+}
+.numbers-list  .number-item .slider .sliders li,
+.numbers-list li {
+	list-style: none;
+}
+.numbers-list  .number-item .slider{
+	height: 475px;
+	overflow: hidden;
+}
+.numbers-list  .number-item .slider .sliders{
+	margin: 0;
+	padding: 0;
+}
+.numbers-list .number-item{
+	border: 1px solid #e8e8e8;
+	margin-bottom: 50px;
+	padding: 50px;
+}
+.numbers-list .number-item .slider,
+.numbers-list .number-item .content{
+	padding-left: 0;
+	padding-right: 0;
+}
+.numbers-list .number-item .content{
+	padding-left: 50px;
+}
+.numbers-list .number-item .content .sub-title{
+	font-family: 'AvenirNextCyr';
+	font-weight: 700;
+	margin: 0 0 30px;
+	font-size: 30px;
+}
+.numbers-list .number-item .content .description{
+	margin-bottom: 20px;
+}
+.numbers-list .number-item .content .options h3,
+.numbers-list .number-item .content .description h3{
+	margin: 0 0 20px;
+	font-weight: 700;
+}
+.numbers-list .number-item .content .description ul {
+	padding-left: 31px;
+}
+.numbers-list .number-item .content .description ul li::before{
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: -29px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #ec4345;
+}
+
+.numbers-list .number-item .content .description p{
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.numbers-list .number-item .content .options .list-options h4{
+	padding-left: 15px;
+	margin: 0;
+}
+
+.numbers-list .number-item .content .options .list-options{
+	padding: 0;
+	margin: 0 0 0 -15px;
+}
+.numbers-list .number-item .content .options .list-options .slider-item .last-link{
+	text-decoration: underline!important;
+	transition: all 3s;
+	font-family:  'AvenirNextCyr';
+	font-weight: 700;
+}
+.numbers-list .number-item .content .options .list-options .slider-item .last-link:hover{
+	color: #ec4345;
+}
+.numbers-list .number-item .content .options .list-options .slider-item{
+	padding-left: 15px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.numbers-list .number-item .content .description li,
+.numbers-list .number-item .content .options .list-options h4,
+.numbers-list .number-item .content .options .list-options{
+	font-family: 'Calibri';
+	font-weight: 300;
+	font-size: 19px;
+}
+
+
+

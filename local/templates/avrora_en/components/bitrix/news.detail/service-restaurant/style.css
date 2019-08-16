@@ -1,0 +1,140 @@
+.service-page-restaurant .main-slider img{
+    width: 100%;
+    max-width: 100%;
+    height: 460px;
+    object-fit: cover!important;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.service-page-restaurant .text-section{
+    margin-bottom: 90px;
+}
+.service-page-restaurant .halls-section .list{
+    margin: 0 -15px;
+    padding: 0;
+}
+
+.service-page-restaurant .halls-section .list .item{
+    list-style: none;
+    margin-bottom: 90px;
+}
+
+.service-page-restaurant .halls-section .list .item .img-block {
+    margin-bottom: 40px;
+}
+.service-page-restaurant .halls-section .list .item .img-block img{
+    max-width: 100%;
+}
+
+.service-page-restaurant .halls-section .list .item .content .title{
+    margin-top: 0;
+    font-family: 'AvenirNextCyr';
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.service-page-restaurant .halls-section .list .item .content .text p{
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+.service-page-restaurant .menu-section .wrapper{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 90px;
+}
+
+.service-page-restaurant .menu-section .wrapper .img-block{
+    width: 65px;
+    height: 65px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: -28px;
+    position: relative;
+    bottom: -28px;
+    transition: all .3s;
+}
+.service-page-restaurant .menu-section .wrapper:hover .img-block{
+    box-shadow: 5px 10px 20px 5px #dedddd;
+}
+
+.service-page-restaurant .menu-section .wrapper .img-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover!important;
+}
+
+.service-page-restaurant .menu-section .wrapper  .title{
+    margin: 0;
+    padding: 10px 8px 10px 70px;
+    font-family: 'AvenirNextCyr';
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+
+
+}
+
+.service-page-restaurant .menu-section .wrapper  .text{
+    border: 1.5px dashed #d0d0d0;
+}
+
+.service-page-restaurant .info-section .item .title{
+    margin: 0 0 0 25px;
+    font-family: 'AvenirNextCyr';
+    font-weight: 700;
+    font-size: 24px;
+
+}
+
+
+.service-page-restaurant .info-section .item .heading{
+    margin-bottom: 40px;
+}
+
+.service-page-restaurant .info-section .item .block{
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-family: 'AvenirNextCyr';
+    font-weight: 700;
+}
+
+.service-page-restaurant .info-section .item .block span{
+    color: #ec4345;
+
+}
+.service-page-restaurant .info-section .item .info-row{
+    padding-left: 65px;
+}
+.service-page-restaurant .info-section .item .info-row .info-block span{
+    width: 100%;
+    font-family: "Calibri";
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.service-page-restaurant .info-section {
+    margin-bottom: 90px;
+}
+.service-page-restaurant .info-section .item .info-row .info-block  a{
+    text-decoration: none;
+    color: #000;
+    font-family: "AvenirNextCyr";
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    transition: all .3s;
+}
+.service-page-restaurant .info-section .item .info-row .info-block  a:hover{
+    color: #ec4345;
+}
+
+.service-page-restaurant .info-section .item .info-row .info-block  {
+    margin-bottom: 25px;
+}
+
+.service-page-restaurant .footer-sliders{
+    margin-bottom: 90px;
+}
