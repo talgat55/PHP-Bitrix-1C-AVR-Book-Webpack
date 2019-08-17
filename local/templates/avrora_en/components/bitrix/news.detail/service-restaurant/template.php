@@ -95,7 +95,8 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
 <section class="menu-section">
     <div class="row">
         <div class="item col">
-            <a  href="/images/sample.pdf"  target="_blank"  class="wrapper">
+            <a href="<?= $arResult['DISPLAY_PROPERTIES']['BANKET_MENU']['FILE_VALUE']['SRC']; ?>" target="_blank"
+               class="wrapper">
                 <div class="img-block">
                     <img src="/images/menu-1.jpg" alt="Изображение">
                 </div>
@@ -107,7 +108,8 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
             </a>
         </div>
         <div class="item col">
-            <a  href="/images/sample.pdf"  target="_blank" class="wrapper">
+            <a href="<?= $arResult['DISPLAY_PROPERTIES']['MAIN_MENU']['FILE_VALUE']['SRC']; ?>" target="_blank"
+               class="wrapper">
                 <div class="img-block">
                     <img src="/images/menu-2.jpg" alt="Изображение">
                 </div>
@@ -119,7 +121,8 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
             </a>
         </div>
         <div class="item col">
-            <a  href="/images/sample.pdf"  target="_blank"  class="wrapper">
+            <a href="<?= $arResult['DISPLAY_PROPERTIES']['BUSINES_MENU']['FILE_VALUE']['SRC']; ?>" target="_blank"
+               class="wrapper">
                 <div class="img-block">
                     <img src="/images/menu-3.jpg" alt="Изображение">
                 </div>
@@ -131,7 +134,8 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
             </a>
         </div>
         <div class="item col">
-            <a  href="/images/sample.pdf"  target="_blank"  class="wrapper">
+            <a href="<?= $arResult['DISPLAY_PROPERTIES']['SWEDES_MENU']['FILE_VALUE']['SRC']; ?>" target="_blank"
+               class="wrapper">
                 <div class="img-block">
                     <img src="/images/menu-4.jpg" alt="Изображение">
                 </div>
@@ -163,7 +167,7 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
                     <div class="col-lg-7 col-md-6 col-xs-12">
                         <div class="block">
                             Buffet Breakfast <br>
-                        from 06:00 to 10:00
+                            from 06:00 to 10:00
                         </div>
                         <div class="block">
 
@@ -232,12 +236,6 @@ $APPLICATION->SetPageProperty("MainClass", "service-page-restaurant");  // add c
                         <a href="tel:8-900-670-35-36">
                             8-900-670-35-36
                         </a>
-                    </div>
-
-                    <div class="info-block">
-                            <span>
-                                Manager
-                            </span>
                         <a href="mailto:restoran@avrorahotel55.ru">
                             restoran@avrorahotel55.ru
                         </a>

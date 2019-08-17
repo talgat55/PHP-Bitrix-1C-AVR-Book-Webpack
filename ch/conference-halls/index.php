@@ -125,7 +125,7 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page");
                     </div>
                     <div class="row align-items-center justify-content-center ">
                         <div class="col-lg-6 col-sm-12">
-                            <a  href="/images/sample.pdf"  target="_blank" class="menu-section wrapper">
+                            <a href="/images/Coffee-break_menyu.pdf" target="_blank" class="menu-section wrapper">
                                 <div class="img-block">
                                     <img src="/images/coffee-break.jpg" alt="Изображение">
                                 </div>

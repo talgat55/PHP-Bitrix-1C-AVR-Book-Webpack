@@ -129,7 +129,7 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
 
                                     <div class="contact-add-block">
                                         <div class="title">
-                                            Alexandra Kozhevina
+                                            Anastasia Zhitkova
                                         </div>
                                         <div class="text">
                                             <a href="tel:8-950-793-01-10">

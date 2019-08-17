@@ -6,15 +6,20 @@ CHTTP::SetStatus("404 Not Found");
 
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 
-$APPLICATION->SetTitle("404 Not Found");
+$APPLICATION->SetTitle("404 Страница не найдена");
 
-$APPLICATION->IncludeComponent("bitrix:main.map", ".default", Array(
-	"LEVEL"	=>	"3",
-	"COL_NUM"	=>	"2",
-	"SHOW_DESCRIPTION"	=>	"Y",
-	"SET_TITLE"	=>	"Y",
-	"CACHE_TIME"	=>	"36000000"
-	)
-);
+?>
+    <div class="container">
+        <div class="row">
+            <div class="page-wrap w-100">
+                <div class="col-md-12 col-xs-12">
+                    <h1 class="main-title">
+                        404 Страница не найдена
+                    </h1>
 
+                </div>
+            </div>
+        </div>
+    </div>
+<?php
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

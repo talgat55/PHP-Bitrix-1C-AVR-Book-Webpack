@@ -9,7 +9,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
     <title><? $APPLICATION->ShowTitle(); ?></title>
 
 
@@ -47,10 +47,35 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 $APPLICATION->ShowPanel();
 ?>
 <main class="<? $APPLICATION->ShowProperty('MainClass'); ?> main-wrapper">
+    <div class="mobile-bar d-flex justify-content-center">
+        <? $APPLICATION->IncludeComponent(
+            "bitrix:menu",
+            "mobile-menu",
+            array(
+                "ALLOW_MULTI_SELECT" => "N",
+                "CHILD_MENU_TYPE" => "left",
+                "DELAY" => "N",
+                "MAX_LEVEL" => "1",
+                "MENU_CACHE_GET_VARS" => array(),
+                "MENU_CACHE_TIME" => "3600",
+                "MENU_CACHE_TYPE" => "N",
+                "MENU_CACHE_USE_GROUPS" => "Y",
+                "ROOT_MENU_TYPE" => "mobile",
+                "USE_EXT" => "N",
+                "COMPONENT_TEMPLATE" => "mobile-menu"
+            ),
+            false
+        ); ?>
+    </div>
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-4">
+                <div class="col-md-3 col-6">
+                    <a id="mobile-toggle" href="#menu" class="mobile-toggle hamburger hamburger--collapse hamburger--3dx  ">
+                                 <span class="hamburger-box">
+                                     <span class="hamburger-inner"></span>
+                                 </span>
+                    </a>
                     <div id="logo">
                         <a href="/en" class="logo">
                             <img src="/images/logo-new-en.png" alt="Логотип"/>
@@ -58,7 +83,7 @@ $APPLICATION->ShowPanel();
                     </div>
                 </div>
 
-                <div class="col-md-9  col-8">
+                <div class="col-md-9  col-6">
                     <div class="top-header">
                         <div class="row d-flex align-items-center">
                             <div class="item col-lg-4 col-xs-12">

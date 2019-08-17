@@ -1,0 +1,54 @@
+
+.mobile-bar{
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+    width: 100%;
+    left: -100%;
+    top: -20px;
+    height: 120%;
+    transition: all .5s;
+}
+.mobile-bar.is-active{
+    left: 0!important;
+}
+
+.mobile-bar .logo{
+    padding-top: 100px;
+    display: inline-block;
+}
+.mobile-bar .logo img{
+    height: 50px;
+}
+.mobile-bar .list-lang{
+    margin: 0;
+    padding: 15px;
+}
+.mobile-bar .list-lang li{
+    list-style: none;
+}
+.mobile-bar .list-lang li a{
+    padding: 10px;
+}
+
+.mobile-menu{
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+.mobile-menu li{
+    list-style: none;
+}
+.mobile-menu li a{
+    text-decoration: none;
+    transition: all .3s;
+    font-family: 'AvenirNextCyr';
+    font-weight: 400;
+    color: #000;
+    display: inline-block;
+    padding: 10px 0;
+}
+.mobile-menu li a:hover{
+    text-decoration: none;
+    color: #ec4345;
+    
+}

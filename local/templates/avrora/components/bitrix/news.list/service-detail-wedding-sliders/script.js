@@ -38,8 +38,8 @@ jQuery(document).ready(function () {
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
                 // instead of a settings object
-            ]
-            //   autoplay: true,
+            ],
+            autoplay: true
         });
 
 

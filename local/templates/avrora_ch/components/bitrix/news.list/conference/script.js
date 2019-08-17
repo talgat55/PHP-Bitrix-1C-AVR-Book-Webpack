@@ -9,14 +9,6 @@ jQuery(document).ready(function () {
     var modalSuccess = jQuery('.modal-success');
     var activeClass = 'is-active';
 
-    jQuery(listClass).slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        dots: true
-        //   autoplay: true,
-    });
-
 
     jQuery(arrowClass + ' .prev').click(function (e) {
         e.preventDefault();
@@ -74,3 +66,17 @@ jQuery(document).ready(function () {
 
     // end redy function
 });
+window.onload = function() {
+    "use strict";
+
+    var listClass = '.sliders';
+
+    jQuery(listClass).slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+    });
+
+};

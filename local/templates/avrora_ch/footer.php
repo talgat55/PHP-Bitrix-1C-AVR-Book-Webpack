@@ -122,12 +122,12 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
             <div class="col-lg-3 col-md-6 col-xs-12 d-flex align-items-center  last-col-certs">
                 <ul class="footer-certs-list d-flex">
                     <li>
-                        <a href="#">
+                        <a target="_blank" href="/images/Scan.jpg">
                             <img src="/images/cert1.jpg" alt="Сертификат"/>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a target="_blank" href="/images/certificates.pdf">
                             <img src="/images/cert2.jpg" alt="Сертификат"/>
                         </a>
                     </li>

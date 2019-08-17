@@ -13,8 +13,10 @@
 $this->setFrameMode(true);
 $this->addExternalCss("/local/templates/avrora/assets/build/css/slick.css");
 $this->addExternalCss("/local/templates/avrora/assets/build/css/slick-theme.css");
+$this->addExternalCss("/local/templates/avrora/assets/build/css/lightbox.min.css");
 
 $this->addExternalJS("/local/templates/avrora/assets/build/js/slick.min.js");
+$this->addExternalJS("/local/templates/avrora/assets/build/js/lightbox.min.js");
 
 $APPLICATION->SetPageProperty("MainClass", "conference-page-detail");
 
@@ -34,7 +36,9 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page-detail");
                     <ul class="slider-list">
                         <? foreach ($arResult["DISPLAY_PROPERTIES"]["SLIDES_DETAIL_PAGE"]["FILE_VALUE"] as $arItem): ?>
                             <li class="slider-item">
-                                <img src="<?= $arItem['SRC']; ?>" alt="Слайд"/>
+                                <a href="<?= $arItem['SRC']; ?>"  data-lightbox="image">
+                                    <img src="<?= $arItem['SRC']; ?>" alt="Слайд"/>
+                                </a>
                             </li>
                         <? endforeach; ?>
                     </ul>

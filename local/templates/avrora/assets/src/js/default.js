@@ -6,6 +6,7 @@ jQuery(document).ready(function () {
     mapInit();
     changeLang();
     formHandler();
+    mobileMenu();
         //  input mask phone
     if(jQuery('.phone-input').length){
         jQuery('.phone-input').mask('+0(000) 000-0000');
@@ -138,6 +139,22 @@ function formHandler() {
             });
             return false;
         }
+    });
+}
+
+
+//----------------------------------
+//   Mobile menu
+//------------------------------------
+function mobileMenu() {
+    "use strict";
+    var clickClass = jQuery('#mobile-toggle');
+    var mobileBar = jQuery('.mobile-bar');
+    var activeClass = 'is-active';
+
+    clickClass.click(function (e) {
+        jQuery(this).toggleClass(activeClass);
+        mobileBar.toggleClass(activeClass);
     });
 }
 

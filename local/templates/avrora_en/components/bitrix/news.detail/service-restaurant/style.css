@@ -93,6 +93,9 @@
 .service-page-restaurant .info-section .item .heading{
     margin-bottom: 40px;
 }
+.service-page-restaurant .info-section .item  .heading img{
+    height: 37px;
+}
 
 .service-page-restaurant .info-section .item .block{
     margin-bottom: 35px;

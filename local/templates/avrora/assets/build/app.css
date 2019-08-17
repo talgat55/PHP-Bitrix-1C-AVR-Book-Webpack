@@ -165,6 +165,168 @@ body {
   font-weight: 700;
 }
 
+#mobile-toggle {
+  position: fixed !important;
+  top: 25px;
+  display: none;
+  left: 10px;
+  transition: all .6s;
+  z-index: 10000;
+}
+
+#mobile-toggle .navigation-top-mobile {
+  padding: 130px 30px 0 30px;
+}
+
+#mobile-toggle .navigation-top-mobile .list-inline > li {
+  display: block;
+}
+
+#mobile-toggle .menu-menu-lk {
+  padding-top: 0 !important;
+  background: transparent !important;
+}
+
+#mobile-toggle .menu-menu-lk li:after {
+  display: none !important;
+}
+
+#mobile-toggle .menu-menu-lk li {
+  display: block;
+}
+
+#mobile-toggle .menu-menu-lk li a {
+  padding: 0 30px;
+  font-size: 18px;
+  font-family: "AvenirNextCyr";
+}
+
+#mobile-toggle.is-active {
+  left: 10px !important;
+}
+
+.hamburger-box {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #000;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.hamburger {
+  padding: 15px 10px;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+  position: absolute;
+  top: 47px;
+  left: 25px;
+  cursor: pointer;
+  z-index: 99999;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
+.common-home .hamburger.is-active .hamburger-inner,
+.common-home .hamburger.is-active .hamburger-inner::before,
+.common-home .hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
+.hamburger-inner,
+.hamburger-inner::after,
+.hamburger-inner::before {
+  background-color: #000;
+}
+
+.common-home .hamburger-inner,
+.common-home .hamburger-inner::after,
+.common-home .hamburger-inner::before {
+  background-color: #000;
+}
+
+.hamburger--3dx .hamburger-box {
+  perspective: 80px;
+}
+
+body:not(.common-home) .mobile-bar #megamenu-menu .nav > li > a {
+  color: #000 !important;
+}
+
+.hamburger--3dx .hamburger-inner {
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.hamburger--3dx .hamburger-inner::before,
+.hamburger--3dx .hamburger-inner::after {
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.hamburger--3dx.is-active .hamburger-inner {
+  background-color: transparent !important;
+  transform: rotateY(180deg);
+}
+
+.hamburger--3dx.is-active .hamburger-inner::before {
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+
+.hamburger--3dx.is-active .hamburger-inner::after {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+}
+
 header {
   padding: 35px 0 20px;
 }
@@ -474,7 +636,7 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .first-section {
-  margin-top: 120px;
+  margin-top: 60px;
 }
 
 .first-section p {
@@ -487,7 +649,7 @@ header .bottom-header .second #special-block .temperature-block {
 
 .first-section .first,
 .first-section .second {
-  margin-bottom: 170px;
+  margin-bottom: 80px;
 }
 
 .first-section #home-banner {
@@ -498,7 +660,7 @@ header .bottom-header .second #special-block .temperature-block {
   background-image: url("/images/bg-advantage.jpg");
   background-repeat: no-repeat !important;
   background-size: cover !important;
-  padding: 160px 0;
+  padding: 60px 0;
   background-position: center center !important;
 }
 
@@ -552,24 +714,24 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .services-section {
-  padding: 160px 0;
+  padding: 60px 0;
 }
 
 .services-section .title-border {
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .news-section {
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .news-section .title-border {
-  margin-bottom: 90px;
+  margin-bottom: 50px;
 }
 
 .feedback-section {
   background-color: #e4e4e4;
-  padding-top: 80px;
+  padding-top: 60px;
   padding-bottom: 30px;
 }
 
@@ -700,11 +862,11 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .payments-section {
-  padding: 115px 0;
+  padding: 60px 0;
 }
 
 .payments-section .title-border {
-  margin-bottom: 115px;
+  margin-bottom: 50px;
 }
 
 .contacts-page .item-walp {
@@ -713,6 +875,11 @@ header .bottom-header .second #special-block .temperature-block {
 
 .contacts-page .item-walp .item .img-block {
   margin-bottom: 20px;
+}
+
+.contacts-page .item-walp .item .img-block img {
+  width: 30px;
+  object-fit: cover !important;
 }
 
 .contacts-page .item-walp .item .img-block .title {
@@ -727,7 +894,7 @@ header .bottom-header .second #special-block .temperature-block {
   font-size: 20px;
   font-family: "Calibri";
   font-weight: 400;
-  padding-left: 60px;
+  padding-left: 55px;
 }
 
 .contacts-page .item-walp .item .content .links-list {
@@ -1286,7 +1453,7 @@ footer .footer-soc-links-block {
 }
 
 footer .footer-soc-links-block .title {
-  margin: 0 20px 0 0;
+  margin: 0 5px 0 0;
   font-family: "Calibri";
   font-size: 18px;
   font-weight: 300;
@@ -1482,6 +1649,14 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 1024px) {
+  #mobile-toggle {
+    display: inline-block;
+  }
+
+  header #logo {
+    margin-left: 50px;
+  }
+
   header #phone-block span,
   header #adr-lang-block,
   header .bottom-header {
@@ -1753,6 +1928,10 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 768px) {
+  header .top-header #phone-block a p {
+    font-size: 13px !important;
+  }
+
   .reception-list .item img {
     width: 100%;
   }
@@ -1763,7 +1942,6 @@ footer .footer-certs-list li a:hover {
 
   header #logo {
     display: table;
-    margin: 0 auto;
   }
 
   header #logo img {
@@ -2051,4 +2229,8 @@ footer .footer-certs-list li a:hover {
     width: 300px;
     margin: 0 auto;
   }
+}
+
+.bootom-copyright {
+  font-size: 12px !important;
 }

@@ -187,6 +187,129 @@ body
 //
 // Header
 //
+#mobile-toggle
+  position: fixed!important
+  top: 25px
+  display: none
+  left: 10px
+  transition: all .6s
+  z-index: 10000
+  .navigation-top-mobile
+    padding: 130px 30px 0 30px
+    .list-inline>li
+      display: block
+  .menu-menu-lk
+    padding-top: 0!important
+    background: transparent!important
+    li:after
+      display: none!important
+    li
+      display: block
+      a
+        padding: 0 30px
+        font-size: 18px
+        font-family: $font_avenir
+
+  &.is-active
+    left: 10px!important
+
+
+.hamburger-box
+  position: relative
+  display: inline-block
+  width: 40px
+  height: 24px
+
+
+.hamburger-inner
+  display: block
+  top: 50%
+  margin-top: -2px
+
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+  width: 40px
+  height: 4px
+  background-color: #000
+  border-radius: 4px
+  position: absolute
+  transition-property: transform
+  transition-duration: 0.15s
+  transition-timing-function: ease
+
+
+.hamburger-inner::before, .hamburger-inner::after
+  content: ""
+  display: block
+
+
+.hamburger-inner::before
+  top: -10px
+
+
+.hamburger-inner::after
+  bottom: -10px
+
+
+.hamburger
+  padding: 15px 10px
+  cursor: pointer
+  transition-property: opacity, filter
+  transition-duration: 0.15s
+  transition-timing-function: linear
+  font: inherit
+  color: inherit
+  text-transform: none
+  background-color: transparent
+  border: 0
+  margin: 0
+  overflow: visible
+  position: absolute
+  top: 47px
+  left: 25px
+  cursor: pointer
+  z-index: 99999
+
+.hamburger:hover
+  opacity: 0.7
+
+
+.hamburger.is-active:hover
+  opacity: 0.7
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after
+  background-color: #000
+.common-home
+  .hamburger.is-active .hamburger-inner,
+  .hamburger.is-active .hamburger-inner::before,
+  .hamburger.is-active .hamburger-inner::after
+    background-color: #000
+.hamburger-inner, .hamburger-inner::after,
+.hamburger-inner::before
+  background-color: #000
+.common-home
+  .hamburger-inner, .hamburger-inner::after,
+  .hamburger-inner::before
+    background-color: #000
+
+.hamburger--3dx .hamburger-box
+  perspective: 80px
+body:not(.common-home) .mobile-bar #megamenu-menu .nav > li > a
+  color: #000!important
+.hamburger--3dx .hamburger-inner
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+.hamburger--3dx .hamburger-inner::before,
+.hamburger--3dx .hamburger-inner::after
+  transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+
+.hamburger--3dx.is-active .hamburger-inner
+  background-color: transparent !important
+  transform: rotateY(180deg)
+.hamburger--3dx.is-active .hamburger-inner::before
+  transform: translate3d(0, 10px, 0) rotate(45deg)
+.hamburger--3dx.is-active .hamburger-inner::after
+  transform: translate3d(0, -10px, 0) rotate(-45deg)
 
 header
   padding: 35px 0 20px
@@ -450,7 +573,7 @@ header
 // First  section
 //
 .first-section
-  margin-top: 120px
+  margin-top: 60px
 
   p
     font-size: 18px
@@ -462,7 +585,7 @@ header
 
   .first,
   .second
-    margin-bottom: 170px
+    margin-bottom: 80px
 
   #home-banner
     border: 15px solid #e9e9e9
@@ -474,7 +597,7 @@ header
   background-image: url("/images/bg-advantage.jpg")
   background-repeat: no-repeat!important
   background-size: cover!important
-  padding: 160px 0
+  padding: 60px 0
   background-position: center center!important
   .wrapper-block
     margin: 0 auto
@@ -522,10 +645,10 @@ header
 // Service section
 //
 .services-section
-  padding: 160px 0
+  padding: 60px 0
 
   .title-border
-    margin-bottom: 120px
+    margin-bottom: 50px
 
 
 
@@ -533,9 +656,9 @@ header
 // News section
 //
 .news-section
-  padding-bottom: 100px
+  padding-bottom: 60px
   .title-border
-    margin-bottom: 90px
+    margin-bottom: 50px
 
 
 
@@ -544,7 +667,7 @@ header
 //
 .feedback-section
   background-color: #e4e4e4
-  padding-top: 80px
+  padding-top: 60px
   padding-bottom: 30px
   .top
     margin-bottom: 75px
@@ -639,10 +762,10 @@ header
 //  Payments
 //
 .payments-section
-  padding: 115px 0
+  padding: 60px 0
 
   .title-border
-    margin-bottom: 115px
+    margin-bottom: 50px
 
 
 //
@@ -654,6 +777,9 @@ header
     .item
       .img-block
         margin-bottom: 20px
+        img
+          width: 30px
+          object-fit: cover!important
         .title
           padding-left: 25px
           margin: 0
@@ -664,8 +790,8 @@ header
       .content
         font-size: 20px
         font-family: $font_calibri
-        font-weight: 300
-        padding-left: 60px
+        font-weight: 400
+        padding-left: 55px
 
         .links-list
           margin: 0
@@ -691,7 +817,7 @@ header
           li:last-child
             a
               font-family: $font_calibri
-              font-weight: 300
+              font-weight: 400
               font-size: 20px
               margin-bottom: 0
 
@@ -699,7 +825,7 @@ header
           .title
             font-size: 20px
             font-family: $font_calibri
-            font-weight: 300
+            font-weight: 400
             margin-bottom: 20px
           .text
             a
@@ -729,7 +855,7 @@ header
           color: $main_color
       .mail-field
         font-family: $font_calibri
-        font-weight: 300
+        font-weight: 400
 .contacts-page.row.bottom
   margin-bottom: 40px
   .item
@@ -800,6 +926,7 @@ header
         padding: 0
         li
           margin-bottom: 50px
+          min-height: 75px
         p
           margin: 0 0 0 18px
           font-size: 24px
@@ -893,13 +1020,10 @@ header
 
     .menu-section.wrapper  .text
       border: 1.5px dashed #d0d0d0
-
-
-
-
-
-
-
+.lang-item
+  transition: all .3s
+  &:hover
+    opacity: .5
 .numbers-list .slide-arrows
   position: absolute
   left: 0
@@ -938,6 +1062,7 @@ header
   visibility: hidden
   transition: all .3s
   #feedback-form
+    textarea,
     input
       border-bottom: 1px solid #e8e8e8
   .close-icon
@@ -1106,7 +1231,7 @@ footer
   .footer-soc-links-block
     margin-top: 20px
     .title
-      margin: 0 20px 0 0
+      margin: 0 5px 0 0
       font-family: $font_calibri
       font-size: 18px
       font-weight: 300
@@ -1126,18 +1251,23 @@ footer
 
         i
           font-size: 20px
-
-        .vk
-          color: #698cc4
-
-        .inst
-          color: #f23c6f
-
-        .fb
-          color: #5d6eac
-
-        .odn
-          color: #ee8208
+          padding: 0 3px
+        i.fab.fa-vk
+          font-size: 29px!important
+        i.fab.fa-instagram
+          font-size: 23px!important
+        i.fab.fa-facebook
+          font-size: 22px!important
+        i.fab.fa-odnoklassniki
+          font-size: 22px!important
+      .vk
+        color: #698cc4
+      .inst
+        color: #f23c6f
+      .fb
+        color: #5d6eac
+      .odn
+        color: #ee8208
 
 
   .list-add-links
@@ -1245,7 +1375,11 @@ footer
         padding: 14px 15px
 
 @media (max-width: 1024px)
+  #mobile-toggle
+    display: inline-block
   header
+    #logo
+      margin-left: 50px
     #phone-block span,
     #adr-lang-block,
     .bottom-header
@@ -1447,6 +1581,11 @@ footer
         width: 50%
 
 @media (max-width: 768px)
+  header .top-header #phone-block a p
+    font-size: 13px!important
+
+  .reception-list .item img
+    width: 100%
   .menu-section
     .row
       .col
@@ -1454,7 +1593,6 @@ footer
 
   header #logo
     display: table
-    margin: 0 auto
     img
       height: 50px
   .footer-slider-section
@@ -1556,6 +1694,17 @@ footer
           justify-content: center
         .info-row
           padding: 0
+
+  .conference-page-detail
+    .text-info.d-flex.align-items-center.justify-content-center.w-100
+      flex-direction: column
+
+    .sub-title-conference
+      font-size: 28px
+    .description
+      font-size: 18px
+
+
 @media (max-width: 600px)
   .numbers-list .number-item
     padding: 10px
@@ -1650,3 +1799,8 @@ footer
   .service-page-wedding .last-block .item-walp
     width: 300px
     margin: 0 auto
+
+
+
+.bootom-copyright
+  font-size: 12px!important
