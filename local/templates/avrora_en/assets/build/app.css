@@ -1928,6 +1928,11 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 768px) {
+  .modal-success .modal-content,
+  .modal-cutom .modal-content {
+    width: 100%;
+  }
+
   header .top-header #phone-block a p {
     font-size: 13px !important;
   }
@@ -2105,6 +2110,14 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 600px) {
+  .footer-slider-section .slider-item img {
+    width: 100%;
+  }
+
+  .hotel-page .last-section .border-bottom {
+    padding-bottom: 0;
+  }
+
   .numbers-list .number-item {
     padding: 10px;
   }
@@ -2229,8 +2242,45 @@ footer .footer-certs-list li a:hover {
     width: 300px;
     margin: 0 auto;
   }
+
+  .service-page-restaurant .info-section .first {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .service-page-restaurant .footer-sliders {
+    margin-bottom: 0;
+  }
+
+  .service-page-restaurant .halls-section .list .item {
+    margin-bottom: 40px;
+  }
+
+  .service-page-restaurant .halls-section .list .item .img-block {
+    margin-bottom: 15px;
+  }
+
+  .main-title {
+    margin: 20px auto 0px;
+  }
+
+  .first-section .second {
+    margin-bottom: 0;
+  }
+
+  .first-section .second {
+    padding: 50px 0 20px !important;
+  }
+
+  .policy-block.col-md-7.col-xs-12 {
+    margin-top: 20px;
+  }
 }
 
 .bootom-copyright {
   font-size: 12px !important;
+}
+
+a.load-more.link-more-alt.news-link.main-link.hide-item {
+  display: none !important;
 }

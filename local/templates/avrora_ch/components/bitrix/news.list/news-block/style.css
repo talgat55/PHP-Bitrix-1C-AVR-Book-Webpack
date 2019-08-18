@@ -56,6 +56,7 @@
     display: inline-block;
     height: 262px;
     margin-bottom: 25px;
+    overflow: hidden;
 }
 .news-section .news-list .news-item .preview_picture{
     max-width: 100%;

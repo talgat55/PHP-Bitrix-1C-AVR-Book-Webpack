@@ -13,9 +13,11 @@
 $this->setFrameMode(true);
 $this->addExternalCss("/local/templates/avrora/assets/build/css/slick.css");
 $this->addExternalCss("/local/templates/avrora/assets/build/css/slick-theme.css");
+$this->addExternalCss("/local/templates/avrora/assets/build/css/lightbox.min.css");
 
 $this->addExternalJS("/local/templates/avrora/assets/build/js/slick.min.js");
 $this->addExternalJS("/local/templates/avrora/assets/build/js/jquery.mask.min.js");
+$this->addExternalJS("/local/templates/avrora/assets/build/js/lightbox.min.js");
 
 ?>
 <div class="container">
@@ -30,7 +32,9 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/jquery.mask.min.js
                         <ul class="sliders d-flex">
                             <? foreach ($arItem["DISPLAY_PROPERTIES"]["SLIDERS"]["FILE_VALUE"] as $fileItem): ?>
                                 <li class="slider-item">
+                                    <a href="<?= $fileItem['SRC']; ?>"  data-lightbox="image-<?=$arItem["ID"]; ?>">
                                     <img src="<?= $fileItem['SRC']; ?>" alt="Слайд"/>
+                                    </a>
                                 </li>
                             <? endforeach; ?>
 

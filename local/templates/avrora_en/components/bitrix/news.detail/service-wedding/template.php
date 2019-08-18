@@ -233,7 +233,7 @@ foreach ($arResult['DISPLAY_PROPERTIES']['FISRT_SLIDER']['LINK_ELEMENT_VALUE'] a
 
 </section>
 <section class="hal-sliders">
-    <ul class="list-hal-heading d-flex">
+    <ul class="list-hal-heading d-flex justify-content-center">
         <?php
 
         $i = 0;
