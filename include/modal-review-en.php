@@ -40,7 +40,7 @@
                         <button type="submit" form="feedback-form" class="main-link">
                             Send
                         </button>
-                        <input type="hidden" name="event" value="FEEDBACK_EVENT"/>
+                        <input type="hidden" name="event" value="REVIEW_EVENT"/>
                     </div>
                     <div class="policy-block col-md-7 col-xs-12">
                         By clicking on the “Send” button you consent to <a href="/en/policy/">

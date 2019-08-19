@@ -30,6 +30,7 @@
                         </label>
                         <textarea   rows="1" name="comment" placeholder="Отзыв"
                                   class="text-input  " required></textarea>
+                        <input type="hidden" name="event" value="REVIEW_EVENT"/>
                     </div>
                 </div>
             </div>

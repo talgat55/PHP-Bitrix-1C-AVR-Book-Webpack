@@ -18,6 +18,8 @@
         <div class="col-lg-4 col-md-6 col-xs-12">
                                     <textarea rows="4" name="comment" placeholder="Comment"
                                               class="textarea-input"></textarea>
+            <input type="hidden" name="event" value="FEEDBACK_EVENT"/>
+            <input type="hidden" name="siteid" value="s2"/>
         </div>
         <div class="col-lg-4 col-md-6 col-xs-12">
             <input type="email" name="email" placeholder="Email *" class="text-input" required>

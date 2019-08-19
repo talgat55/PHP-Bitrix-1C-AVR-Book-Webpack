@@ -40,7 +40,7 @@
                         <button type="submit" form="feedback-form" class="main-link">
                             送
                         </button>
-                        <input type="hidden" name="event" value="FEEDBACK_EVENT"/>
+                        <input type="hidden" name="event" value="REVIEW_EVENT"/>
                     </div>
                     <div class="policy-block col-md-7 col-xs-12">
                         点击“提交”按钮即表示您同意 <a href="/ch/policy">
