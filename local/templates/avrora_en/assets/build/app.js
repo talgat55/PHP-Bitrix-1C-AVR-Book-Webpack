@@ -118,7 +118,9 @@ jQuery(document).ready(function () {
   mapInit();
   changeLang();
   formHandler();
-  mobileMenu(); //  input mask phone
+  scrollHeader();
+  mobileMenu();
+  reserverBlockHover(); //  input mask phone
 
   if (jQuery('.phone-input').length) {
     jQuery('.phone-input').mask('+0(000) 000-0000');
@@ -248,6 +250,54 @@ function mobileMenu() {
     jQuery(this).toggleClass(activeClass);
     mobileBar.toggleClass(activeClass);
   });
+} //----------------------------------
+//   Scroll header
+//------------------------------------
+
+
+function scrollHeader() {
+  "use strict";
+
+  var headerClass = jQuery('.header-wrap');
+  var activeClass = 'is-active';
+  jQuery(window).scroll(function () {
+    var scroll = jQuery(window).scrollTop();
+
+    if (scroll >= 1) {
+      headerClass.addClass(activeClass);
+    } else {
+      headerClass.removeClass(activeClass);
+    }
+  });
+} //----------------------------------
+//   Reserve block Hover
+//------------------------------------
+
+
+function reserverBlockHover() {
+  "use strict";
+
+  var reserveSection = jQuery('.reserve-wrapper .reserve-section');
+  jQuery("#sticky-reserve-block ").hover(function () {
+    jQuery("#sticky-reserve-block").addClass('is-active');
+  }, function () {
+    jQuery("#sticky-reserve-block").removeClass('is-active');
+  }); // show hide block reserve
+
+  if (reserveSection.length) {
+    var offset = reserveSection.offset();
+    jQuery(window).scroll(function () {
+      var scroll = jQuery(window).scrollTop();
+
+      if (scroll > offset.top + reserveSection.height()) {
+        jQuery('#sticky-reserve-block').fadeIn();
+      } else {
+        jQuery('#sticky-reserve-block').fadeOut();
+      }
+    });
+  } else {
+    jQuery('#sticky-reserve-block').fadeIn();
+  }
 }
 
 /***/ }),

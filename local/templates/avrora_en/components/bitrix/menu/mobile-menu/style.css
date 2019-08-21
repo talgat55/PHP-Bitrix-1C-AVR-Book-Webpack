@@ -32,9 +32,10 @@
 }
 
 .mobile-menu{
-    margin: 20px 0 0 0;
+    margin: 120px 0 0 0;
     padding: 0;
 }
+
 .mobile-menu li{
     list-style: none;
 }

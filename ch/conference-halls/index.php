@@ -16,7 +16,7 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page");
                     <p class="text-center">
                         Aurora Hotel酒店设有三间现代化的舒适会议室和一个商务中心 非常适合培训，研讨会，新闻发布会，各种业务  会议，网络会议。 <br>
                         <br>
-                        客房配有空调，并提供高速互联网接入（Wi-Fi）。
+                        客房配有空调，并提供高速互联网接入<br>（Wi-Fi）。
                     </p>
                     <div class="title-border">
                     </div>
@@ -85,7 +85,7 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page");
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
-		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY1" => "SORT",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",

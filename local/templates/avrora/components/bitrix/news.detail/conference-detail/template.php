@@ -36,7 +36,7 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page-detail");
                     <ul class="slider-list">
                         <? foreach ($arResult["DISPLAY_PROPERTIES"]["SLIDES_DETAIL_PAGE"]["FILE_VALUE"] as $arItem): ?>
                             <li class="slider-item">
-                                <a href="<?= $arItem['SRC']; ?>"  data-lightbox="image">
+                                <a href="<?= $arItem['SRC']; ?>" data-lightbox="image">
                                     <img src="<?= $arItem['SRC']; ?>" alt="Слайд"/>
                                 </a>
                             </li>
@@ -112,28 +112,34 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page-detail");
                                 </li>
                             </ul>
                             <div class="border-conference"></div>
-                            <p class="description">
-                                Стоимость аренды по прейскуранту <b>пакет Бизнес</b>
-                                (с оборудованием)
-                            </p>
-                            <ul class="list-prices">
-                                <li>
-                                    <p>
+                            <? if ($arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_HOUR"]["VALUE"] != '-' || $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_DAY"]["VALUE"] != '-')  : ?>
+                                <p class="description">
+                                    Стоимость аренды по прейскуранту <b>пакет Бизнес</b>
+                                    (с оборудованием)
+                                </p>
+                                <ul class="list-prices">
+                                    <? if ($arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_HOUR"]["VALUE"]  != '-') : ?>
+                                        <li>
+                                            <p>
                                         <span>
                                           <?= $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_HOUR"]["VALUE"]; ?>   рублей
                                         </span>
-                                        (за час)
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
+                                                (за час)
+                                            </p>
+                                        </li>
+                                    <? endif; ?>
+                                    <? if ( $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_DAY"]["VALUE"]  != '-') : ?>
+                                        <li>
+                                            <p>
                                         <span>
                                          <?= $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_DAY"]["VALUE"]; ?>    рублей
                                         </span>
-                                        (за день, от 7 часов)
-                                    </p>
-                                </li>
-                            </ul>
+                                                (за день, от 7 часов)
+                                            </p>
+                                        </li>
+                                    <? endif; ?>
+                                </ul>
+                            <? endif; ?>
                         </div>
 
                         <div class="item col-lg-4 col-md-6 col-sm-12">

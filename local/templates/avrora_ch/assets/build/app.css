@@ -165,6 +165,38 @@ body {
   font-weight: 700;
 }
 
+#sticky-reserve-block {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -675px;
+  transition: all .3s;
+  z-index: 99999999;
+  display: none;
+}
+
+#sticky-reserve-block.is-active {
+  left: 0 !important;
+}
+
+#sticky-reserve-block .button {
+  position: absolute;
+  top: 0;
+  right: -75px;
+  padding: 20px;
+  background: #ec4345;
+  color: #fff;
+}
+
+#sticky-reserve-block .reserve-section {
+  top: 0;
+  margin: 0;
+}
+
+#sticky-reserve-block .reserve-section .reserve-block .first {
+  display: none;
+}
+
 #mobile-toggle {
   position: fixed !important;
   top: 25px;
@@ -328,7 +360,31 @@ body:not(.common-home) .mobile-bar #megamenu-menu .nav > li > a {
 }
 
 header {
+  height: 179px;
+}
+
+header .header-wrap {
   padding: 35px 0 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999999;
+  background: #fff;
+}
+
+header .header-wrap.is-active {
+  padding: 20px 0 20px;
+  top: 0;
+}
+
+header .header-wrap.is-active .top-header {
+  padding-bottom: 0 !important;
+  height: 0 !important;
+  border-bottom: none;
+}
+
+header .header-wrap.is-active #logo img {
+  height: 50px;
 }
 
 header #logo {
@@ -337,11 +393,16 @@ header #logo {
 
 header #logo img {
   max-width: 100%;
+  transition: all .3s;
+  height: 83px;
 }
 
 header .top-header {
   padding-bottom: 15px;
   border-bottom: 1px solid #e7e7e7;
+  height: 73px;
+  overflow: hidden;
+  transition: all .3s;
 }
 
 header .top-header #phone-block .img-block {
@@ -493,13 +554,60 @@ header .bottom-header .second #special-block .temperature-block {
   top: -215px;
 }
 
+.reserve-section .img-reserve {
+  width: 70px;
+  height: 70px;
+  fill: #fff;
+  margin-right: 20px;
+}
+
 .reserve-section .reserve-block {
   border-radius: 5px;
 }
 
+.reserve-section .reserve-block .bottom-block a {
+  font-size: 33px;
+  color: #fff;
+  text-decoration: none;
+  font-family: "AvenirNextCyr";
+  font-weight: 700;
+  line-height: 1;
+  transition: all .3s;
+}
+
+.reserve-section .reserve-block .bottom-block a:hover {
+  opacity: .5;
+}
+
+.reserve-section .reserve-block .bottom-block span {
+  color: #fff;
+  font-size: 18px;
+  font-family: "AvenirNextCyr";
+  font-weight: 300;
+  line-height: 1;
+}
+
+.reserve-section .reserve-block .copyright {
+  position: relative;
+  bottom: -80px;
+  left: -30px;
+}
+
+.reserve-section .reserve-block .copyright img {
+  height: 35px !important;
+}
+
+.reserve-section .reserve-block .copyright a {
+  text-decoration: underline;
+  color: #fff;
+  font-family: "AvenirNextCyr";
+  font-size: 13px;
+  font-weight: 600;
+}
+
 .reserve-section .reserve-block .title {
   margin: 0;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 800;
   font-family: "AvenirNextCyr";
 }
@@ -511,13 +619,13 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .reserve-section .reserve-block .first img {
-  height: 38px;
+  height: 55px;
   margin-right: 20px;
 }
 
 .reserve-section .reserve-block .first .title {
   color: #fff;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .reserve-section .reserve-block .first .list-advantages {
@@ -1577,6 +1685,10 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 1200px) {
+  #sticky-reserve-block {
+    left: -612px;
+  }
+
   #special-block {
     display: none !important;
   }
@@ -1654,7 +1766,7 @@ footer .footer-certs-list li a:hover {
   }
 
   header #logo {
-    margin-left: 50px;
+    margin-left: 55px;
   }
 
   header #phone-block span,
@@ -1687,6 +1799,33 @@ footer .footer-certs-list li a:hover {
 
   .reserve-section .reserve-block .title {
     font-size: 25px;
+  }
+
+  .header-wrap {
+    padding: 20px 0 !important;
+  }
+
+  .header-wrap .first {
+    width: 100% !important;
+    display: block !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+
+  .header-wrap .second {
+    display: none !important;
+  }
+
+  .header-wrap #logo {
+    margin-left: 0 !important;
+  }
+
+  .header-wrap #logo img {
+    height: 68px;
+  }
+
+  header {
+    height: 108px;
   }
 }
 
@@ -1933,6 +2072,16 @@ footer .footer-certs-list li a:hover {
     width: 100%;
   }
 
+  #mobile-toggle {
+    top: 15px;
+  }
+
+  header #logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
   header .top-header #phone-block a p {
     font-size: 13px !important;
   }
@@ -1945,11 +2094,7 @@ footer .footer-certs-list li a:hover {
     width: 100%;
   }
 
-  header #logo {
-    display: table;
-  }
-
-  header #logo img {
+  .menu-section img {
     height: 50px;
   }
 
@@ -2107,6 +2252,10 @@ footer .footer-certs-list li a:hover {
   .conference-page-detail .description {
     font-size: 18px;
   }
+
+  .conference-page .main-title {
+    padding: 0 15px 10px 15px;
+  }
 }
 
 @media (max-width: 600px) {
@@ -2127,7 +2276,7 @@ footer .footer-certs-list li a:hover {
   }
 
   header #logo img {
-    height: auto !important;
+    height: 50px !important;
     padding: 4.5px 0;
   }
 

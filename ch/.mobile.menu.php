@@ -1,11 +1,18 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"房间和价格",
-		"/ch/hotel/",
+		"主页",
+		"/ch/",
 		Array(), 
 		Array(), 
 		"" 
+	),
+		Array(
+		"房间和价格",
+		"/ch/hotel/",
+		Array(),
+		Array(),
+		""
 	),
 	Array(
 		"餐厅",

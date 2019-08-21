@@ -3,9 +3,6 @@
 <? if (!empty($arResult)): ?>
     <div>
 
-        <a href="/en/" class="logo">
-            <img src="/images/logo-new-en.png" alt="Логотип"/>
-        </a>
         <ul class="mobile-menu ">
 
             <?

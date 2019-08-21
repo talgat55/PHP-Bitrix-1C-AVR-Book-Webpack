@@ -108,27 +108,34 @@ $APPLICATION->SetPageProperty("MainClass", "conference-page-detail");
                                 </li>
                             </ul>
                             <div class="border-conference"></div>
-                            <p class="description">
-                                租赁价格根据价格表<b>商务套餐</b> （带设备）
-                            </p>
-                            <ul class="list-prices">
-                                <li>
-                                    <p>
+
+                            <? if (!empty($arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_HOUR"]["VALUE"]) || !empty($arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_DAY"]["VALUE"])  )  : ?>
+                                <p class="description">
+                                    租赁价格根据价格表<b>商务套餐</b> （带设备）
+                                </p>
+                                <ul class="list-prices">
+                                    <? if ($arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_HOUR"]["VALUE"]  != '-') : ?>
+                                        <li>
+                                            <p>
                                         <span>
-                                          <?= $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_HOUR"]["VALUE"]; ?>   卢布
+                                          <?= $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_HOUR"]["VALUE"]; ?>    卢布
                                         </span>
-                                        （每小时）
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>
+                                                （每小时）
+                                            </p>
+                                        </li>
+                                    <? endif; ?>
+                                    <? if ( $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_DAY"]["VALUE"]  != '-') : ?>
+                                        <li>
+                                            <p>
                                         <span>
-                                         <?= $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_DAY"]["VALUE"]; ?>    卢布
+                                         <?= $arResult["DISPLAY_PROPERTIES"]["COST_RENT_BUSINES_DAY"]["VALUE"]; ?>   卢布
                                         </span>
-                                        （每天7小时）
-                                    </p>
-                                </li>
-                            </ul>
+                                                （每天7小时）
+                                            </p>
+                                        </li>
+                                    <? endif; ?>
+                                </ul>
+                            <? endif; ?>
                         </div>
 
                         <div class="item col-lg-4 col-md-6 col-sm-12">

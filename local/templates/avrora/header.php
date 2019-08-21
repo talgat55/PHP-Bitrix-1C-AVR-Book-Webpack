@@ -68,162 +68,166 @@ $APPLICATION->ShowPanel();
         ); ?>
     </div>
     <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-6">
-                    <a id="mobile-toggle" href="#menu" class="mobile-toggle hamburger hamburger--collapse hamburger--3dx  ">
+        <div class="header-wrap">
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="first col-md-3 col-6">
+                        <a id="mobile-toggle" href="#menu"
+                           class="mobile-toggle hamburger hamburger--collapse hamburger--3dx  ">
                                  <span class="hamburger-box">
                                      <span class="hamburger-inner"></span>
                                  </span>
-                    </a>
-                    <div id="logo">
-                        <a href="/" class="logo">
-                            <img src="/images/logo.png" alt="Логотип"/>
                         </a>
+                        <div id="logo">
+                            <a href="/" class="logo">
+                                <img src="/images/logo.png" alt="Логотип"/>
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-md-9  col-6">
-                    <div class="top-header">
-                        <div class="row d-flex align-items-center">
-                            <div class="item col-lg-4 col-xs-12">
-                                <div id="phone-block" class="d-flex align-items-start">
-                                    <div class="img-block">
-                                        <img src="/images/phone.png" alt="Иконка"/>
-                                    </div>
-                                    <a href="tel:8-800-100-32-80">
+                    <div class="second col-md-9  col-6">
+                        <div class="top-header">
+                            <div class="row d-flex align-items-center">
+                                <div class="item col-lg-4 col-xs-12">
+                                    <div id="phone-block" class="d-flex align-items-start">
+                                        <div class="img-block">
+                                            <img src="/images/phone.png" alt="Иконка"/>
+                                        </div>
+                                        <a href="tel:8-800-100-32-80">
                                         <span>
                                             Звонок по России бесплатный
                                         </span>
-                                        <p>
-                                            8-800-100-32-80
-                                        </p>
-                                    </a>
+                                            <p>
+                                                8-800-100-32-80
+                                            </p>
+                                        </a>
 
-                                </div>
-                            </div>
-                            <div class="item col-lg-4 col-xs-12">
-                                <div id="list-soc-phones" class="d-flex align-items-start ">
-                                    <div class="img-block">
-                                        <img src="/images/soc-phones.png" alt="Иконка"/>
                                     </div>
-                                    <ul class="list-phones">
-                                        <li>
-                                            <a href="tel:8-951-416-04-44">
-                                                8-951-416-04-44
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="tel:8 (3812) 55-73-52">
-                                                8 (3812) 55-73-52
-                                            </a>
-                                        </li>
-
-
-                                    </ul>
-
                                 </div>
-                            </div>
-
-                            <div class="item col-lg-4 col-xs-12">
-                                <div id="adr-lang-block"
-                                     class="d-flex align-items-start justify-content-between align-items-end">
-                                    <div class="first  d-flex">
+                                <div class="item col-lg-4 col-xs-12">
+                                    <div id="list-soc-phones" class="d-flex align-items-start ">
                                         <div class="img-block">
-                                            <img src="/images/geo.png" alt="Иконка"/>
+                                            <img src="/images/soc-phones.png" alt="Иконка"/>
                                         </div>
-                                        <div class="adress">
-                                            <a target="_blank"
-                                               href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9F%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+6,+%D0%9E%D0%BC%D1%81%D0%BA,+%D0%9E%D0%BC%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+644015/@54.9442581,73.351403,17z/data=!3m1!4b1!4m5!3m4!1s0x43ab026a63214a55:0xe33794ae6c93fb4b!8m2!3d54.944255!4d73.353597?hl=ru-RU"
-                                               class="link-to-adress">
-                                                <div>
-                                                    г. Омск
-                                                </div>
-                                                <div>
-                                                    ул. Поворотникова, 6
-                                                </div>
-
-                                            </a>
-
-                                        </div>
-                                    </div>
-
-                                    <div class="second">
-                                        <ul class="list-lang">
+                                        <ul class="list-phones">
                                             <li>
-                                                <a href="#" class="lang-item d-flex" data-lang="ru">
-                                                    <img src="/images/ru-lng.jpg" alt="Иконка"/>
+                                                <a href="tel:8-951-416-04-44">
+                                                    8-951-416-04-44
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="#" class="lang-item d-flex" data-lang="en">
-                                                    <img src="/images/eng-lng.jpg" alt="Иконка"/>
+                                                <a href="tel:8 (3812) 55-73-52">
+                                                    8 (3812) 55-73-52
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="#" class="lang-item d-flex" data-lang="ch">
-                                                    <img src="/images/ch-lng.jpg" alt="Иконка"/>
-                                                </a>
-                                            </li>
+
+
                                         </ul>
-                                    </div>
 
+                                    </div>
+                                </div>
+
+                                <div class="item col-lg-4 col-xs-12">
+                                    <div id="adr-lang-block"
+                                         class="d-flex align-items-start justify-content-between align-items-end">
+                                        <div class="first  d-flex">
+                                            <div class="img-block">
+                                                <img src="/images/geo.png" alt="Иконка"/>
+                                            </div>
+                                            <div class="adress">
+                                                <a target="_blank"
+                                                   href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%9F%D0%BE%D0%B2%D0%BE%D1%80%D0%BE%D1%82%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2%D0%B0,+6,+%D0%9E%D0%BC%D1%81%D0%BA,+%D0%9E%D0%BC%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+644015/@54.9442581,73.351403,17z/data=!3m1!4b1!4m5!3m4!1s0x43ab026a63214a55:0xe33794ae6c93fb4b!8m2!3d54.944255!4d73.353597?hl=ru-RU"
+                                                   class="link-to-adress">
+                                                    <div>
+                                                        г. Омск
+                                                    </div>
+                                                    <div>
+                                                        ул. Поворотникова, 6
+                                                    </div>
+
+                                                </a>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="second">
+                                            <ul class="list-lang">
+                                                <li>
+                                                    <a href="#" class="lang-item d-flex" data-lang="ru">
+                                                        <img src="/images/ru-lng.jpg" alt="Иконка"/>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="lang-item d-flex" data-lang="en">
+                                                        <img src="/images/eng-lng.jpg" alt="Иконка"/>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="lang-item d-flex" data-lang="ch">
+                                                        <img src="/images/ch-lng.jpg" alt="Иконка"/>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="bottom-header">
-                        <div class="row">
-                            <div class="first col-xl-9  col-md-12 col-xs-12">
-                                <? $APPLICATION->IncludeComponent("bitrix:menu", "mian-menu", Array(
-                                    "ALLOW_MULTI_SELECT" => "N",    // Разрешить несколько активных пунктов одновременно
-                                    "CHILD_MENU_TYPE" => "left",    // Тип меню для остальных уровней
-                                    "DELAY" => "N",    // Откладывать выполнение шаблона меню
-                                    "MAX_LEVEL" => "1",    // Уровень вложенности меню
-                                    "MENU_CACHE_GET_VARS" => array(    // Значимые переменные запроса
-                                        0 => "",
+                        <div class="bottom-header">
+                            <div class="row">
+                                <div class="first col-xl-9  col-md-12 col-xs-12">
+                                    <? $APPLICATION->IncludeComponent("bitrix:menu", "mian-menu", Array(
+                                        "ALLOW_MULTI_SELECT" => "N",    // Разрешить несколько активных пунктов одновременно
+                                        "CHILD_MENU_TYPE" => "left",    // Тип меню для остальных уровней
+                                        "DELAY" => "N",    // Откладывать выполнение шаблона меню
+                                        "MAX_LEVEL" => "1",    // Уровень вложенности меню
+                                        "MENU_CACHE_GET_VARS" => array(    // Значимые переменные запроса
+                                            0 => "",
+                                        ),
+                                        "MENU_CACHE_TIME" => "3600",    // Время кеширования (сек.)
+                                        "MENU_CACHE_TYPE" => "N",    // Тип кеширования
+                                        "MENU_CACHE_USE_GROUPS" => "Y",    // Учитывать права доступа
+                                        "ROOT_MENU_TYPE" => "top",    // Тип меню для первого уровня
+                                        "USE_EXT" => "N",    // Подключать файлы с именами вида .тип_меню.menu_ext.php
                                     ),
-                                    "MENU_CACHE_TIME" => "3600",    // Время кеширования (сек.)
-                                    "MENU_CACHE_TYPE" => "N",    // Тип кеширования
-                                    "MENU_CACHE_USE_GROUPS" => "Y",    // Учитывать права доступа
-                                    "ROOT_MENU_TYPE" => "top",    // Тип меню для первого уровня
-                                    "USE_EXT" => "N",    // Подключать файлы с именами вида .тип_меню.menu_ext.php
-                                ),
-                                    false
-                                ); ?>
-                            </div>
-                            <div class="second col-xl-3 col-xs-12 d-flex align-items-center">
-                                <div id="special-block" class="d-flex">
-                                    <div class="temperature-block d-flex  align-items-center">
-                                        <div class="img-block">
-                                            <img src="/images/thermometer.png" alt="Иконка"/>
-                                        </div>
-                                        <span>
+                                        false
+                                    ); ?>
+                                </div>
+                                <div class="second col-xl-3 col-xs-12 d-flex align-items-center">
+                                    <div id="special-block" class="d-flex">
+                                        <div class="temperature-block d-flex  align-items-center">
+                                            <div class="img-block">
+                                                <img src="/images/thermometer.png" alt="Иконка"/>
+                                            </div>
+                                            <span>
                                             <? getTemperatureCity(); ?> C
                                         </span>
 
-                                    </div>
-                                    <div class="clock-block  d-flex  align-items-center">
-                                        <div class="img-block">
-                                            <img src="/images/clock.png" alt="Иконка"/>
                                         </div>
-                                        <span>
+                                        <div class="clock-block  d-flex  align-items-center">
+                                            <div class="img-block">
+                                                <img src="/images/clock.png" alt="Иконка"/>
+                                            </div>
+                                            <span>
                                            Омск  <? getTimeCity(); ?>
                                         </span>
 
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
-
                         </div>
-                    </div>
 
+                    </div>
                 </div>
             </div>
         </div>
-
-
     </header>
+
     <div id="primary">
 
 

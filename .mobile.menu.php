@@ -1,12 +1,20 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Номера и цены", 
-		"/hotel/", 
+		"Главная",
+		"/",
 		Array(), 
 		Array(), 
 		"" 
 	),
+		Array(
+		"Номера и цены",
+		"/hotel/",
+		Array(),
+		Array(),
+		""
+	),
+
 	Array(
 		"Ресторан", 
 		"/uslugi/restaurant/", 

@@ -6,27 +6,29 @@
  * Time: 23:14
  */
 ?>
-<section class="reserve-section">
+<section class="reserve-section  ">
     <div class="reserve-block">
         <div class="row">
             <div class="first col-xs-12">
                 <div class="info-block">
                     <h3 class="title">
                         Reserve rooms
-                        with discount!! </h3>
-                    <div class="bottom-block">
-                        <ul class="list-advantages d-flex">
-                            <li class="item d-flex"><img src="/images/banner-icon.png" alt="иконка">
-                                <p>
-                                    Buffet breakfast
-                                </p>
-                            </li>
-                            <li class="item d-flex"><img src="/images/banner-icon2.png" alt="иконка">
-                                <p>
-                                    Rooms you want to live in!
-                                </p>
-                            </li>
-                        </ul>
+                        with discount!!
+                    </h3>
+                    <div class="bottom-block d-flex align-items-top">
+                        <img src="/images/phone-reserve.png" alt="Иконка" />
+                        <div>
+                            <a href="tel:8-800-100-32-80" >
+                                8-800-100-32-80
+                            </a><br>
+                            <span> Free call in Russia  </span>
+                        </div>
+                    </div>
+                    <div class="copyright d-flex align-items-center">
+                        <img src="/images/visa.png" alt="Иконка" />
+                        <a target="_blank" href="https://ivisa.ru/">
+                            Get a visa <br> invitation
+                        </a>
                     </div>
                 </div>
             </div>

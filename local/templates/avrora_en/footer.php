@@ -6,6 +6,15 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
 ?>
 
+<?php
+// reserve block
+$APPLICATION->IncludeFile(
+    SITE_DIR . "../include/sticky-reserve-en.php",
+    Array(),
+    Array("MODE" => "html")
+);
+?>
+
 <footer>
     <div class="container">
         <div class="row">
@@ -127,10 +136,16 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
                         </a>
                     </li>
                     <li>
-                        <a target="_blank" href="/images/certificates.pdf">
+                        <a target="_blank" href="/images/Svidetelstvo_Avrora_3_zvezdy.pdf">
                             <img src="/images/cert2.jpg" alt="Сертификат"/>
                         </a>
                     </li>
+                    <li>
+                        <a target="_blank" href="/images/sertifikat-3.jpg">
+                            <img src="/images/cert3.jpg" style="width: 95px" alt="Сертификат"/>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
 

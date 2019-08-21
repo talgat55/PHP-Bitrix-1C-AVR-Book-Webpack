@@ -10,13 +10,17 @@ $APPLICATION->IncludeFile(
     Array(),
     Array("MODE" => "html")
 );
-//  include reserve block
-$APPLICATION->IncludeFile(
-    SITE_DIR . "/include/reserve-block-ch.php",
-    Array(),
-    Array("MODE" => "html")
-);
 ?>
+    <div class="reserve-wrapper">
+        <?php
+        //  include reserve block
+        $APPLICATION->IncludeFile(
+            SITE_DIR . "/include/reserve-block-ch.php",
+            Array(),
+            Array("MODE" => "html")
+        );
+        ?>
+    </div>
     <section class="first-block">
         <div class="container">
             <div class="row">
@@ -98,7 +102,7 @@ $APPLICATION->IncludeFile(
 		"SET_STATUS_404" => "N",
 		"SET_TITLE" => "N",
 		"SHOW_404" => "N",
-		"SORT_BY1" => "ACTIVE_FROM",
+		"SORT_BY1" => "SORT",
 		"SORT_BY2" => "SORT",
 		"SORT_ORDER1" => "DESC",
 		"SORT_ORDER2" => "ASC",

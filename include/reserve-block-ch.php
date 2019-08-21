@@ -6,29 +6,31 @@
  * Time: 23:14
  */
 ?>
-<section class="reserve-section">
+<section class="reserve-section  ">
     <div class="reserve-block">
         <div class="row">
             <div class="first col-xs-12">
                 <div class="info-block">
                     <h3 class="title">
-                        预订房间<br>
+                        预订房间
                         打折！
                     </h3>
-                    <div class="bottom-block">
-                        <ul class="list-advantages d-flex">
-                            <li class="item d-flex"><img src="/images/banner-icon.png" alt="иконка">
-                                <p>
-                                    自助早餐
-                                </p>
-                            </li>
-                            <li class="item d-flex"><img src="/images/banner-icon2.png" alt="иконка">
-                                <p>
-                                    你想住的房间！
-                                </p>
-                            </li>
-                        </ul>
+                    <div class="bottom-block d-flex align-items-top">
+                        <img src="/images/phone-reserve.png" alt="Иконка" />
+                        <div>
+                            <a href="tel:8-800-100-32-80" >
+                                8-800-100-32-80
+                            </a><br>
+                            <span> 俄罗斯免费电话  </span>
+                        </div>
                     </div>
+                    <div class="copyright d-flex align-items-center">
+                        <img src="/images/visa.png" alt="Иконка" />
+                        <a target="_blank" href="https://ivisa.ru/">
+                            获得签证邀请
+                        </a>
+                    </div>
+
                 </div>
             </div>
             <div class="second col-xs-12">
