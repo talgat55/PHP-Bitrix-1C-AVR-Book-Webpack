@@ -33,11 +33,18 @@
 .numbers-list .number-item .content{
 	padding-left: 50px;
 }
+.numbers-list .number-item .content .sub-title a,
 .numbers-list .number-item .content .sub-title{
 	font-family: 'AvenirNextCyr';
 	font-weight: 700;
 	margin: 0 0 30px;
 	font-size: 30px;
+	color: #000;
+	transition: all .3s;
+}
+.numbers-list .number-item .content .sub-title a:hover{
+	color:  #ec4345;
+	text-decoration: none;
 }
 .numbers-list .number-item .content .description{
 	margin-bottom: 20px;

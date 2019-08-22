@@ -56,7 +56,9 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/lightbox.min.js");
                     </div>
                     <div class="content  col-lg-7 col-md-12 col-sm-12">
                         <h2 class="sub-title">
-                            <?= $arItem['NAME']; ?>
+                            <a href="<?=$arItem["DETAIL_PAGE_URL"]?>"  >
+                                <?= $arItem['NAME']; ?>
+                            </a>
                         </h2>
                         <div class="description">
                             <ul>
