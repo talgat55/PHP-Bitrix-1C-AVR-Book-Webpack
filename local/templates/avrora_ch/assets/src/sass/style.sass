@@ -374,10 +374,11 @@ header
 
 
     #phone-block
+      padding-top: 2px
       .img-block
         width: 41px
         height: 38px
-        margin-right: 25px
+        margin-right: 10px
 
         img
           max-width: 100%
@@ -392,24 +393,27 @@ header
           p
             color: $main_color
 
-
         span
           font-size: 14px
           font-family: $font_calibri
           font-weight: 300
           color: $text_color
-          margin-bottom: 5px
+          display: inline-block
+
         p
           margin-bottom: 0
           font-size: 21px
           font-family: $font_avenir
           font-weight: 800
+          line-height: 1
+          margin-top: 8px
 
     #list-soc-phones
+      margin-left: -15px
       .img-block
         width: 71px
         height: 31px
-        margin-right: 25px
+        margin-right: 10px
 
         img
           max-width: 100%
@@ -420,11 +424,10 @@ header
         line-height: 14px
 
         li
-          padding-bottom: 8px
           list-style: none
           a
             text-decoration: none
-            font-size: 17px
+            font-size: 21px
             font-family: $font_avenir
             font-weight: 800
             color: $text_color
@@ -440,7 +443,7 @@ header
         .img-block
           width: 38px
           height: 38px
-          margin-right: 25px
+          margin-right: 10px
 
         .adress
           .link-to-adress
@@ -455,7 +458,7 @@ header
               margin-bottom: 4px
 
             div:last-child
-              font-size: 13px
+              font-size: 14px
               font-family: $font_calibri
               font-weight: 400
 
@@ -1211,15 +1214,16 @@ footer
   #logo-footer
     img
       max-width: 100%
+      height: 60px
 
   #phone-block-footer
-    margin-bottom: 35px
+    margin-bottom: 20px
 
 
     .img-block
-      width: 41px
+      width: 29px
       height: 38px
-      margin-right: 25px
+      margin-right: 10px
 
       img
         max-width: 100%
@@ -1246,12 +1250,13 @@ footer
         font-size: 21px
         font-family: $font_avenir
         font-weight: 800
+        line-height: 1
 
   #list-soc-phones-footer
     .img-block
-      width: 71px
+      width: 68px
       height: 31px
-      margin-right: 25px
+      margin-right: 10px
 
       img
         max-width: 100%
@@ -1262,11 +1267,10 @@ footer
       line-height: 14px
 
       li
-        padding-bottom: 8px
         list-style: none
         a
           text-decoration: none
-          font-size: 17px
+          font-size: 21px
           font-family: $font_avenir
           font-weight: 800
           color: $text_color
@@ -1276,44 +1280,35 @@ footer
             text-decoration: none
             color: $main_color
 
-
   #adr-lang-block-footer
-    margin-bottom: 45px
     .first
       .img-block
         width: 38px
         height: 38px
-        margin-right: 25px
-
+        margin-right: 10px
     .adress
       .link-to-adress
         text-decoration: none
         color: $text_color
-
         div:first-child
           font-size: 27px
           font-family: $font_avenir
           font-weight: 800
           line-height: 22px
           margin-bottom: 4px
-
         div:last-child
-          font-size: 13px
+          font-size: 14px
           font-family: $font_calibri
           font-weight: 400
-
     .second
       .list-lang
         margin: 0
         padding: 0
-
         li
           list-style: none
           height: 19px
-
           a
             text-decoration: none
-
 
   .footer-soc-links-block
     margin-top: 20px
@@ -1323,11 +1318,9 @@ footer
       font-size: 18px
       font-weight: 300
       color: #000
-
     .footer-soc-links
-      margin: 0
+      margin: 0 0 0 37px
       padding: 0
-
       li
         list-style: none
         a
@@ -1335,10 +1328,9 @@ footer
           transition: all .3s
           &:hover
             opacity: .5
-
         i
           font-size: 20px
-          padding: 0 3px
+          padding: 0
         i.fab.fa-vk
           font-size: 29px!important
         i.fab.fa-instagram
@@ -1356,9 +1348,8 @@ footer
       .odn
         color: #ee8208
 
-
   .list-add-links
-    margin: 0
+    margin: 10px 0 0 0
     padding: 0
     li
       list-style: none
@@ -1375,7 +1366,7 @@ footer
           color: #aeaeae
 
       a
-        font-size: 16px
+        font-size: 14px
         transition:  all .3s
         &:hover
           color: $main_color
@@ -1394,6 +1385,7 @@ footer
         margin-right: 0
       img
         max-width: 100%
+        border: 1px solid #b5b5b5
 
       a
         transition: all .3s

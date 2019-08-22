@@ -405,10 +405,14 @@ header .top-header {
   transition: all .3s;
 }
 
+header .top-header #phone-block {
+  padding-top: 2px;
+}
+
 header .top-header #phone-block .img-block {
   width: 41px;
   height: 38px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 header .top-header #phone-block .img-block img {
@@ -435,7 +439,7 @@ header .top-header #phone-block a span {
   font-family: "Calibri";
   font-weight: 300;
   color: #000;
-  margin-bottom: 5px;
+  display: inline-block;
 }
 
 header .top-header #phone-block a p {
@@ -443,12 +447,18 @@ header .top-header #phone-block a p {
   font-size: 21px;
   font-family: "AvenirNextCyr";
   font-weight: 800;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+header .top-header #list-soc-phones {
+  margin-left: -15px;
 }
 
 header .top-header #list-soc-phones .img-block {
   width: 71px;
   height: 31px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 header .top-header #list-soc-phones .img-block img {
@@ -462,13 +472,12 @@ header .top-header #list-soc-phones .list-phones {
 }
 
 header .top-header #list-soc-phones .list-phones li {
-  padding-bottom: 8px;
   list-style: none;
 }
 
 header .top-header #list-soc-phones .list-phones li a {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 21px;
   font-family: "AvenirNextCyr";
   font-weight: 800;
   color: #000;
@@ -483,7 +492,7 @@ header .top-header #list-soc-phones .list-phones li a:hover {
 header .top-header #adr-lang-block .first .img-block {
   width: 38px;
   height: 38px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 header .top-header #adr-lang-block .first .adress .link-to-adress {
@@ -500,7 +509,7 @@ header .top-header #adr-lang-block .first .adress .link-to-adress div:first-chil
 }
 
 header .top-header #adr-lang-block .first .adress .link-to-adress div:last-child {
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Calibri";
   font-weight: 400;
 }
@@ -1432,16 +1441,17 @@ footer {
 
 footer #logo-footer img {
   max-width: 100%;
+  height: 60px;
 }
 
 footer #phone-block-footer {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 
 footer #phone-block-footer .img-block {
-  width: 41px;
+  width: 29px;
   height: 38px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 footer #phone-block-footer .img-block img {
@@ -1476,12 +1486,13 @@ footer #phone-block-footer a p {
   font-size: 21px;
   font-family: "AvenirNextCyr";
   font-weight: 800;
+  line-height: 1;
 }
 
 footer #list-soc-phones-footer .img-block {
-  width: 71px;
+  width: 68px;
   height: 31px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 footer #list-soc-phones-footer .img-block img {
@@ -1495,13 +1506,12 @@ footer #list-soc-phones-footer .list-phones {
 }
 
 footer #list-soc-phones-footer .list-phones li {
-  padding-bottom: 8px;
   list-style: none;
 }
 
 footer #list-soc-phones-footer .list-phones li a {
   text-decoration: none;
-  font-size: 17px;
+  font-size: 21px;
   font-family: "AvenirNextCyr";
   font-weight: 800;
   color: #000;
@@ -1513,14 +1523,10 @@ footer #list-soc-phones-footer .list-phones li a:hover {
   color: #ec4345;
 }
 
-footer #adr-lang-block-footer {
-  margin-bottom: 45px;
-}
-
 footer #adr-lang-block-footer .first .img-block {
   width: 38px;
   height: 38px;
-  margin-right: 25px;
+  margin-right: 10px;
 }
 
 footer #adr-lang-block-footer .adress .link-to-adress {
@@ -1537,7 +1543,7 @@ footer #adr-lang-block-footer .adress .link-to-adress div:first-child {
 }
 
 footer #adr-lang-block-footer .adress .link-to-adress div:last-child {
-  font-size: 13px;
+  font-size: 14px;
   font-family: "Calibri";
   font-weight: 400;
 }
@@ -1569,7 +1575,7 @@ footer .footer-soc-links-block .title {
 }
 
 footer .footer-soc-links-block .footer-soc-links {
-  margin: 0;
+  margin: 0 0 0 37px;
   padding: 0;
 }
 
@@ -1588,7 +1594,7 @@ footer .footer-soc-links-block .footer-soc-links li a:hover {
 
 footer .footer-soc-links-block .footer-soc-links li i {
   font-size: 20px;
-  padding: 0 3px;
+  padding: 0;
 }
 
 footer .footer-soc-links-block .footer-soc-links li i.fab.fa-vk {
@@ -1624,7 +1630,7 @@ footer .footer-soc-links-block .footer-soc-links .odn {
 }
 
 footer .list-add-links {
-  margin: 0;
+  margin: 10px 0 0 0;
   padding: 0;
 }
 
@@ -1645,7 +1651,7 @@ footer .list-add-links li:last-child a {
 }
 
 footer .list-add-links li a {
-  font-size: 16px;
+  font-size: 14px;
   transition: all .3s;
 }
 
@@ -1670,6 +1676,7 @@ footer .footer-certs-list li:last-child {
 
 footer .footer-certs-list li img {
   max-width: 100%;
+  border: 1px solid #b5b5b5;
 }
 
 footer .footer-certs-list li a {

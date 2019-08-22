@@ -85,7 +85,7 @@ $APPLICATION->ShowPanel();
                         </div>
                     </div>
 
-                    <div class="col-md-9  col-6">
+                    <div class="second col-md-9  col-6">
                         <div class="top-header">
                             <div class="row d-flex align-items-center">
                                 <div class="item col-lg-4 col-xs-12">
@@ -94,19 +94,20 @@ $APPLICATION->ShowPanel();
                                             <img src="/images/phone.png" alt="Иконка"/>
                                         </div>
                                         <a href="tel:8-800-100-32-80">
+                                            <p>
+                                                8-800-100-32-80
+                                            </p>
                                         <span>
                                           (电话服务中心)
                                             昼夜预定
                                         </span>
-                                            <p>
-                                                8-800-100-32-80
-                                            </p>
+
                                         </a>
 
                                     </div>
                                 </div>
                                 <div class="item col-lg-4 col-xs-12">
-                                    <div id="list-soc-phones" class="d-flex align-items-start ">
+                                    <div id="list-soc-phones" class="d-flex align-items-center  ">
                                         <div class="img-block">
                                             <img src="/images/soc-phones.png" alt="Иконка"/>
                                         </div>
@@ -116,13 +117,6 @@ $APPLICATION->ShowPanel();
                                                     8-951-416-04-44
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="tel:8 (3812) 55-73-52">
-                                                    8 (3812) 55-73-52
-                                                </a>
-                                            </li>
-
-
                                         </ul>
 
                                     </div>

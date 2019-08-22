@@ -94,18 +94,19 @@ $APPLICATION->ShowPanel();
                                             <img src="/images/phone.png" alt="Иконка"/>
                                         </div>
                                         <a href="tel:8-800-100-32-80">
-                                        <span>
-                                            Hotel hotline
-                                        </span>
                                             <p>
                                                 8-800-100-32-80
                                             </p>
+                                            <span>
+                                            Hotel hotline
+                                            </span>
+
                                         </a>
 
                                     </div>
                                 </div>
                                 <div class="item col-lg-4 col-xs-12">
-                                    <div id="list-soc-phones" class="d-flex align-items-start ">
+                                    <div id="list-soc-phones" class="d-flex  align-items-center">
                                         <div class="img-block">
                                             <img src="/images/soc-phones.png" alt="Иконка"/>
                                         </div>
@@ -115,13 +116,6 @@ $APPLICATION->ShowPanel();
                                                     8-951-416-04-44
                                                 </a>
                                             </li>
-                                            <li>
-                                                <a href="tel:8 (3812) 55-73-52">
-                                                    8 (3812) 55-73-52
-                                                </a>
-                                            </li>
-
-
                                         </ul>
 
                                     </div>

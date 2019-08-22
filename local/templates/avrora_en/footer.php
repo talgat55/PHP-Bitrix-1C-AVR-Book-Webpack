@@ -25,9 +25,7 @@ $APPLICATION->IncludeFile(
                     </a>
                 </div>
                 <div class="footer-soc-links-block d-flex align-items-center">
-                    <h5 class="title">
-                      We  are in social  networks:
-                    </h5>
+
                     <ul class="footer-soc-links d-flex  align-items-center">
                         <li>
                             <a target="_blank" class="vk" href="https://vk.com/avrorahotel55">
@@ -52,45 +50,40 @@ $APPLICATION->IncludeFile(
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-xs-12">
-                <div id="phone-block-footer" class="d-flex align-items-start">
-                    <div class="img-block">
-                        <img src="/images/phone.png" alt="Иконка"/>
+            <div class="col-lg-3 col-md-6 col-xs-12 d-flex align-items-center">
+                <div>
+                    <div id="phone-block-footer" class="d-flex align-items-start justify-content-end">
+                        <div class="img-block">
+                            <img src="/images/phone.png" alt="Иконка"/>
+                        </div>
+                        <a href="tel:8-800-100-32-80">
+                            <p>
+                                8-800-100-32-80
+                            </p>
+                            <span>
+                                 Hotel hotline
+                            </span>
+                        </a>
                     </div>
-                    <a href="tel:8-800-100-32-80">
-                                        <span>
-                                             Hotel hotline
-                                        </span>
-                        <p>
-                            8-800-100-32-80
-                        </p>
-                    </a>
+                    <div id="list-soc-phones-footer" class="d-flex align-items-center ">
+                        <div class="img-block">
+                            <img src="/images/soc-phones.png" alt="Иконка"/>
+                        </div>
+                        <ul class="list-phones">
+                            <li>
+                                <a href="tel:8-951-416-04-44">
+                                    8-951-416-04-44
+                                </a>
+                            </li>
 
-                </div>
-                <div id="list-soc-phones-footer" class="d-flex align-items-start ">
-                    <div class="img-block">
-                        <img src="/images/soc-phones.png" alt="Иконка"/>
+
+                        </ul>
+
                     </div>
-                    <ul class="list-phones">
-                        <li>
-                            <a href="tel: 8-951-416-04-44">
-                                8-951-416-04-44
-                            </a>
-                        </li>
-                        <li>
-                            <a href="tel:8 (3812) 55-73-52">
-                                8 (3812) 55-73-52
-                            </a>
-                        </li>
-
-
-                    </ul>
-
                 </div>
 
             </div>
-
-            <div class="col-lg-3 col-md-6 col-xs-12">
+            <div class="col-lg-3 col-md-6 col-xs-12  d-flex align-items-center">
 
                 <div id="adr-lang-block-footer"
                      class="d-flex align-items-start justify-content-between align-items-end">
@@ -112,23 +105,11 @@ $APPLICATION->IncludeFile(
                         </div>
                     </div>
                 </div>
-                <ul class="list-add-links">
-                    <li>
-                        <a href="/en/policy/">
-                            Privacy policy
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" class="bootom-copyright" title="Перейти на сайт разработчика"
-                           href="http://asmart-group.ru/">
-                            Website developed by IT-Company Asmart
-                        </a>
-                    </li>
-                </ul>
+
 
 
             </div>
-            <div class="col-lg-3 col-md-6 col-xs-12 d-flex align-items-center  last-col-certs">
+            <div class="col-lg-3 col-md-6 col-xs-12  last-col-certs">
                 <ul class="footer-certs-list d-flex">
                     <li>
                         <a target="_blank" href="/images/Scan.jpg">
@@ -146,6 +127,19 @@ $APPLICATION->IncludeFile(
                         </a>
                     </li>
 
+                </ul>
+                <ul class="list-add-links">
+                    <li>
+                        <a href="/en/policy/">
+                            Privacy policy
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" class="bootom-copyright" title="Перейти на сайт разработчика"
+                           href="http://asmart-group.ru/">
+                            Website developed by IT-Company Asmart
+                        </a>
+                    </li>
                 </ul>
             </div>
 
