@@ -48,6 +48,7 @@
 .services-list .service-item  .slider-wrapper{
     height: 600px;
 }
+.services-list .service-item .title a,
 .services-list .service-item .title{
     font-size: 48px;
     color: #000;
@@ -56,7 +57,15 @@
     margin-top: 0;
     margin-bottom: 35px;
     text-align: left;
+    transition: all .3s;
 }
+.services-list .service-item .title a:hover{
+    color: #ec4345;
+    text-decoration: none;
+}
+
+
+
 .services-list li{
     list-style: none;
 }

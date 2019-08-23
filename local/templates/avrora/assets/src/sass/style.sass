@@ -205,7 +205,13 @@ body
     background: #ec4345
     color: #fff
 
-
+  .content
+    .reserve-section
+      width: 660px
+      .reserve-block
+        width: 100%
+        .second
+          width: 100%
   .reserve-section
     top: 0
     margin: 0
@@ -511,18 +517,20 @@ header
 
 .reserve-section
   width: fit-content
-  margin: 0 auto -215px auto
+  margin: 0 auto -130px auto
   position: relative
-  top: -215px
+  top: -130px
   .img-reserve
     width: 70px
     height: 70px
     fill: #fff
     margin-right: 20px
   .reserve-block
+    width: 91%
+    margin: 0 auto
     .bottom-block
       a
-        font-size: 33px
+        font-size: 21px
         color: #fff
         text-decoration: none
         font-family: $font_avenir
@@ -534,15 +542,16 @@ header
 
       span
         color: #fff
-        font-size: 18px
+        font-size: 14px
         font-family: $font_avenir
         font-weight: 300
         line-height: 1
+        display: block
 
     .copyright
-      position: relative
-      bottom: -80px
-      left: -30px
+      position: absolute
+      bottom: 16px
+      left: 16px
       img
         height: 35px!important
       a
@@ -557,21 +566,23 @@ header
     border-radius: 5px
     .title
       margin: 0
-      font-size: 25px
+      font-size: 21px
       font-weight: 800
       font-family: $font_avenir
 
     .first
-      padding: 50px
-      width: 490px
+      padding: 25px
+      width: 40%
       background-color: $main_color
+      position: relative
       img
-        height: 55px
+        height: 40px
         margin-right: 20px
 
       .title
         color: #fff
         margin-bottom: 30px
+        text-align: center
 
       .list-advantages
         margin: 0
@@ -588,8 +599,8 @@ header
             font-weight: 700
 
     .second
-      padding: 32px 110px
-      width: 690px
+      padding: 25px 50px
+      width: 60%
       background-color: #f4f4f4
 
       .title
@@ -1397,8 +1408,9 @@ footer
   display: none!important
 
 @media (max-width: 1200px)
+
   #sticky-reserve-block
-    left: -612px
+    left: -675px
   #special-block
     display: none!important
 
@@ -1456,6 +1468,13 @@ footer
         padding: 14px 15px
 
 @media (max-width: 1024px)
+  #sticky-reserve-block
+    left: -721px
+  .reserve-section .reserve-block .copyright
+    position: relative
+    bottom: 0
+    left: 0
+    padding-top: 20px
   #mobile-toggle
     display: inline-block
   header

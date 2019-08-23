@@ -24,7 +24,7 @@ $this->setFrameMode(true);
 
         $text =
             '<div class="content-wrap">' .
-            '<h3 class="title">' . $arItem["NAME"] . '</h3>' .
+            '<h3 class="title"><a href="' . $arItem['PROPERTIES']['LINK']['VALUE'] . '"  >' . $arItem["NAME"] . '</a></h3>' .
             '<div class="content">' . $arItem["PREVIEW_TEXT"] . '</div>' .
             '<a href="' . $arItem['PROPERTIES']['LINK']['VALUE'] . '"  class="link-more">Подробнее</a>' .
             '</div>';

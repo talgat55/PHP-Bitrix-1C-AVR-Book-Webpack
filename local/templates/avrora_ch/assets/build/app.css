@@ -188,6 +188,18 @@ body {
   color: #fff;
 }
 
+#sticky-reserve-block .content .reserve-section {
+  width: 660px;
+}
+
+#sticky-reserve-block .content .reserve-section .reserve-block {
+  width: 100%;
+}
+
+#sticky-reserve-block .content .reserve-section .reserve-block .second {
+  width: 100%;
+}
+
 #sticky-reserve-block .reserve-section {
   top: 0;
   margin: 0;
@@ -558,9 +570,9 @@ header .bottom-header .second #special-block .temperature-block {
 
 .reserve-section {
   width: fit-content;
-  margin: 0 auto -215px auto;
+  margin: 0 auto -130px auto;
   position: relative;
-  top: -215px;
+  top: -130px;
 }
 
 .reserve-section .img-reserve {
@@ -571,11 +583,13 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .reserve-section .reserve-block {
+  width: 91%;
+  margin: 0 auto;
   border-radius: 5px;
 }
 
 .reserve-section .reserve-block .bottom-block a {
-  font-size: 33px;
+  font-size: 21px;
   color: #fff;
   text-decoration: none;
   font-family: "AvenirNextCyr";
@@ -590,16 +604,17 @@ header .bottom-header .second #special-block .temperature-block {
 
 .reserve-section .reserve-block .bottom-block span {
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "AvenirNextCyr";
   font-weight: 300;
   line-height: 1;
+  display: block;
 }
 
 .reserve-section .reserve-block .copyright {
-  position: relative;
-  bottom: -80px;
-  left: -30px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
 }
 
 .reserve-section .reserve-block .copyright img {
@@ -616,25 +631,27 @@ header .bottom-header .second #special-block .temperature-block {
 
 .reserve-section .reserve-block .title {
   margin: 0;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 800;
   font-family: "AvenirNextCyr";
 }
 
 .reserve-section .reserve-block .first {
-  padding: 50px;
-  width: 490px;
+  padding: 25px;
+  width: 40%;
   background-color: #ec4345;
+  position: relative;
 }
 
 .reserve-section .reserve-block .first img {
-  height: 55px;
+  height: 40px;
   margin-right: 20px;
 }
 
 .reserve-section .reserve-block .first .title {
   color: #fff;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .reserve-section .reserve-block .first .list-advantages {
@@ -655,8 +672,8 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .reserve-section .reserve-block .second {
-  padding: 32px 110px;
-  width: 690px;
+  padding: 25px 50px;
+  width: 60%;
   background-color: #f4f4f4;
 }
 
@@ -1693,7 +1710,7 @@ footer .footer-certs-list li a:hover {
 
 @media (max-width: 1200px) {
   #sticky-reserve-block {
-    left: -612px;
+    left: -675px;
   }
 
   #special-block {
@@ -1768,6 +1785,17 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 1024px) {
+  #sticky-reserve-block {
+    left: -721px;
+  }
+
+  .reserve-section .reserve-block .copyright {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+  }
+
   #mobile-toggle {
     display: inline-block;
   }
