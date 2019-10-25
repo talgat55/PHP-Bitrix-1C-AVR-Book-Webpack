@@ -1,4 +1,3 @@
-
 @font-face
   font-family: 'AvenirNextCyr'
   src: local('AvenirNextCyr-Bold'), local('AvenirNextCyr-Bold'),
@@ -72,9 +71,6 @@
   font-style: normal
 
 
-
-
-
 =placeholder
   &::-webkit-input-placeholder
     @content
@@ -88,7 +84,7 @@
 // Main
 //
 $font_avenir: 'AvenirNextCyr'
-$font_calibri:  'Calibri'
+$font_calibri: 'Calibri'
 
 $main_color: #ec4345
 $text_color: #000
@@ -105,7 +101,7 @@ body
 
 *:focus,
 *:active
-    outline: none
+  outline: none
 
 
 .hide-main-title
@@ -119,12 +115,14 @@ body
   color: #000
   font-family: $font_avenir
   font-weight: 700
+
 .title-border
   width: 235px
   height: 2px
   background-color: $main_color
   margin-bottom: 45px
   margin-top: 15px
+
   &.center
     margin-right: auto
     margin-left: auto
@@ -136,11 +134,11 @@ body
   font-family: $font_calibri
   font-weight: 400
   border-radius: 5px
-  padding: 11px  65px
+  padding: 11px 65px
   transition: all .3s
   margin-top: 60px
   display: inline-block
-  box-shadow: 0px 11px 20px 0px rgba(225,47,19,.4)
+  box-shadow: 0px 11px 20px 0px rgba(225, 47, 19, .4)
 
   &:hover
     background: #333
@@ -164,8 +162,9 @@ body
 
     &:hover
       text-decoration: none
+
       i
-        color: $main_color!important
+        color: $main_color !important
 
 
     i
@@ -183,7 +182,6 @@ body
   font-weight: 700
 
 
-
 //
 // Header
 //
@@ -195,8 +193,10 @@ body
   transition: all .3s
   z-index: 99999999
   display: none
+
   &.is-active
-    left: 0!important
+    left: 0 !important
+
   .button
     position: absolute
     top: 0
@@ -205,39 +205,55 @@ body
     background: #ec4345
     color: #fff
 
+  .content
+    .reserve-section
+      width: 660px
+
+      .reserve-block
+        width: 100%
+
+        .second
+          width: 100%
 
   .reserve-section
     top: 0
     margin: 0
+
     .reserve-block
       .first
         display: none
 
 #mobile-toggle
-  position: fixed!important
+  position: fixed !important
   top: 25px
   display: none
   left: 10px
   transition: all .6s
   z-index: 10000
+
   .navigation-top-mobile
     padding: 130px 30px 0 30px
-    .list-inline>li
+
+    .list-inline > li
       display: block
+
   .menu-menu-lk
-    padding-top: 0!important
-    background: transparent!important
+    padding-top: 0 !important
+    background: transparent !important
+
     li:after
-      display: none!important
+      display: none !important
+
     li
       display: block
+
       a
         padding: 0 30px
         font-size: 18px
         font-family: $font_avenir
 
   &.is-active
-    left: 10px!important
+    left: 10px !important
 
 
 .hamburger-box
@@ -302,18 +318,22 @@ body
 
 .hamburger.is-active:hover
   opacity: 0.7
+
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after
   background-color: #000
+
 .common-home
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after
     background-color: #000
+
 .hamburger-inner, .hamburger-inner::after,
 .hamburger-inner::before
   background-color: #000
+
 .common-home
   .hamburger-inner, .hamburger-inner::after,
   .hamburger-inner::before
@@ -321,10 +341,13 @@ body
 
 .hamburger--3dx .hamburger-box
   perspective: 80px
+
 body:not(.common-home) .mobile-bar #megamenu-menu .nav > li > a
-  color: #000!important
+  color: #000 !important
+
 .hamburger--3dx .hamburger-inner
   transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
+
 .hamburger--3dx .hamburger-inner::before,
 .hamburger--3dx .hamburger-inner::after
   transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1)
@@ -332,14 +355,17 @@ body:not(.common-home) .mobile-bar #megamenu-menu .nav > li > a
 .hamburger--3dx.is-active .hamburger-inner
   background-color: transparent !important
   transform: rotateY(180deg)
+
 .hamburger--3dx.is-active .hamburger-inner::before
   transform: translate3d(0, 10px, 0) rotate(45deg)
+
 .hamburger--3dx.is-active .hamburger-inner::after
   transform: translate3d(0, -10px, 0) rotate(-45deg)
 
 header
 
   height: 179px
+
   .header-wrap
     padding: 35px 0 20px
     position: fixed
@@ -347,13 +373,16 @@ header
     right: 0
     z-index: 999999
     background: #fff
+
     &.is-active
       padding: 20px 0 20px
       top: 0
+
       .top-header
-        padding-bottom: 0!important
-        height: 0!important
+        padding-bottom: 0 !important
+        height: 0 !important
         border-bottom: none
+
       #logo img
         height: 50px
 
@@ -375,21 +404,27 @@ header
 
     #phone-block
       padding-top: 2px
+      height: 55px
+
       .img-block
         width: 41px
-        height: 38px
+        height: 42px
         margin-right: 10px
+        margin-top: 7px
 
         img
           max-width: 100%
           vertical-align: text-top
 
       a
+        margin-top: 6px
         text-decoration: none
         color: $text_color
         transition: all .3s
+
         &:hover
           text-decoration: none
+
           p
             color: $main_color
 
@@ -410,10 +445,11 @@ header
 
     #list-soc-phones
       margin-left: -15px
+
       .img-block
-        width: 71px
+        width: 83px
         height: 31px
-        margin-right: 10px
+        margin-right: 3px
 
         img
           max-width: 100%
@@ -425,13 +461,14 @@ header
 
         li
           list-style: none
+
           a
             text-decoration: none
             font-size: 21px
             font-family: $font_avenir
             font-weight: 800
             color: $text_color
-            transition:  all .3s
+            transition: all .3s
 
             &:hover
               text-decoration: none
@@ -439,13 +476,15 @@ header
 
     #adr-lang-block
       .first
-
         .img-block
           width: 38px
           height: 38px
           margin-right: 10px
+          margin-top: 14px
 
         .adress
+          margin-top: 19px
+
           .link-to-adress
             text-decoration: none
             color: $text_color
@@ -466,10 +505,16 @@ header
         .list-lang
           margin: 0
           padding: 0
+          height: 57px
+          position: relative
+          top: 10px
 
           li
             list-style: none
-            height: 19px
+            height: 13px
+
+            img
+              width: 19px
 
             a
               text-decoration: none
@@ -477,6 +522,7 @@ header
   .bottom-header
     .second
       padding-left: 0
+
       #special-block
         .clock-block,
         .temperature-block
@@ -502,49 +548,55 @@ header
           padding-right: 15px
 
 
-
-
-
 //
 // Home page
 //
 
 .reserve-section
-  width: fit-content
-  margin: 0 auto -215px auto
+  width: max-content
+  margin: 0 auto -130px auto
   position: relative
-  top: -215px
+  top: -130px
+
   .img-reserve
     width: 70px
     height: 70px
     fill: #fff
     margin-right: 20px
+
   .reserve-block
+    width: 91%
+    margin: 0 auto
+
     .bottom-block
       a
-        font-size: 33px
+        font-size: 21px
         color: #fff
         text-decoration: none
         font-family: $font_avenir
         font-weight: 700
         line-height: 1
         transition: all .3s
+
         &:hover
           opacity: .5
 
       span
         color: #fff
-        font-size: 18px
+        font-size: 14px
         font-family: $font_avenir
         font-weight: 300
         line-height: 1
+        display: block
 
     .copyright
-      position: relative
-      bottom: -80px
-      left: -30px
+      position: absolute
+      bottom: 16px
+      left: 16px
+
       img
-        height: 35px!important
+        height: 35px !important
+
       a
         text-decoration: underline
         color: #fff
@@ -553,25 +605,28 @@ header
         font-weight: 600
 
 
-
     border-radius: 5px
+
     .title
       margin: 0
-      font-size: 25px
+      font-size: 21px
       font-weight: 800
       font-family: $font_avenir
 
     .first
-      padding: 50px
-      width: 490px
+      padding: 25px
+      width: 40%
       background-color: $main_color
+      position: relative
+
       img
-        height: 55px
+        height: 40px
         margin-right: 20px
 
       .title
         color: #fff
         margin-bottom: 30px
+        text-align: center
 
       .list-advantages
         margin: 0
@@ -588,8 +643,8 @@ header
             font-weight: 700
 
     .second
-      padding: 32px 110px
-      width: 690px
+      padding: 25px 50px
+      width: 60%
       background-color: #f4f4f4
 
       .title
@@ -641,12 +696,11 @@ header
     margin-top: 35px
     width: 100%
     transition: all .3s
-    box-shadow: 0px 11px 20px 0px rgba(225,47,19,.4)
+    box-shadow: 0px 11px 20px 0px rgba(225, 47, 19, .4)
+
     &:hover
       background-color: #333
       color: #fff
-
-
 
 
   .form-group
@@ -685,10 +739,11 @@ header
 //
 .advantage-section
   background-image: url("/images/bg-advantage.jpg")
-  background-repeat: no-repeat!important
-  background-size: cover!important
+  background-repeat: no-repeat !important
+  background-size: cover !important
   padding: 60px 0
-  background-position: center center!important
+  background-position: center center !important
+
   .wrapper-block
     margin: 0 auto
     display: table
@@ -704,6 +759,7 @@ header
   .list-adv
     margin: 0
     padding: 0
+
     .item
       list-style: none
       font-family: $font_avenir
@@ -741,15 +797,14 @@ header
     margin-bottom: 50px
 
 
-
 //
 // News section
 //
 .news-section
   padding-bottom: 60px
+
   .title-border
     margin-bottom: 50px
-
 
 
 //
@@ -759,8 +814,10 @@ header
   background-color: #e4e4e4
   padding-top: 60px
   padding-bottom: 30px
+
   .top
     margin-bottom: 75px
+
     img
       max-width: 100%
 
@@ -769,6 +826,7 @@ header
 
     .content
       font-weight: 400
+
       p
         margin-bottom: 0
 
@@ -777,11 +835,10 @@ header
         color: $main_color
         text-decoration: none
         transition: all .3s
+
         &:hover
           color: #333
           text-decoration: none
-
-
 
 
 //
@@ -825,7 +882,7 @@ header
     display: inline-block
     width: 100%
     border: none
-    box-shadow: 0px 11px 20px 0px rgba(225,47,19,.4)
+    box-shadow: 0px 11px 20px 0px rgba(225, 47, 19, .4)
 
     &:hover
       background: #333
@@ -843,6 +900,7 @@ header
       color: $main_color
       text-decoration: underline
       transition: all .3s
+
       &:hover
         color: #313131
         text-decoration: none
@@ -864,12 +922,15 @@ header
 .contacts-page
   .item-walp
     padding-bottom: 50px
+
     .item
       .img-block
         margin-bottom: 20px
+
         img
           width: 30px
-          object-fit: cover!important
+          object-fit: cover !important
+
         .title
           padding-left: 25px
           margin: 0
@@ -899,6 +960,7 @@ header
               margin-bottom: 15px
               display: inline-block
               transition: all .3s
+
               &:hover
                 text-decoration: none
                 color: $main_color
@@ -917,6 +979,7 @@ header
             font-family: $font_calibri
             font-weight: 400
             margin-bottom: 20px
+
           .text
             a
               text-decoration: none
@@ -927,9 +990,11 @@ header
               margin-bottom: 15px
               display: inline-block
               transition: all .3s
+
               &:hover
                 text-decoration: none
                 color: $main_color
+
       .mail-field,
       .phone-field
         text-decoration: none
@@ -940,16 +1005,21 @@ header
         margin-bottom: 15px
         display: inline-block
         transition: all .3s
+
         &:hover
           text-decoration: none
           color: $main_color
+
       .mail-field
         font-family: $font_calibri
         font-weight: 400
+
 .contacts-page.row.bottom
   margin-bottom: 40px
+
   .item
     margin-bottom: 30px
+
     .img-block
       margin-bottom: 7px
 
@@ -964,6 +1034,7 @@ header
   font-family: $font_calibri
   font-size: 20px
   font-weight: 300
+
   .title-border
     margin: 0 auto 95px auto
 
@@ -973,15 +1044,19 @@ header
     .border-bottom
       padding-bottom: 90px
       border-bottom: 1px solid #e5e5e5
+
     .heading
       padding: 30px
+
     h3
       font-family: $font_avenir
       font-weight: 700
       font-size: 24px
       margin: 0
+
       &.black
         color: black
+
       &.red
         color: $main_color
 
@@ -991,6 +1066,7 @@ header
       font-family: $font_avenir
       font-weight: 700
       margin: 0 0 60px
+
   .call-block
     &::before
       content: ""
@@ -1005,32 +1081,42 @@ header
 
 
     border: 1px solid #e8e8e8
+
     .heading
       border-bottom: 1px solid #e8e8e8
+
     .sub-heading
       padding: 30px
+
     .content
       padding: 30px
+
       .list
         margin: 0
         padding: 0
+
         li
           margin-bottom: 50px
           min-height: 75px
+
         p
           margin: 0 0 0 18px
           font-size: 24px
           font-weight: 300
           font-family: $font_calibri
+
         .img-block
           img
             max-width: 39px
+
     .first
       padding: 0
       border-right: 1px solid #e8e8e8
+
     .second
       padding: 0
       border-left: 1px solid #e8e8e8
+
   .rotate
     transform: rotateZ(180deg)
 
@@ -1045,10 +1131,13 @@ header
     font-family: $font_avenir
     font-weight: 700
     margin: 0 0 60px
+
   .last-section
     margin-bottom: 90px
+
     .link-more.order-price
       margin-top: 40px
+
     .description
       font-family: $font_calibri
       font-size: 20px
@@ -1056,6 +1145,7 @@ header
       font-weight: 300
       margin: 0 auto 20px auto
       width: 80%
+
     .text-info
       margin-bottom: 15px
 
@@ -1065,10 +1155,12 @@ header
         font-family: $font_calibri
         font-size: 24px
         color: #000
+
       a
         text-decoration: none
         padding-left: 8px
         transition: all .3s
+
         &:hover
           color: $main_color
           text-decoration: none
@@ -1077,20 +1169,21 @@ header
         color: #cdcdcd
 
     .menu-section.wrapper
-        display: block
-        text-decoration: none
-        color: #000
-        width: 250px
-        margin: 0 0 0 auto
-        .img-block
-          width: 65px
-          height: 65px
-          overflow: hidden
-          border-radius: 50%
-          margin-top: -28px
-          position: relative
-          bottom: -28px
-          transition: all .3s
+      display: block
+      text-decoration: none
+      color: #000
+      width: 250px
+      margin: 0 0 0 auto
+
+      .img-block
+        width: 65px
+        height: 65px
+        overflow: hidden
+        border-radius: 50%
+        margin-top: -28px
+        position: relative
+        bottom: -28px
+        transition: all .3s
 
     .menu-section.wrapper:hover .img-block
       box-shadow: 5px 10px 20px 5px #dedddd
@@ -1098,9 +1191,9 @@ header
     .menu-section.wrapper .img-block img
       width: 100%
       height: 100%
-      object-fit: cover!important
+      object-fit: cover !important
 
-    .menu-section.wrapper  .title
+    .menu-section.wrapper .title
       margin: 0
       padding: 10px 8px 10px 70px
       font-family: 'AvenirNextCyr'
@@ -1108,16 +1201,20 @@ header
       font-weight: 600
       text-align: center
 
-    .menu-section.wrapper  .text
+    .menu-section.wrapper .text
       border: 1.5px dashed #d0d0d0
+
 .lang-item
   transition: all .3s
+
   &:hover
     opacity: .5
+
 .numbers-list .slide-arrows
   position: absolute
   left: 0
   bottom: 0
+
 .numbers-list .slide-arrows a:hover
   text-decoration: none
 
@@ -1128,7 +1225,7 @@ header
 
 .numbers-list .slide-arrows a:hover i
 
-  color: #ec4345!important
+  color: #ec4345 !important
 
 .numbers-list .slide-arrows a
   display: inline-block
@@ -1140,6 +1237,7 @@ header
   z-index: 2
   background-color: #fff
   padding: 0
+
 .modal-success,
 .modal-cutom
   position: fixed
@@ -1151,26 +1249,32 @@ header
   opacity: 0
   visibility: hidden
   transition: all .3s
+
   #feedback-form
     textarea,
     input
       border-bottom: 1px solid #e8e8e8
+
   .close-icon
     position: absolute
     top: 0
     right: 0
     padding: 7px 12px
+
     i
       font-size: 20px
       color: #333
       transition: all .3s
+
       &:hover
         color: $main_color
+
   .modal-content
     width: 50%
     background-color: #fff
     border: none
     padding: 20px
+
     .policy-block
       a
         color: $main_color
@@ -1182,7 +1286,7 @@ header
   width: 100%
   height: 100%
   z-index: 998
-  background: rgba(0,0,0,.7)
+  background: rgba(0, 0, 0, .7)
   opacity: 0
   visibility: hidden
   transition: all .3s
@@ -1195,13 +1299,12 @@ header
   background-color: #fff
   border-radius: 10px
   padding: 40px
+
   h3
     margin: 0
     font-size: 23px
     font-family: $font_avenir
     font-weight: 700
-
-
 
 
 //
@@ -1214,15 +1317,16 @@ footer
   #logo-footer
     img
       max-width: 100%
-      height: 60px
+      margin-top: -1px
+      height: 74px
 
   #phone-block-footer
     margin-bottom: 20px
 
 
     .img-block
-      width: 29px
-      height: 38px
+      width: 39px
+      height: 42px
       margin-right: 10px
 
       img
@@ -1233,8 +1337,10 @@ footer
       text-decoration: none
       color: $text_color
       transition: all .3s
+
       &:hover
         text-decoration: none
+
         p
           color: $main_color
 
@@ -1245,6 +1351,7 @@ footer
         font-weight: 300
         color: $text_color
         margin-bottom: 5px
+
       p
         margin-bottom: 0
         font-size: 21px
@@ -1253,10 +1360,13 @@ footer
         line-height: 1
 
   #list-soc-phones-footer
+    position: relative
+    top: 6px
+
     .img-block
       width: 68px
       height: 31px
-      margin-right: 10px
+      margin-right: 3px
 
       img
         max-width: 100%
@@ -1268,96 +1378,124 @@ footer
 
       li
         list-style: none
+
         a
           text-decoration: none
           font-size: 21px
           font-family: $font_avenir
           font-weight: 800
           color: $text_color
-          transition:  all .3s
+          transition: all .3s
 
           &:hover
             text-decoration: none
             color: $main_color
 
   #adr-lang-block-footer
+    position: relative
+    top: 14px
+
     .first
       .img-block
         width: 38px
         height: 38px
         margin-right: 10px
+
     .adress
       .link-to-adress
         text-decoration: none
         color: $text_color
+
         div:first-child
           font-size: 27px
           font-family: $font_avenir
           font-weight: 800
           line-height: 22px
-          margin-bottom: 4px
+          margin-bottom: 2px
+
         div:last-child
           font-size: 14px
           font-family: $font_calibri
           font-weight: 400
+
     .second
       .list-lang
         margin: 0
         padding: 0
+
         li
           list-style: none
           height: 19px
+
           a
             text-decoration: none
 
   .footer-soc-links-block
     margin-top: 20px
+
     .title
       margin: 0 5px 0 0
       font-family: $font_calibri
       font-size: 18px
       font-weight: 300
       color: #000
+
     .footer-soc-links
-      margin: 0 0 0 37px
+      margin: 0 0 0 -2px
       padding: 0
+
       li
         list-style: none
+
         a
-          padding: 5px
           transition: all .3s
+
           &:hover
             opacity: .5
+
         i
           font-size: 20px
           padding: 0
+
         i.fab.fa-vk
-          font-size: 29px!important
+          font-size: 29px !important
+
         i.fab.fa-instagram
-          font-size: 23px!important
+          font-size: 23px !important
+
         i.fab.fa-facebook
-          font-size: 22px!important
+          font-size: 22px !important
+
         i.fab.fa-odnoklassniki
-          font-size: 22px!important
+          font-size: 22px !important
+
       .vk
         color: #698cc4
+
       .inst
         color: #f23c6f
+
       .fb
         color: #5d6eac
+
       .odn
         color: #ee8208
 
   .list-add-links
-    margin: 10px 0 0 0
+    margin: 27px 0 0 0
     padding: 0
+
     li
+      line-height: 1
       list-style: none
+
       &:first-child
         a
           text-decoration: underline
           font-weight: 400
           color: #000
+          line-height: 1
+          font-size: 13px
 
       &:last-child
         a
@@ -1367,7 +1505,8 @@ footer
 
       a
         font-size: 14px
-        transition:  all .3s
+        transition: all .3s
+
         &:hover
           color: $main_color
           text-decoration: none
@@ -1376,6 +1515,8 @@ footer
   .footer-certs-list
     margin: 0
     padding: 0
+    position: relative
+    top: 22px
 
     li
       list-style: none
@@ -1383,6 +1524,7 @@ footer
 
       &:last-child
         margin-right: 0
+
       img
         max-width: 100%
         border: 1px solid #b5b5b5
@@ -1394,20 +1536,22 @@ footer
           opacity: .5
 
 .mobile-block
-  display: none!important
+  display: none !important
 
 @media (max-width: 1200px)
+
   #sticky-reserve-block
-    left: -612px
+    left: -675px
   #special-block
-    display: none!important
+    display: none !important
 
   header
     .top-header
       #phone-block a p
         font-size: 15px
+
     #list-soc-phones
-      display: none!important
+      display: none !important
 
   .reserve-section
     .reserve-block
@@ -1419,12 +1563,14 @@ footer
 
   .reception-list
     width: 390px
+
     .item
       img
-        height: auto!important
+        height: auto !important
   .footer-slider-section
     .footer-slider-list
       height: 500px
+
       .slider-item
         height: 500px
 
@@ -1436,16 +1582,19 @@ footer
       .list-phones
         li a
           font-size: 15px
+
       .img-block
         width: 40px
 
     #adr-lang-block-footer .first .img-block
-      margin-right:  10px
+      margin-right: 10px
+
       .adress .link-to-adress div:first-child
         font-size: 19px
 
     .list-add-links li a
       font-size: 14px
+
     .footer-soc-links-block .title
       margin: 0
       font-size: 14px
@@ -1456,19 +1605,28 @@ footer
         padding: 14px 15px
 
 @media (max-width: 1024px)
+  #sticky-reserve-block
+    left: -721px
+  .reserve-section .reserve-block .copyright
+    position: relative
+    bottom: 0
+    left: 0
+    padding-top: 20px
   #mobile-toggle
     display: inline-block
   header
     #logo
       margin-left: 55px
+
     #phone-block span,
     #adr-lang-block,
     .bottom-header
-      display: none!important
+      display: none !important
 
     .top-header
-      border: none!important
+      border: none !important
       padding-bottom: 0
+
       #phone-block a p
         font-size: 15px
         line-height: 40px
@@ -1480,32 +1638,49 @@ footer
           margin-bottom: 25px
 
         .list-advantages
-          display: block!important
+          display: block !important
+
           .item
             margin-bottom: 10px
 
       .title
         font-size: 25px
   .header-wrap
-    padding: 20px 0!important
+    padding: 20px 0 !important
+
     .first
       width: 100% !important
-      display: block!important
-      max-width: 100%!important
+      display: block !important
+      max-width: 100% !important
       margin: 0 auto
+
     .second
-      display: none!important
+      display: none !important
+
     #logo
-      margin-left: 0!important
+      margin-left: 0 !important
+
       img
         height: 68px
   header
     height: 108px
 
 @media (max-width: 992px)
+  .detail-booking-btn
+    margin-bottom: 20px
+  .ch-version,
+  .en-version
+    .header-wrap #logo
+      display: block !important
+      text-align: center
+
+    .top-header
+      display: none
+
   .reserve-section
     margin: 0 auto
     top: 0
+
     .reserve-block
       .second,
       .first
@@ -1519,12 +1694,14 @@ footer
 
   .first-section
     margin-top: 50px
+
     .first,
     .second
       margin-bottom: 50px
 
   .advantage-section
     padding: 50px 0
+
     .wrapper-block
       margin: 0
       display: block
@@ -1538,16 +1715,17 @@ footer
 
   .services-list
     .slider-wrapper
-      height: 400px!important
+      height: 400px !important
+
     .list-sliders
-      width: 100%!important
-      height: 400px!important
+      width: 100% !important
+      height: 400px !important
 
   .services-section
-    padding: 50px 0!important
+    padding: 50px 0 !important
 
     .title-border
-      margin-bottom: 40px!important
+      margin-bottom: 40px !important
 
   .sub-title
     font-size: 35px
@@ -1556,13 +1734,15 @@ footer
       .title
         font-size: 30px
         margin-top: 20px
+
       .content-wrap
-        padding: 0!important
+        padding: 0 !important
   .right
     &.desktop-block
-      display: none!important
+      display: none !important
+
     &.mobile-block
-      display: block!important
+      display: block !important
       height: 400px
   .services-section
     .services-list
@@ -1571,15 +1751,18 @@ footer
   .feedback-section
     .feedback-block
       .top.d-flex
-        display: block!important
+        display: block !important
+
     .top
       .title-border
         margin-bottom: 35px
   #feedback-form
     .form-group.d-flex
-      display: block!important
+      display: block !important
+
       .col-lg-4
         margin: 0 auto
+
       textarea,
       input
         width: 100%
@@ -1594,6 +1777,7 @@ footer
         .img-block
           .title
             font-size: 18px
+
         .content
           font-size: 15px
 
@@ -1601,6 +1785,7 @@ footer
           .links-list li a
             font-size: 15px
             margin-bottom: 10px
+
     &.row.bottom
       .item
         width: 49%
@@ -1611,6 +1796,7 @@ footer
       .w-100.d-flex.align-items-center
         flex-wrap: wrap
         justify-content: center
+
       .col
         flex-basis: inherit
         flex-grow: initial
@@ -1629,47 +1815,59 @@ footer
     margin-bottom: 35px
   .numbers-list .number-item
     flex-direction: column
+
     .slider-item
       img
         margin: 0 auto
+
     .slider .sliders
       margin-bottom: 20px
+
     .content
       padding: 0
       text-align: center
+
       .description ul li::before
         display: none
+
       .sub-title
         font-size: 28px
 
   .conference-page
     .sub-title, .conference-page h2
       margin-bottom: 20px
+
     .last-section
       .menu-section.wrapper
-        margin:  0 auto
+        margin: 0 auto
+
       .link-more.order-price
         margin: 40px auto 0 auto
         display: table
   .hotel-page
     .call-block
-      display: block!important
+      display: block !important
+
       .heading
         border-top: 1px solid #e8e8e8
+
       .content
         .list
           p
             font-size: 15px
+
           li
             margin-bottom: 28px
 
     .call-block::before
-      display: none!important
+      display: none !important
+
     .last-section h3
       font-size: 20px
   .menu-section
     .row
       flex-wrap: wrap
+
       .col
         flex-basis: initial
         flex-grow: inherit
@@ -1686,8 +1884,9 @@ footer
       display: block
       margin: 0 auto
       text-align: center
+
     .top-header #phone-block a p
-      font-size: 13px!important
+      font-size: 13px !important
 
   .reception-list .item img
     width: 100%
@@ -1701,10 +1900,12 @@ footer
   .footer-slider-section
     .footer-slider-list
       height: 200px
+
       .slider-item
         height: 200px
   .footer-slide-arrows
     bottom: 0
+
     a i
       font-size: 15px
   #logo-footer
@@ -1714,10 +1915,11 @@ footer
     .footer-soc-links-block
       margin: 24px auto
       justify-content: center
+
     #phone-block-footer,
     #list-soc-phones-footer,
     #adr-lang-block-footer
-      justify-content: center!important
+      justify-content: center !important
 
     #list-soc-phones-footer
       margin-bottom: 30px
@@ -1725,6 +1927,7 @@ footer
     .list-add-links
       text-align: center
       margin-bottom: 30px
+
     .last-col-certs
       justify-content: center
 
@@ -1734,13 +1937,16 @@ footer
         width: auto
         display: block
         padding: 0 15px
+
         .content
           width: 230px
+
     .item-walp
       display: flex
       justify-content: center
       flex-direction: column
       align-items: center
+
       .item .content
         width: 300px
   .main-title
@@ -1749,17 +1955,21 @@ footer
   .reviews-block
     .slick-prev
       left: 20px
+
     .slick-next
       right: 20px
 
     .slick-dots
       padding: 10px 0
+
     .reviews-list
       padding: 15px
+
       .review-item
         .content
           .from-site-info
             font-size: 19px
+
           .sep
             margin: 0 auto 20px auto
 
@@ -1774,8 +1984,10 @@ footer
   .service-page-wedding .last-block .item-walp
     .title
       font-size: 18px
+
     .content a
       font-size: 15px
+
     &.first .bg-item
       margin-left: auto
       margin-right: auto
@@ -1783,6 +1995,7 @@ footer
 
   .conference-page .last-section .text-info
     flex-direction: column
+
     a,
     .text
       font-size: 17px
@@ -1790,11 +2003,14 @@ footer
   .service-page-restaurant
     .menu-section .wrapper
       margin-bottom: 35px
+
     .info-section
       text-align: center
+
       .item
         .heading
           justify-content: center
+
         .info-row
           padding: 0
 
@@ -1804,6 +2020,7 @@ footer
 
     .sub-title-conference
       font-size: 28px
+
     .description
       font-size: 18px
   .conference-page
@@ -1811,8 +2028,18 @@ footer
       padding: 0 15px 10px 15px
 
 
-
 @media (max-width: 600px)
+
+  footer
+    #list-soc-phones-footer
+      margin-bottom: 20px !important
+
+      .img-block
+        width: 61px
+
+    #adr-lang-block-footer
+      margin-bottom: 30px
+
   .footer-slider-section
     .slider-item
       img
@@ -1829,7 +2056,7 @@ footer
   header
     #logo
       img
-        height: 50px!important
+        height: 50px !important
         padding: 4.5px 0
 
     .top-header #phone-block .img-block
@@ -1842,6 +2069,7 @@ footer
     .right.mobile-block,
     .list-sliders
       height: 200px !important
+
     .slick-slide
       img
         width: 100%
@@ -1850,12 +2078,14 @@ footer
   .services-section
     .services-slide-arrows
       bottom: 10px
+
     .left
       .services-slide-arrows
         right: 20px
   .advantage-section
     .title
       font-size: 28px
+
     .list-adv
       .item
         font-size: 15px
@@ -1866,9 +2096,11 @@ footer
   .services-list
     .link-more
       margin-top: 20px
+
     .service-item
       .content ul li
         font-size: 15px
+
         &:before
           width: 8px
           height: 8px
@@ -1880,32 +2112,39 @@ footer
   .news-section
     .title-border
       margin-bottom: 35px
+
     .news-list
       li
         margin-bottom: 50px
+
       .news-item
         .blog-img
           display: block
           height: auto
           margin-bottom: 10px
+
       .preview_picture
-        float: none!important
+        float: none !important
         display: table
         margin: 0 auto
+
       .news-date-time
         margin-bottom: 5px
         text-align: center
+
       .title
         text-align: center
 
   .payments-section
     padding: 60px 0
+
     .title-border
       margin-bottom: 35px
 
   .service-page-wedding .hal-sliders .list-hal-heading
     flex-wrap: inherit
     flex-direction: column
+
     li
       width: 100%
 
@@ -1918,11 +2157,14 @@ footer
     .info-section .first
       width: 70%
       margin: 0 auto
+
     .footer-sliders
       margin-bottom: 0
+
     .halls-section
       .list .item
         margin-bottom: 40px
+
         .img-block
           margin-bottom: 15px
   .main-title
@@ -1936,7 +2178,28 @@ footer
     margin-top: 20px
 
 .bootom-copyright
-  font-size: 12px!important
+  font-size: 12px !important
 
 a.load-more.link-more-alt.news-link.main-link.hide-item
-  display: none!important
+  display: none !important
+
+#back_to_top
+  position: fixed
+  bottom: 40px
+  right: 10px
+  z-index: 999
+  opacity: 0
+  transition: all .3s
+  background-color: $main_color
+
+  i
+    font-size: 22px
+    color: #fff
+    padding: 14px
+
+  &.backactive
+    opacity: 1
+
+  &:hover
+    background-color: #333
+

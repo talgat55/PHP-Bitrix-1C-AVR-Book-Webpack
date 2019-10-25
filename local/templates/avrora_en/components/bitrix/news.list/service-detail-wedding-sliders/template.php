@@ -21,12 +21,17 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/lightbox.min.js");
 ?>
 <? foreach ($arResult["ITEMS"] as $arItem): ?>
     <? if ($arItem['ID'] == $arParams['CURRENT_ID'])  : ?>
-        <ul class="slider-items <?=  ($arParams['COUNTER'] == 0)  ?  'active' : ''; ?>  w-100  <?=$arItem['ID']; ?>"  data-price="<?=$arItem["DISPLAY_PROPERTIES"]['PRICE']['DISPLAY_VALUE']; ?>" data-capacity="<?=$arItem["DISPLAY_PROPERTIES"]['CAPACITY']['VALUE']; ?>" >
+        <ul class="slider-items <?= ($arParams['COUNTER'] == 0) ? 'active' : ''; ?>  w-100  <?= $arItem['ID']; ?>"
+            data-price="<?= $arItem["DISPLAY_PROPERTIES"]['PRICE']['DISPLAY_VALUE']; ?>"
+            data-capacity="<?= $arItem["DISPLAY_PROPERTIES"]['CAPACITY']['VALUE']; ?>"
+            data-service="<?= $arItem["DISPLAY_PROPERTIES"]['SERVICE']['VALUE']; ?>"
+
+        >
             <? foreach ($arItem["DISPLAY_PROPERTIES"]['SLIDERS']['VALUE'] as $file_item): ?>
-                <li >
+                <li>
                     <? $URL = CFile::GetPath($file_item); ?>
-                    <a href="<?= $URL; ?>"  data-lightbox="image-<?=$arItem['ID'];?>">
-                        <img src="<?= $URL; ?>"  alt="Изображение" />
+                    <a href="<?= $URL; ?>" data-lightbox="image-<?= $arItem['ID']; ?>">
+                        <img src="<?= $URL; ?>" alt="Изображение"/>
                     </a>
                 </li>
             <? endforeach; ?>

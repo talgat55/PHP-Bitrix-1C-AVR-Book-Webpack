@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 .services-list .list-sliders{
     padding: 0;
     height: 600px;
@@ -113,4 +114,28 @@
     background-color: #fff;
     padding: 0;
 }
+
+@media   (max-width: 1400px) {
+    .services-list .service-item  .slider-wrapper,
+    .services-list .list-sliders{
+        height: 440px;
+    }
+    .services-list .service-item .title a, .services-list .service-item .title{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .services-section .link-more{
+        margin-top: 25px;
+    }
+    .services-list .list-sliders .slick-slide img{
+        width: 100%;
+    }
+
+}
+@media   (min-width: 1920px)   {
+    .services-list .list-sliders .slick-slide img {
+        width: 100%;
+    }
+}
+
 

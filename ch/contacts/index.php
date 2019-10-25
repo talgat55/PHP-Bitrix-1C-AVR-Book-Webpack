@@ -106,9 +106,6 @@ $APPLICATION->AddHeadScript("//api-maps.yandex.ru/2.1/?lang=ru_RU");
                                             Sergey Melekhov
                                         </div>
                                         <div class="text">
-                                            <a href="tel:8-953-390-07-50">
-                                                8-953-390-07-50
-                                            </a>
 
                                         </div>
                                     </div>

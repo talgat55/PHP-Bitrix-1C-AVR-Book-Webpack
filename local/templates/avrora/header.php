@@ -10,7 +10,7 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.png" type="image/x-icon"/>
-    <title><? $APPLICATION->ShowTitle(); ?></title>
+    <title><? $APPLICATION->ShowTitle(false); ?></title>
 
 
     <? $APPLICATION->ShowMeta("keywords") ?>
@@ -27,7 +27,9 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/bootstrap.min.css">
 
     <? $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/assets/build/app.css"); ?>
-
+    <?  if (strpos($_SERVER['HTTP_USER_AGENT'], 'Trident/7.0; rv:11.0') !== false) : ?>
+        <? $APPLICATION->SetAdditionalCSS(SITE_TEMPLATE_PATH . "/assets/build/css/ie-fix.css"); ?>
+    <?  endif; ?>
 
     <script src="<?= SITE_TEMPLATE_PATH; ?>/assets/build/global.js"></script>
     <? $APPLICATION->ShowHeadScripts() ?>
@@ -39,7 +41,49 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     $APPLICATION->AddHeadScript("/local/templates/avrora/assets/build/app.js");
 
     ?>
-
+    <!-- start TL head script -->
+    <script type="text/javascript">
+        (function(w){
+            var q=[
+                ['setContext', 'TL-INT-avrora-lightxdesign', 'ru']
+            ];
+            var t=w.travelline=(w.travelline||{}),ti=t.integration=(t.integration||{});ti.__cq=ti.__cq?ti.__cq.concat(q):q;
+            if (!ti.__loader){ti.__loader=true;var d=w.document,p=d.location.protocol,s=d.createElement('script');s.type='text/javascript';s.async=true;s.src=(p=='https:'?p:'http:')+'//ibe.tlintegration.com/integration/loader.js';(d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(s);}
+        })(window);
+    </script>
+    <!-- end TL head script -->
+    <script type="text/javascript">
+        (function(w){
+            var q=[
+                ['setContext', 'TL-INT-avrora-lightxdesign', 'ru'],
+                ['embed', 'booking-button-widget', {}]
+            ];
+            var t=w.travelline=(w.travelline||{}),ti=t.integration=(t.integration||{});ti.__cq=ti.__cq?ti.__cq.concat(q):q;
+            if (!ti.__loader){ti.__loader=true;var d=w.document,p=d.location.protocol,s=d.createElement('script');s.type='text/javascript';s.async=true;s.src=(p=='https:'?p:'http:')+'//ibe.tlintegration.com/integration/loader.js'; (d.getElementsByTagName('head')[0]||d.getElementsByTagName('body')[0]).appendChild(s);}
+        })(window);
+    </script>
+    <link rel="stylesheet" href="/local/templates/avrora/assets/src/css/travelline-style.css">
+    <link rel="stylesheet" href="/local/templates/avrora/assets/src/css/datepicker.min.css">
+    <script type="text/javascript" src="/local/templates/avrora/assets/src/js/datepicker.min.js"></script>
+    <!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+	   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+	   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+	
+	   ym(13395118, "init", {
+			clickmap:true,
+			trackLinks:true,
+			accurateTrackBounce:true,
+			webvisor:true,
+			ecommerce:"dataLayer"
+	   });
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/13395118" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+	<script type="text/javascript">
+	window.dataLayer = window.dataLayer || [];
+	</script>
 </head>
 
 <body class="<? $APPLICATION->ShowProperty('BodyClass'); ?>  " <? $APPLICATION->ShowProperty('BodyTag'); ?> >
@@ -93,7 +137,7 @@ $APPLICATION->ShowPanel();
                                 <div class="item col-lg-4 col-xs-12">
                                     <div id="phone-block" class="d-flex align-items-start">
                                         <div class="img-block">
-                                            <img src="/images/phone.png" alt="Иконка"/>
+                                            <img width="38" src="/images/phone-top.png" alt="Иконка"/>
                                         </div>
                                         <a href="tel:8-800-100-32-80">
                                             <p>
@@ -109,7 +153,8 @@ $APPLICATION->ShowPanel();
                                 <div class="item col-lg-4 col-xs-12">
                                     <div id="list-soc-phones" class="d-flex align-items-center ">
                                         <div class="img-block">
-                                            <img src="/images/soc-phones.png" alt="Иконка"/>
+                                            <img width="35" src="/images/viber.png" alt="Иконка"/>
+                                            <img width="35" src="/images/whatsup.png" alt="Иконка"/>
                                         </div>
                                         <ul class="list-phones">
                                             <li>

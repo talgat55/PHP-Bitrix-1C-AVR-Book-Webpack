@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
+$APPLICATION->SetPageProperty("title", "A restaurant");
 $APPLICATION->SetTitle("A restaurant");
 ?>
     <div class="container">

@@ -1,0 +1,31 @@
+/*
+* fix home page slider
+*/
+.reserve-section{
+    width: 60%!important;
+}
+
+@media (max-width: 1200px) {
+    .reserve-section{
+        width: 70%!important;
+    }
+}
+@media (max-width: 900px) {
+    .reserve-section{
+        width: 90%!important;
+    }
+}
+
+/*
+* News
+*/
+.page-wrap,
+.page-wrap .news-page .news-list,
+.page-wrap .news-page,
+.news-section .news-list{
+    width: 100%;
+}
+.news-section .news-list .news-item .preview_picture{
+    width: 100%!important;
+    height: 100%!important;
+}

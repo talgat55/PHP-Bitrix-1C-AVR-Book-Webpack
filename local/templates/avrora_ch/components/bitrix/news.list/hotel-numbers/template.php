@@ -83,7 +83,7 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/lightbox.min.js");
                                 <? endforeach; ?>
                             </ul>
                         </div>
-                        <a href="#" class="link-more order-price">
+                        <a href="/ch/booking/?room-type=<?php echo $arItem["PROPERTIES"]["ROOM_TYPE"]["VALUE"]; ?>" class="detail-booking-btn">
                             找出当前的价格
                         </a>
 

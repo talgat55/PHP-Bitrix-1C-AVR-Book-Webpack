@@ -4,11 +4,11 @@
 }
 #home-slider .slider-list li{
 	list-style: none;
-	height: 550px;
+	height: 350px;
 }
 
 #home-slider {
-	height: 550px;
+	height: 350px;
 	overflow: hidden;
 	position: relative;
 }

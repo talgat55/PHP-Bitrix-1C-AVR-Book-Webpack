@@ -375,6 +375,7 @@ foreach ($arResult['DISPLAY_PROPERTIES']['FISRT_SLIDER']['LINK_ELEMENT_VALUE'] a
                             1 => "SLIDERS",
                             2 => "PRICE",
                             3 => "CAPACITY",
+                            4 => "SERVICE",
                         ),
                         "SET_BROWSER_TITLE" => "N",
                         "SET_LAST_MODIFIED" => "N",
@@ -434,6 +435,16 @@ foreach ($arResult['DISPLAY_PROPERTIES']['FISRT_SLIDER']['LINK_ELEMENT_VALUE'] a
                     <p class="price">
                         费用 -  1500卢布/人。
                     </p>
+                </div>
+                <div class="wrap special-block d-none">
+                    <div class="item  d-flex align-items-center ">
+                        <div class="img-block">
+                            <img src="/images/waiter.png" alt="Иконка"/>
+                        </div>
+                        <p class="waiter">
+                            10％的服务费
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

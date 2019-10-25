@@ -8,7 +8,8 @@ jQuery(document).ready(function () {
     formHandler();
     scrollHeader();
     mobileMenu();
-    reserverBlockHover();
+    backToTop();
+    // reserverBlockHover();
     //  input mask phone
     if (jQuery('.phone-input').length) {
         jQuery('.phone-input').mask('+0(000) 000-0000');
@@ -184,34 +185,60 @@ function scrollHeader() {
 //----------------------------------
 //   Reserve block Hover
 //------------------------------------
-function reserverBlockHover() {
+// function reserverBlockHover() {
+//     "use strict";
+//     var  reserveSection = jQuery( '.reserve-wrapper .reserve-section' );
+//     jQuery( "#sticky-reserve-block " ).hover(
+//         function() {
+//             jQuery( "#sticky-reserve-block").addClass('is-active');
+//         }, function() {
+//             jQuery( "#sticky-reserve-block").removeClass('is-active');
+//         }
+//     );
+//     // show hide block reserve
+//
+//     if(reserveSection.length){
+//
+//         var offset = reserveSection.offset();
+//         jQuery(window).scroll(function(){
+//             var  scroll = jQuery(window).scrollTop();
+//
+//             if (scroll > offset.top + reserveSection.height()) {
+//                 jQuery( '#sticky-reserve-block' ).fadeIn();
+//             }else{
+//                 jQuery( '#sticky-reserve-block' ).fadeOut();
+//             }
+//
+//         });
+//     }else{
+//         jQuery( '#sticky-reserve-block' ).fadeIn();
+//     }
+//
+// }
+
+
+// ---------------------------------------------------------
+// Back To Top
+// ---------------------------------------------------------
+function backToTop() {
     "use strict";
-    var  reserveSection = jQuery( '.reserve-wrapper .reserve-section' );
-    jQuery( "#sticky-reserve-block " ).hover(
-        function() {
-            jQuery( "#sticky-reserve-block").addClass('is-active');
-        }, function() {
-            jQuery( "#sticky-reserve-block").removeClass('is-active');
+    jQuery(window).scroll(function () {
+
+        var backToTop = jQuery('#back_to_top');
+        var activeClass = 'backactive';
+
+        if (jQuery(this).scrollTop() > 100) {
+            backToTop.addClass(activeClass);
+        } else {
+            backToTop.removeClass(activeClass);
         }
-    );
-    // show hide block reserve
 
-    if(reserveSection.length){
+    });
 
-        var offset = reserveSection.offset();
-        jQuery(window).scroll(function(){
-            var  scroll = jQuery(window).scrollTop();
+    jQuery(document).on('click', '#back_to_top', function (e) {
+        e.preventDefault();
 
-            if (scroll > offset.top + reserveSection.height()) {
-                jQuery( '#sticky-reserve-block' ).fadeIn();
-            }else{
-                jQuery( '#sticky-reserve-block' ).fadeOut();
-            }
-
-        });
-    }else{
-        jQuery( '#sticky-reserve-block' ).fadeIn();
-    }
+        jQuery('body,html').animate({scrollTop: 0}, jQuery(window).scrollTop() / 3, 'linear');
+    });
 
 }
-

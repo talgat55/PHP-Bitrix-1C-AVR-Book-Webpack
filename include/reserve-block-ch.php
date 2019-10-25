@@ -25,8 +25,8 @@
                         </div>
                     </div>
                     <div class="copyright d-flex align-items-center">
+                        <a target="_blank" href="/ch/visasupport" class="visa-banner-link">
                         <img src="/images/visa.png" alt="Иконка" />
-                        <a target="_blank" href="https://ivisa.ru/">
                             获得签证邀请
                         </a>
                     </div>
@@ -45,7 +45,7 @@
                                     到货日期：
                                 </label>
                                 <div class=" position-relative">
-                                    <input type="text" name="date_from" class="text-input date-input"> <span
+                                    <input type="text" name="date_from" class="text-input date-input sf-datepicker" id="sf-date-from"> <span
                                         class="date-icon"> <img src="/images/date-icon.jpg"
                                                                 alt="иконка"> </span>
                                 </div>
@@ -55,7 +55,7 @@
                                     退房日期：
                                 </label>
                                 <div class=" position-relative">
-                                    <input type="text" name="date_to" class="text-input date-input"> <span
+                                    <input type="text" name="date_to" class="text-input date-input sf-datepicker"id="sf-date-to"> <span
                                         class="date-icon"> <img src="/images/date-icon.jpg"
                                                                 alt="иконка"> </span>
                                 </div>
@@ -70,7 +70,7 @@
                                 </label>
                                 <div class=" position-relative w--115">
 
-                                    <input type="number" name="count" class="text-input "  min="1">
+                                    <input type="number" name="count" class="text-input "  min="1" id="sf-adults">
                                     <span class="date-icon person ">
                                             <img src="/images/person-icon.png" alt="иконка">
                                         </span>
@@ -85,6 +85,86 @@
                         </div>
                     </div>
                 </form>
+                <script>
+                    var today = new Date();
+                    var tomorrow = new Date;
+                    tomorrow.setDate(tomorrow.getDate() + 1);
+                    var selectedDate = today;
+                    var selectedDate1 = tomorrow;
+                    var btnSend = document.getElementById('reserve-form');
+
+                    function getDay(date) {
+                        var dd = date.getDate();
+                        if (dd < 10) dd = '0' + dd;
+                        return dd;
+                    }
+
+                    function getMonth(date) {
+                        var mm = date.getMonth() + 1;
+                        if (mm < 10) mm = '0' + mm;
+                        return mm;
+                    }
+
+                    function formatDate(date) {
+                        return date.getFullYear() + '-' +  getMonth(date) + '-' +  getDay(date);
+                    }
+
+                    var datePicker = $('#sf-date-from');
+
+                    datePicker.datepicker({
+                        language: 'zh',
+                        minDate: today,
+                        startDate: today,
+                        autoClose: true,
+                        onSelect: function (formattedDate, date) {
+                            selectedDate = date;
+                        }
+                    });
+
+                    //указываем значение текущей даты
+                    datePicker.data('datepicker').selectDate(today);
+
+                    var datePicker1 = $('#sf-date-to');
+
+                    datePicker1.datepicker({
+                        language: 'zh',
+                        minDate: tomorrow,
+                        startDate: tomorrow,
+                        autoClose: true,
+                        onSelect: function (formattedDate, date) {
+                            selectedDate1 = date;
+                        }
+                    });
+
+                    //указываем значение текущей даты
+                    datePicker1.data('datepicker').selectDate(tomorrow);
+
+                    btnSend.addEventListener('submit', function (e) {
+                        e.preventDefault();
+                        var formDateFrom = new Date(selectedDate);
+                        formDateFrom.setHours(0);
+                        formDateFrom.setMinutes(0);
+                        var formDateTo = new Date(selectedDate1);
+                        formDateTo.setHours(0);
+                        formDateTo.setMinutes(0);
+                        var formatDateFrom = formatDate(formDateFrom);
+                        var formatDateTo = formatDate(formDateTo);
+                        var nights = (formDateTo - formDateFrom) / (1000 * 60 * 60 * 24);
+                        if (nights < 1) {
+                            nights = 1;
+                        } else {
+                            nights.toFixed();
+                        }
+                        var selectedAdults = document.querySelector('#sf-adults');
+                        var selectedAdultsVal = selectedAdults.value;
+                        if (selectedAdultsVal === "") {
+                            selectedAdultsVal = 1;
+                        }
+                        var pathName = '/ch/booking/?date=' + formatDateFrom + '&nights=' + nights + '&adults=' + selectedAdultsVal;
+                        window.location.href = pathName;
+                        return false;
+                    });
+                </script>
             </div>
         </div>
     </div>

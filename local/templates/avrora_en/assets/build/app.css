@@ -112,7 +112,7 @@ body {
   font-family: "Calibri";
   font-weight: 400;
   border-radius: 5px;
-  padding: 11px  65px;
+  padding: 11px 65px;
   transition: all .3s;
   margin-top: 60px;
   display: inline-block;
@@ -186,6 +186,18 @@ body {
   padding: 20px;
   background: #ec4345;
   color: #fff;
+}
+
+#sticky-reserve-block .content .reserve-section {
+  width: 660px;
+}
+
+#sticky-reserve-block .content .reserve-section .reserve-block {
+  width: 100%;
+}
+
+#sticky-reserve-block .content .reserve-section .reserve-block .second {
+  width: 100%;
 }
 
 #sticky-reserve-block .reserve-section {
@@ -407,12 +419,14 @@ header .top-header {
 
 header .top-header #phone-block {
   padding-top: 2px;
+  height: 55px;
 }
 
 header .top-header #phone-block .img-block {
   width: 41px;
-  height: 38px;
+  height: 42px;
   margin-right: 10px;
+  margin-top: 7px;
 }
 
 header .top-header #phone-block .img-block img {
@@ -421,6 +435,7 @@ header .top-header #phone-block .img-block img {
 }
 
 header .top-header #phone-block a {
+  margin-top: 6px;
   text-decoration: none;
   color: #000;
   transition: all .3s;
@@ -456,9 +471,9 @@ header .top-header #list-soc-phones {
 }
 
 header .top-header #list-soc-phones .img-block {
-  width: 71px;
+  width: 83px;
   height: 31px;
-  margin-right: 10px;
+  margin-right: 3px;
 }
 
 header .top-header #list-soc-phones .img-block img {
@@ -493,6 +508,11 @@ header .top-header #adr-lang-block .first .img-block {
   width: 38px;
   height: 38px;
   margin-right: 10px;
+  margin-top: 14px;
+}
+
+header .top-header #adr-lang-block .first .adress {
+  margin-top: 19px;
 }
 
 header .top-header #adr-lang-block .first .adress .link-to-adress {
@@ -517,11 +537,18 @@ header .top-header #adr-lang-block .first .adress .link-to-adress div:last-child
 header .top-header #adr-lang-block .second .list-lang {
   margin: 0;
   padding: 0;
+  height: 57px;
+  position: relative;
+  top: 10px;
 }
 
 header .top-header #adr-lang-block .second .list-lang li {
   list-style: none;
-  height: 19px;
+  height: 13px;
+}
+
+header .top-header #adr-lang-block .second .list-lang li img {
+  width: 19px;
 }
 
 header .top-header #adr-lang-block .second .list-lang li a {
@@ -557,10 +584,10 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .reserve-section {
-  width: fit-content;
-  margin: 0 auto -215px auto;
+  width: max-content;
+  margin: 0 auto -130px auto;
   position: relative;
-  top: -215px;
+  top: -130px;
 }
 
 .reserve-section .img-reserve {
@@ -571,11 +598,13 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .reserve-section .reserve-block {
+  width: 91%;
+  margin: 0 auto;
   border-radius: 5px;
 }
 
 .reserve-section .reserve-block .bottom-block a {
-  font-size: 33px;
+  font-size: 21px;
   color: #fff;
   text-decoration: none;
   font-family: "AvenirNextCyr";
@@ -590,16 +619,17 @@ header .bottom-header .second #special-block .temperature-block {
 
 .reserve-section .reserve-block .bottom-block span {
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
   font-family: "AvenirNextCyr";
   font-weight: 300;
   line-height: 1;
+  display: block;
 }
 
 .reserve-section .reserve-block .copyright {
-  position: relative;
-  bottom: -80px;
-  left: -30px;
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
 }
 
 .reserve-section .reserve-block .copyright img {
@@ -616,25 +646,27 @@ header .bottom-header .second #special-block .temperature-block {
 
 .reserve-section .reserve-block .title {
   margin: 0;
-  font-size: 25px;
+  font-size: 21px;
   font-weight: 800;
   font-family: "AvenirNextCyr";
 }
 
 .reserve-section .reserve-block .first {
-  padding: 50px;
-  width: 490px;
+  padding: 25px;
+  width: 40%;
   background-color: #ec4345;
+  position: relative;
 }
 
 .reserve-section .reserve-block .first img {
-  height: 55px;
+  height: 40px;
   margin-right: 20px;
 }
 
 .reserve-section .reserve-block .first .title {
   color: #fff;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .reserve-section .reserve-block .first .list-advantages {
@@ -655,8 +687,8 @@ header .bottom-header .second #special-block .temperature-block {
 }
 
 .reserve-section .reserve-block .second {
-  padding: 32px 110px;
-  width: 690px;
+  padding: 25px 50px;
+  width: 60%;
   background-color: #f4f4f4;
 }
 
@@ -1441,7 +1473,8 @@ footer {
 
 footer #logo-footer img {
   max-width: 100%;
-  height: 60px;
+  margin-top: -1px;
+  height: 74px;
 }
 
 footer #phone-block-footer {
@@ -1449,8 +1482,8 @@ footer #phone-block-footer {
 }
 
 footer #phone-block-footer .img-block {
-  width: 29px;
-  height: 38px;
+  width: 39px;
+  height: 42px;
   margin-right: 10px;
 }
 
@@ -1489,10 +1522,15 @@ footer #phone-block-footer a p {
   line-height: 1;
 }
 
+footer #list-soc-phones-footer {
+  position: relative;
+  top: 6px;
+}
+
 footer #list-soc-phones-footer .img-block {
   width: 68px;
   height: 31px;
-  margin-right: 10px;
+  margin-right: 3px;
 }
 
 footer #list-soc-phones-footer .img-block img {
@@ -1523,6 +1561,11 @@ footer #list-soc-phones-footer .list-phones li a:hover {
   color: #ec4345;
 }
 
+footer #adr-lang-block-footer {
+  position: relative;
+  top: 14px;
+}
+
 footer #adr-lang-block-footer .first .img-block {
   width: 38px;
   height: 38px;
@@ -1539,7 +1582,7 @@ footer #adr-lang-block-footer .adress .link-to-adress div:first-child {
   font-family: "AvenirNextCyr";
   font-weight: 800;
   line-height: 22px;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 
 footer #adr-lang-block-footer .adress .link-to-adress div:last-child {
@@ -1575,7 +1618,7 @@ footer .footer-soc-links-block .title {
 }
 
 footer .footer-soc-links-block .footer-soc-links {
-  margin: 0 0 0 37px;
+  margin: 0 0 0 -2px;
   padding: 0;
 }
 
@@ -1584,7 +1627,6 @@ footer .footer-soc-links-block .footer-soc-links li {
 }
 
 footer .footer-soc-links-block .footer-soc-links li a {
-  padding: 5px;
   transition: all .3s;
 }
 
@@ -1630,11 +1672,12 @@ footer .footer-soc-links-block .footer-soc-links .odn {
 }
 
 footer .list-add-links {
-  margin: 10px 0 0 0;
+  margin: 27px 0 0 0;
   padding: 0;
 }
 
 footer .list-add-links li {
+  line-height: 1;
   list-style: none;
 }
 
@@ -1642,6 +1685,8 @@ footer .list-add-links li:first-child a {
   text-decoration: underline;
   font-weight: 400;
   color: #000;
+  line-height: 1;
+  font-size: 13px;
 }
 
 footer .list-add-links li:last-child a {
@@ -1663,6 +1708,8 @@ footer .list-add-links li a:hover {
 footer .footer-certs-list {
   margin: 0;
   padding: 0;
+  position: relative;
+  top: 22px;
 }
 
 footer .footer-certs-list li {
@@ -1693,7 +1740,7 @@ footer .footer-certs-list li a:hover {
 
 @media (max-width: 1200px) {
   #sticky-reserve-block {
-    left: -612px;
+    left: -675px;
   }
 
   #special-block {
@@ -1768,6 +1815,17 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 1024px) {
+  #sticky-reserve-block {
+    left: -721px;
+  }
+
+  .reserve-section .reserve-block .copyright {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    padding-top: 20px;
+  }
+
   #mobile-toggle {
     display: inline-block;
   }
@@ -1837,6 +1895,21 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 992px) {
+  .detail-booking-btn {
+    margin-bottom: 20px;
+  }
+
+  .ch-version .header-wrap #logo,
+  .en-version .header-wrap #logo {
+    display: block !important;
+    text-align: center;
+  }
+
+  .ch-version .top-header,
+  .en-version .top-header {
+    display: none;
+  }
+
   .reserve-section {
     margin: 0 auto;
     top: 0;
@@ -2266,6 +2339,18 @@ footer .footer-certs-list li a:hover {
 }
 
 @media (max-width: 600px) {
+  footer #list-soc-phones-footer {
+    margin-bottom: 20px !important;
+  }
+
+  footer #list-soc-phones-footer .img-block {
+    width: 61px;
+  }
+
+  footer #adr-lang-block-footer {
+    margin-bottom: 30px;
+  }
+
   .footer-slider-section .slider-item img {
     width: 100%;
   }
@@ -2439,4 +2524,28 @@ footer .footer-certs-list li a:hover {
 
 a.load-more.link-more-alt.news-link.main-link.hide-item {
   display: none !important;
+}
+
+#back_to_top {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  z-index: 999;
+  opacity: 0;
+  transition: all .3s;
+  background-color: #ec4345;
+}
+
+#back_to_top i {
+  font-size: 22px;
+  color: #fff;
+  padding: 14px;
+}
+
+#back_to_top.backactive {
+  opacity: 1;
+}
+
+#back_to_top:hover {
+  background-color: #333;
 }

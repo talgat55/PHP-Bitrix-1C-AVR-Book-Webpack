@@ -10,7 +10,7 @@ if(isset($_POST)  && !empty($_POST)){
 
     $EVENT = ($_POST['event']);
 
-    if($EVENT == 'FEEDBACK_EVENT') {
+    if($EVENT == 'FEEDBACK_FORM') {
         $USER_NAME = htmlspecialcharsbx($_POST['name']);
         $USER_EMAIL = htmlspecialcharsbx($_POST['email']);
         $USER_PHONE = htmlspecialcharsbx($_POST['phone']);
@@ -31,7 +31,8 @@ if(isset($_POST)  && !empty($_POST)){
             "USER_MESSAGE" => $USER_MESSAGE,
         );
     }
-    CEvent::Send($EVENT,   's1' , $arEventFields, "N", "", "");
+    
+    $var = CEvent::Send($EVENT,   's1' , $arEventFields, "N", "", "");
 
     echo 'true';
 

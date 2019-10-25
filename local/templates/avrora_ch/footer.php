@@ -6,12 +6,15 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 
 ?>
 <?php
+$page_main_search = parse_url($_SERVER['REQUEST_URI']);
+if (strpos($page_main_search["path"],"/booking") === false) :
 // reserve block
 $APPLICATION->IncludeFile(
     SITE_DIR . "/include/sticky-reserve-ch.php",
     Array(),
     Array("MODE" => "html")
 );
+endif;
 ?>
 <footer>
     <div class="container">
@@ -22,30 +25,39 @@ $APPLICATION->IncludeFile(
                         <img src="/images/logo-new-en.png" alt="Логотип"/>
                     </a>
                 </div>
-                <div class="footer-soc-links-block d-flex align-items-center">
-
+                <div class="footer-soc-links-block d-flex align-items-center  justify-content-center">
                     <ul class="footer-soc-links d-flex  align-items-center">
                         <li>
+                            <a target="_blank" class="fb" href="https://www.facebook.com/avrora55">
+                                <!--                                <i class="fab fa-facebook"></i>-->
+                                <img width="34"  src="/images/Facebook-logo-png-qw.png" alt="Иконка"/>
+                            </a>
+                        </li>
+                        <li>
                             <a target="_blank" class="vk" href="https://vk.com/avrorahotel55">
-                                <i class="fab fa-vk"></i>
+                                <!--                                <i class="fab fa-vk"></i>-->
+                                <img width="26" src="/images/vk-applied-01-01-1024x1024.png" alt="Иконка"/>
                             </a>
                         </li>
                         <li>
                             <a target="_blank" class="inst" href="https://www.instagram.com/avrorahotel55/">
-                                <i class="fab fa-instagram"></i>
+                                <!--                                <i class="fab fa-instagram"></i>-->
+                                <img width="37" src="/images/instagram-icon-white-on-gradient.png" alt="Иконка"/>
+
                             </a>
                         </li>
-                        <li>
-                            <a target="_blank" class="fb" href="https://www.facebook.com/avrora55">
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
+
                         <li>
                             <a target="_blank" class="odn" href="https://ok.ru/profile/576380255679">
-                                <i class="fab fa-odnoklassniki"></i>
+                                <!--                                <i class="fab fa-odnoklassniki"></i>-->
+                                <img width="26" src="/images/odnoklassniki_logo.png" alt="Иконка"/>
                             </a>
                         </li>
                     </ul>
+                </div>
+                <div class="mt-4  copyright-alt">
+                    © Hotel Aurora, <?= date('Y'); ?><br>
+                    Official site.
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-xs-12  d-flex align-items-center">
@@ -65,7 +77,8 @@ $APPLICATION->IncludeFile(
                     </div>
                     <div id="list-soc-phones-footer" class="d-flex align-items-center">
                         <div class="img-block">
-                            <img src="/images/soc-phones.png" alt="Иконка"/>
+                            <img width="28" src="/images/viber-phone-wifi-logo-transparent-background-pictures-round-3-1024x1024.png" alt="Иконка"/>
+                            <img width="28" src="/images/vatsap2-compressor.png" alt="Иконка"/>
                         </div>
                         <ul class="list-phones">
                             <li>
@@ -82,7 +95,7 @@ $APPLICATION->IncludeFile(
                 <div id="adr-lang-block-footer">
                     <div class="first  d-flex">
                         <div class="img-block">
-                            <img src="/images/geo.png" alt="Иконка"/>
+                            <img height="39" src="/images/geo.png" alt="Иконка"/>
                         </div>
                         <div class="adress">
                             <a target="_blank"
@@ -105,17 +118,17 @@ $APPLICATION->IncludeFile(
                 <ul class="footer-certs-list d-flex">
                     <li>
                         <a target="_blank" href="/images/Scan.jpg">
-                            <img src="/images/cert1.jpg" alt="Сертификат"/>
+                            <img width="108" src="/images/cert1.jpg" alt="Сертификат"/>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="/images/Svidetelstvo_Avrora_3_zvezdy.pdf">
-                            <img src="/images/cert2.jpg" alt="Сертификат"/>
+                            <img width="60" src="/images/cert2.jpg" alt="Сертификат"/>
                         </a>
                     </li>
                     <li>
                         <a target="_blank" href="/images/sertifikat-3.jpg">
-                            <img src="/images/cert3.jpg" style="width: 95px" alt="Сертификат"/>
+                            <img width="55" src="/images/cert3.jpg"   alt="Сертификат"/>
                         </a>
                     </li>
                 </ul>
@@ -140,10 +153,12 @@ $APPLICATION->IncludeFile(
 </div>
 
 </main>
-<?php
-
-
-?>
+<?/*<script type="text/javascript" src="//api.venyoo.ru/wnew.js?wc=venyoo/default/science&widget_id=6235328327843840"></script>*/?>
+<a id="back_to_top" href="#">
+    <div class="ba-block">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+</a>
 <link rel="stylesheet" href="<?= SITE_TEMPLATE_PATH; ?>/assets/build/css/fontawesome-all.min.css">
 
 <? $APPLICATION->ShowProperty('FooterJS'); ?>

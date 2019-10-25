@@ -11,22 +11,20 @@
         <a href="#" class="close-icon">
             <i class="fas fa-times"></i>
         </a>
-        <form id="feedback-form" method="post" action="ajax/send.php">
+        <form id="feedback-form" method="post" action="ajax/send.php" onsubmit="yaCounter33180868.reachGoal('premises_for_rent_aurora');yaCounter13395118.reachGoal('premises_for_rent_aurora');return true;">
             <div class="form-group">
                 <div class="row">
                     <div class="col-md-6 col-xs-12">
                         <label>
                             Как вас зовут?
                         </label>
-                        <input type="text" name="name" placeholder="Ваше имя"
-                               class="text-input" required>
+                        <input type="text" name="name" placeholder="Ваше имя" class="text-input" required="">
                     </div>
                     <div class="col-md-6 col-xs-12">
                         <label>
                             Телефон
                         </label>
-                        <input type="text" name="phone" placeholder="Телефон"
-                               class="text-input phone-input" required>
+                        <input type="text" name="phone" placeholder="Телефон" class="text-input phone-input" required="">
                     </div>
                 </div>
             </div>
@@ -37,7 +35,7 @@
                         <button type="submit" form="feedback-form" class="main-link">
                             Отправить
                         </button>
-                        <input type="hidden" name="event" value="FEEDBACK_EVENT"/>
+                        <input type="hidden" name="event" value="FEEDBACK_FORM">
                     </div>
                     <div class="policy-block col-md-7 col-xs-12">
                         Нажимая кнопку «Отправить» вы даете свое согласие на <a href="/policy">
@@ -48,4 +46,4 @@
         </form>
     </div>
 </div>
-<div class="layer-overflow"></div>
+<div class="layer-overflow"></div><br>

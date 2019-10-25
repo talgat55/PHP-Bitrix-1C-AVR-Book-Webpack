@@ -6,13 +6,14 @@ jQuery(document).ready(function () {
     var listClass = '.slider-items';
     var itemClickClass = '.list-hal-heading a';
     var activeClass = 'active';
+    var specialBlock = '.special-block';
 
     // init slider
         jQuery(listClass).slick({
             infinite: true,
             slidesToShow: 3,
             slidesToScroll: 1,
-            dots: true,
+            dots: false,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -61,6 +62,7 @@ jQuery(document).ready(function () {
 
     jQuery(itemClickClass).click(function (e) {
         e.preventDefault();
+        jQuery(specialBlock).addClass('d-none');
         var  currentValue = jQuery(this).attr('data-id');
         // add class in active click item
         jQuery(this).parent().parent().find('a').removeClass(activeClass);
@@ -70,9 +72,15 @@ jQuery(document).ready(function () {
         jQuery(listClass+'.'+currentValue).addClass(activeClass);
         var dataPrice = jQuery('.slider-items.active').attr('data-price');
         var dataCapacity = jQuery('.slider-items.active').attr('data-capacity');
+        var dataService  = jQuery('.slider-items.active').attr('data-service');
 
         jQuery('.last-block .capacity').html(' ').append(dataCapacity);
         jQuery('.last-block .price').html(' ').append(dataPrice);
+
+        if(dataService.length){
+            jQuery(specialBlock).removeClass('d-none');
+            jQuery('.last-block .waiter').html(' ').append(dataService);
+        }
 
     });
 

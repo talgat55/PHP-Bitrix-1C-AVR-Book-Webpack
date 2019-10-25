@@ -82,8 +82,8 @@ $this->addExternalJS("/local/templates/avrora/assets/build/js/lightbox.min.js");
                                 <? endforeach; ?>
                             </ul>
                         </div>
-                        <a href="#" class="link-more order-price">
-                            Узнать актуальные цены
+                        <a href="/booking/?room-type=<?php echo $arItem["PROPERTIES"]["ROOM_TYPE"]["VALUE"]; ?>" class="detail-booking-btn">
+                            Забронировать
                         </a>
 
                     </div>

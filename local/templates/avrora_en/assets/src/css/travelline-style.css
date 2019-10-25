@@ -1,0 +1,56 @@
+#tl-anchor {
+    margin: 0 auto 20px;
+    max-width: 1440px;
+}
+
+#tl-reputation-widget {
+    max-width: 170px;
+    width: 100%;
+}
+
+.reputation-cont {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.reputation-cont .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+header .header-wrap {
+    z-index: 9999 !important;
+}
+
+.detail-booking-btn {
+    background: #ec4345;
+    color: #fff;
+    font-family: "Calibri";
+    font-weight: 400;
+    border-radius: 5px;
+    padding: 11px 65px;
+    transition: all .3s;
+    margin-top: 60px;
+    display: inline-block;
+    box-shadow: 0px 11px 20px 0px rgba(225, 47, 19, 0.4);
+    margin-top: 40px;
+}
+
+.detail-booking-btn:hover {
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.visa-banner-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile-bar {
+    z-index: 9999;
+}
